@@ -1,0 +1,22 @@
+import React from 'react';
+import Layout from '@/components/Layout';
+import NavOne from '@/components/NavOne';
+import PageHeader from '@/components/PageHeader';
+import Contact from '@/components/Contact';
+import Map from '@/components/Map';
+import Footer from '@/components/Footer';
+
+
+const ContactPage = () => {
+    return (
+        <Layout pageTitle="Oxpitan | Contact">
+            <NavOne />
+            <PageHeader title="Contact" />
+            <Contact />
+            <Map />
+            <Footer />
+        </Layout>
+    );
+};
+
+export default ContactPage;

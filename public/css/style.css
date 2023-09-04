@@ -125,7 +125,7 @@ a:hover {
 .theme-btn {
     font-size: 12px;
     text-transform: uppercase;
-    background: #990230;
+    background: #e36955;
     color: #fff;
     font-weight: 600;
     letter-spacing: 1px;
@@ -151,7 +151,7 @@ a:hover {
     top: 0;
     left: 1px;
     z-index: -1;
-    background: #990230;
+    background: #e36955;
     -webkit-transform-origin: bottom left;
     transform-origin: bottom left;
     -webkit-transform: skew(-12deg,0deg);
@@ -167,7 +167,7 @@ a:hover {
 }
 .theme-btn:hover,
 .theme-btn:hover:after {
-    /* background-color: #990230; */
+    /* background-color: #e36955; */
     background-color: #0195da;
     color: #fff;
 }
@@ -321,7 +321,7 @@ a:hover {
 }
 .header-area .header-top-action .top-action-content .info-box ul li a:hover,
 .header-area .header-top-action .top-action-content .info-box ul li a i {
-    color: #990230;
+    color: #e36955;
 }
 .header-area .header-top-action .top-action-content .info-box ul li a i {
     margin-right: 5px;
@@ -366,7 +366,7 @@ a:hover {
 }
 .header-area .header-top .ostion-top-wrap .header-btn .theme-btn,
 .header-area .header-top .ostion-top-wrap .header-btn .theme-btn:after {
-    background-color: #990230;
+    background-color: #e36955;
 }
 .header-area .header-top .ostion-top-wrap .header-btn .theme-btn:hover,
 .header-area .header-top .ostion-top-wrap .header-btn .theme-btn:hover:after {
@@ -769,7 +769,7 @@ a:hover {
 }
 .header-area .side-nav-container .side-menu-wrap .side-social li a {
     font-size: 14px;
-    background-color: #50bac3;
+    background-color: #249bc4;
     color: #fff;
     padding: 0 5px 0 12px;
     line-height: 42px;
@@ -787,7 +787,7 @@ a:hover {
     top: 0;
     left: 0;
     z-index: -1;
-    background-color: #50bac3;
+    background-color: #249bc4;
     -webkit-transform-origin: bottom left;
     transform-origin: bottom left;
     -webkit-transform: skew(-12deg,0deg);
@@ -804,7 +804,7 @@ a:hover {
 }
 .header-area .side-nav-container .side-menu-wrap .side-social li:nth-child(3) a,
 .header-area .side-nav-container .side-menu-wrap .side-social li:nth-child(3) a:after {
-    background-color: #f1ae44;
+    background-color: #249bc4;
 }
 .header-area .side-nav-container .side-menu-wrap .side-social li:nth-child(4) a,
 .header-area .side-nav-container .side-menu-wrap .side-social li:nth-child(4) a:after {
@@ -865,7 +865,7 @@ a:hover {
 }
 .header-area2 .header-top-action .top-action-content .info-box ul.top-action-list li a:hover,
 .header-area2 .header-top-action .top-action-content .info-box ul.top-action-list li a i:hover {
-    color: #f1ae44;
+    color: #249bc4;
 }
 
 .header-area2 .header-top .ostion-top-wrap .ostion-menu .ostion-menu-content .navigation-top .main-navigation ul li a,
@@ -875,10 +875,10 @@ a:hover {
 .header-area2 .header-top .ostion-top-wrap .ostion-menu .ostion-menu-content .navigation-top .main-navigation ul li a:hover,
 .header-area2 .header-top .ostion-top-wrap .ostion-menu .ostion-menu-content .navigation-top .main-navigation ul li.active> a:hover,
 .header-area2 .header-top .ostion-top-wrap .ostion-menu .ostion-menu-content .navigation-top .main-navigation ul li .dropdown-menu-item li a:hover{
-    color: #f1ae44;
+    color: #249bc4;
 }
 .header-area2 .header-top .ostion-top-wrap .ostion-menu .ostion-menu-content .navigation-top .main-navigation ul li a:after {
-    background-color: #f1ae44;
+    background-color: #249bc4;
 }
 .header-area2 .header-top .ostion-top-wrap .ostion-menu .ostion-menu-content .navigation-top .main-navigation ul li .dropdown-menu-item {
     -webkit-border-radius: 2px;
@@ -1058,7 +1058,7 @@ a:hover {
     padding-left: 0;
 }
 .give-area .give-title-box {
-    background-color: #f1ae44;
+    background-color: #249bc4;
     padding: 105px 0 109px 115px;
     position: relative;
     z-index: 1;
@@ -1072,7 +1072,7 @@ a:hover {
     top: 0;
     left: 0;
     z-index: -1;
-    background-color: #f1ae44;
+    background-color: #249bc4;
     -webkit-transform-origin: bottom left;
     -webkit-transform: skew(-12deg,0deg);
     -moz-transform: skew(-12deg,0deg);
@@ -1110,7 +1110,7 @@ a:hover {
 }
 .skill-area .skills .skill .progress_bar {
     height: 10px;
-    background-color: #f1ae44;
+    background-color: #249bc4;
     position: relative;
 }
 .skill-area .skills .skill .skill-meta ul {
@@ -1153,7 +1153,7 @@ a:hover {
     top: 0;
     left: -8px;
     z-index: 1;
-    background-color: #50bac3;
+    background-color: #249bc4;
     -webkit-transform-origin: bottom left;
     transform-origin: bottom left;
     -webkit-transform: skew(-20deg,0deg);
@@ -1166,7 +1166,7 @@ a:hover {
     background-color: #e36955;
 }
 .make-world-area .world-static-wrap .world-item .world-img-bg3:after {
-    background-color: #f1ae44;
+    background-color: #249bc4;
 }
 .make-world-area .world-static-wrap2 {
     padding-top: 53px;
@@ -1197,7 +1197,7 @@ a:hover {
     right: 0;
     width: 360px;
     height: 415px;
-    background-color: #50bac3;
+    background-color: #249bc4;
     z-index: -1;
 }
 .donate-area .donate-item-img {
@@ -1217,7 +1217,7 @@ a:hover {
 .donate-area .donate-fun-wrap {
     margin-left: 250px;
     margin-top: -236px;
-    background-color: #50bac3;
+    background-color: #249bc4;
     position: relative;
     z-index: 1;
     padding-top: 120px;
@@ -1332,7 +1332,7 @@ a:hover {
     transition: 0.3s ease;
 }
 .breadcrumb-area .breadcrumb-content .breadcrumb__list li a:hover {
-    color: #f1ae44;
+    color: #249bc4;
 }
 
 /*===================================
@@ -1381,7 +1381,7 @@ a:hover {
 .entry-area .entry-static-wrap .entry-static-box .entry-video-img .video-play-btn {
     font-size: 13px;
     cursor: pointer;
-    background: #990230;
+    background: #e36955;
     color: #fff;
     font-weight: 600;
     width: 45px;
@@ -1413,7 +1413,7 @@ a:hover {
     top: 0;
     left: 0;
     z-index: -1;
-    background: #990230;
+    background: #e36955;
     -webkit-transform-origin: bottom left;
     transform-origin: bottom left;
     -webkit-transform: skew(-12deg,0deg);
@@ -1429,7 +1429,7 @@ a:hover {
 }
 .entry-area .entry-static-wrap .entry-static-box .entry-video-img .video-play-btn:hover,
 .entry-area .entry-static-wrap .entry-static-box .entry-video-img .video-play-btn:hover:after {
-    background-color: #990230;
+    background-color: #e36955;
 }
 
 /*=== entry-static-box2 ===*/
@@ -1477,11 +1477,11 @@ a:hover {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: #f1ae44;
+    background-color: #249bc4;
     opacity: .8;
 }
 .hiw-area .hiw-item .hiw-item-img-box.hiw-bg1:after {
-    background-color: #50bac3;
+    background-color: #249bc4;
 }
 .hiw-area .hiw-item .hiw-item-img-box.hiw-bg2:after {
     background-color: #e36955;
@@ -1643,7 +1643,7 @@ a:hover {
 }
 .service-area .button-shared .theme-btn,
 .service-area .button-shared .theme-btn:after {
-    background-color: #990230;
+    background-color: #e36955;
 }
 .service-area .button-shared .theme-btn:hover,
 .service-area .button-shared .theme-btn:hover:after {
@@ -1694,6 +1694,22 @@ a:hover {
 /*===================================
     MIXER AREA
 =====================================*/
+
+.video-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+  }
+  
+  .video-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+
 .mixer-area {
     position: relative;
     z-index: 1;
@@ -1857,7 +1873,7 @@ a:hover {
     MIXER AREA 3
 =====================================*/
 .mixer-area3 {
-    background-image: url("../images/mixer-bg2.jpg");
+    background-image: url("../images/youtubeBackgroundImage.jpg");
 }
 .mixer-area3:after {
     background-color: rgba(66, 66, 66, 0.80);
@@ -1874,7 +1890,7 @@ a:hover {
     padding-left: 0;
 }
 .mixer-area4 .section-heading .section__meta {
-    color: #f1ae44;
+    color: #249bc4;
 }
 .mixer-area4 .section-heading .section__desc {
     line-height: 30px;
@@ -1887,7 +1903,7 @@ a:hover {
 }
 .mixer-area4 .section-heading .theme-btn:hover,
 .mixer-area4 .section-heading .theme-btn:hover:after {
-    background-color: #f1ae44;
+    background-color: #249bc4;
 }
 .mixer-area4 .mixer-video-content {
     position: relative;
@@ -1897,7 +1913,7 @@ a:hover {
 }
 .mixer-area4 .mixer-video-content .video-play-btn {
     font-size: 12px;
-    background-color: #f1ae44;
+    background-color: #249bc4;
     color: #fff;
     font-weight: 600;
     width: 50px;
@@ -1931,7 +1947,7 @@ a:hover {
     top: 0;
     left: 0;
     z-index: -1;
-    background-color: #f1ae44;
+    background-color: #249bc4;
     -webkit-transform-origin: bottom left;
     transform-origin: bottom left;
     -webkit-transform: skew(-12deg,0deg);
@@ -2128,7 +2144,7 @@ a:hover {
     transition: 0.3s ease-in;
 }
 .causes-area .blog-content-wrap .blog-content .blog-item .blog-inner-content .blog__title a:hover {
-    color: #f1ae44;
+    color: #249bc4;
 }
 .causes-area .blog-content-wrap .blog-content .blog-item .blog-inner-content .blog__desc {
     line-height: 29px;
@@ -2164,10 +2180,10 @@ a:hover {
 .causes-area .blog-content-wrap .blog-content .blog-item1 .barfiller .fill:after,
 .causes-area .blog-content-wrap .blog-content .blog-item1 .barfiller .tip,
 .causes-area .blog-content-wrap .blog-content .blog-item1 .barfiller .tip:before {
-    background-color: #50bac3;
+    background-color: #249bc4;
 }
 .causes-area .blog-content-wrap .blog-content .blog-item1 .barfiller .tip:after {
-    border-top-color: #50bac3;
+    border-top-color: #249bc4;
 }
 
 .causes-area .blog-content-wrap .blog-content .blog-item2 .blog-inner-content .theme-btn,
@@ -2202,7 +2218,7 @@ a:hover {
 }
 
 .causes-area .blog-content-wrap .blog-content .blog-item1 .blog-inner-content .blog__title a:hover {
-    color: #50bac3;
+    color: #249bc4;
 }
 .causes-area .blog-content-wrap .blog-content .blog-item2 .blog-inner-content .blog__title a:hover {
     color: #e36955;
@@ -2226,10 +2242,10 @@ a:hover {
 .causes-detail-area .blog-content-wrap .blog-content .blog-item .barfiller .fill:after,
 .causes-detail-area .blog-content-wrap .blog-content .blog-item .barfiller .tip,
 .causes-detail-area .blog-content-wrap .blog-content .blog-item .barfiller .tip:before {
-    background: #50bac3;
+    background: #249bc4;
 }
 .causes-detail-area .blog-content-wrap .blog-content .blog-item .barfiller .tip:after {
-    border-top-color: #50bac3;
+    border-top-color: #249bc4;
 }
 .causes-detail-area .blog-content-wrap .blog-content .blog-item .blog-inner-content {
     background-color: #f2f0ec;
@@ -2278,7 +2294,7 @@ a:hover {
 }
 .causes-detail-area .blog-content-wrap .blog-content .blog-item .blog-inner-content .inner-causes-btn .theme-btn,
 .causes-detail-area .blog-content-wrap .blog-content .blog-item .blog-inner-content .inner-causes-btn .theme-btn:after {
-    background-color: #50bac3;
+    background-color: #249bc4;
 }
 .causes-detail-area .blog-content-wrap .blog-content .blog-item .blog-inner-content .inner-causes-btn .theme-btn:hover,
 .causes-detail-area .blog-content-wrap .blog-content .blog-item .blog-inner-content .inner-causes-btn .theme-btn:hover:after {
@@ -2463,7 +2479,7 @@ a:hover {
     letter-spacing: 0.1px;
 }
 .sidebar-shared .side-widget .author-box .author__detail .author__meta2 {
-    color: #50bac3;
+    color: #249bc4;
     font-weight: 600;
     font-size: 22px;
     font-family: "Playfair Display", sans-serif;
@@ -2493,7 +2509,7 @@ a:hover {
     margin-bottom: 4px;
 }
 .sidebar-shared .side-widget .author-box .author__detail .author__list li i {
-    color: #f1ae44;
+    color: #249bc4;
     font-size: 15px;
     margin-right: 7px;
 }
@@ -2583,7 +2599,7 @@ a:hover {
 }
 .sidebar-shared .side-widget .side-tags ul li a:hover,
 .sidebar-shared .side-widget .side-tags ul li a:hover:after {
-    background-color: #f1ae44;
+    background-color: #249bc4;
     color: #fff;
 }
 
@@ -2594,7 +2610,7 @@ a:hover {
 }
 .sidebar-shared .side-widget .side-share-profile ul li a {
     font-size: 14px;
-    background-color: #50bac3;
+    background-color: #249bc4;
     color: #fff;
     padding: 0 5px 0 14px;
     line-height: 42px;
@@ -2612,7 +2628,7 @@ a:hover {
     top: 0;
     left: 0;
     z-index: -1;
-    background-color: #50bac3;
+    background-color: #249bc4;
     -webkit-transform-origin: bottom left;
     transform-origin: bottom left;
     -webkit-transform: skew(-12deg,0deg);
@@ -2627,7 +2643,7 @@ a:hover {
 }
 .sidebar-shared .side-widget .side-share-profile ul li:nth-child(3) a,
 .sidebar-shared .side-widget .side-share-profile ul li:nth-child(3) a:after {
-    background-color: #f1ae44;
+    background-color: #249bc4;
 }
 .sidebar-shared .side-widget .side-share-profile ul li:nth-child(4) a,
 .sidebar-shared .side-widget .side-share-profile ul li:nth-child(4) a:after {
@@ -2645,7 +2661,7 @@ a:hover {
 }
 .upcoming-event-area .blog-content-wrap .blog-content .blog-item .blog-img .blog__tag,
 .upcoming-event-area .blog-content-wrap .blog-content .blog-item .blog-img .blog__tag:after {
-    background-color: #50bac3;
+    background-color: #249bc4;
 }
 .upcoming-event-area .blog-content-wrap .blog-content .blog-item .blog-img .blog__tag2,
 .upcoming-event-area .blog-content-wrap .blog-content .blog-item .blog-img .blog__tag2:after {
@@ -2653,7 +2669,7 @@ a:hover {
 }
 .upcoming-event-area .blog-content-wrap .blog-content .blog-item .blog-img .blog__tag3,
 .upcoming-event-area .blog-content-wrap .blog-content .blog-item .blog-img .blog__tag3:after {
-    background-color: #f1ae44;
+    background-color: #249bc4;
 }
 .upcoming-event-area .blog-content-wrap .blog-content .blog-item .blog-img .blog__tag4,
 .upcoming-event-area .blog-content-wrap .blog-content .blog-item .blog-img .blog__tag4:after {
@@ -2690,7 +2706,7 @@ a:hover {
     padding-left: 14px;
     display: inline-block;
     margin-bottom: 0;
-    color: #50bac3;
+    color: #249bc4;
     text-transform: uppercase;
     font-size: 12px;
     letter-spacing: 1px;
@@ -2710,7 +2726,7 @@ a:hover {
     color: #e36955;
 }
 .upcoming-event-area .blog-content-wrap .blog-content .blog-item3 .blog-inner-content .blog__list li {
-    color: #f1ae44;
+    color: #249bc4;
 }
 .upcoming-event-area .blog-content-wrap .blog-content .blog-item4 .blog-inner-content .blog__list li {
     color: #863bae;
@@ -2871,7 +2887,7 @@ a:hover {
     left: 0;
 }
 .event-detail-area .event-detail-sidebar .event-detail-item2 .map-area #map {
-    height: 390px;
+    height: 200px;
 }
 /*=============================
     NEWS DETAIL AREA
@@ -2885,7 +2901,7 @@ a:hover {
     left: 0;
     font-size: 12px;
     text-transform: uppercase;
-    background: #50bac3;
+    background: #249bc4;
     color: #fff;
     font-weight: 800;
     letter-spacing: 1px;
@@ -2903,7 +2919,7 @@ a:hover {
     top: 0;
     left: 0;
     z-index: -1;
-    background: #50bac3;
+    background: #249bc4;
     -webkit-transform-origin: bottom left;
     transform-origin: bottom left;
     -webkit-transform: skew(-12deg,0deg);
@@ -2971,7 +2987,7 @@ a:hover {
 .news-detail-area .blog-content-wrap .blog-content .blog-item .blog-inner-content-2 .news-tag-item-left a {
     font-size: 12px;
     text-transform: uppercase;
-    background: #f1ae44;
+    background: #249bc4;
     color: #fff;
     font-weight: 600;
     letter-spacing: 1px;
@@ -2996,7 +3012,7 @@ a:hover {
     top: 0;
     left: 1px;
     z-index: -1;
-    background: #f1ae44;
+    background: #249bc4;
     -webkit-transform-origin: bottom left;
     transform-origin: bottom left;
     -webkit-transform: skew(-12deg,0deg);
@@ -3025,7 +3041,7 @@ a:hover {
 }
 .news-detail-area .blog-content-wrap .blog-content .blog-item .blog-inner-content-2 .news-tag-item-right .news-share li a {
     font-size: 14px;
-    background-color: #50bac3;
+    background-color: #249bc4;
     color: #fff;
     padding: 0 5px 0 14px;
     line-height: 42px;
@@ -3043,7 +3059,7 @@ a:hover {
     top: 0;
     left: 0;
     z-index: -1;
-    background-color: #50bac3;
+    background-color: #249bc4;
     -webkit-transform-origin: bottom left;
     transform-origin: bottom left;
     -webkit-transform: skew(-12deg,0deg);
@@ -3058,7 +3074,7 @@ a:hover {
 }
 .news-detail-area .blog-content-wrap .blog-content .blog-item .blog-inner-content-2 .news-tag-item-right .news-share li:nth-child(3) a,
 .news-detail-area .blog-content-wrap .blog-content .blog-item .blog-inner-content-2 .news-tag-item-right .news-share li:nth-child(3) a:after {
-    background-color: #f1ae44;
+    background-color: #249bc4;
 }
 .news-detail-area .blog-content-wrap .blog-content .blog-item .blog-inner-content-2 .news-tag-item-right .news-share li:nth-child(4) a,
 .news-detail-area .blog-content-wrap .blog-content .blog-item .blog-inner-content-2 .news-tag-item-right .news-share li:nth-child(4) a:after {
@@ -3086,7 +3102,7 @@ a:hover {
     CLIENTLOGO AREA
 =====================================*/
 .clientlogo-area {
-    padding-top: 50px;
+    /* padding-top: 30px; */
     padding-bottom: 60px;
     text-align: center;
 }
@@ -3144,7 +3160,7 @@ a:hover {
     padding-left: 10px;
     color: #fff;
     z-index: 1;
-    background-color: #50bac3;
+    background-color: #249bc4;
     text-align: center;
 }
 .helping-area .helping-item .helping-box i {
@@ -3167,7 +3183,7 @@ a:hover {
     left: 0;
     right: 0;
     z-index: -1;
-    background-color: #50bac3;
+    background-color: #249bc4;
     -webkit-transform-origin: bottom left;
     transform-origin: bottom left;
     -webkit-transform: skew(-11deg,0deg);
@@ -3183,7 +3199,7 @@ a:hover {
 }
 .helping-area .helping-item .helping-box3,
 .helping-area .helping-item .helping-box3:after{
-    background-color: #f1ae44;
+    background-color: #249bc4;
 }
 .helping-area .helping-item .helping-box4,
 .helping-area .helping-item .helping-box4:after {
@@ -3231,14 +3247,14 @@ a:hover {
 }
 /*=== helping-form ===*/
 .helping-area2 .helping-form {
-    background-color: #50bac3;
+    background-color: #249bc4;
     padding: 120px 0 120px 120px;
     position: relative;
     z-index: 1;
     margin-top: -361px;
 }
 .helping-area2:after {
-    background-color: #50bac3;
+    background-color: #249bc4;
     margin-top: -261px;
     height: 932px;
 }
@@ -3292,7 +3308,7 @@ a:hover {
     transition: 0.3s ease;
 }
 .cat-area .helping-item .helping-cat-item h4 a:hover {
-    color: #f1ae44;
+    color: #249bc4;
 }
 /*=============================
    GALLERY AREA
@@ -3554,7 +3570,7 @@ a:hover {
 }
 .package-area .package-price-wrap .package-item .package-top .package__price li .price__text {
     font-size: 36px;
-    color: #50bac3;
+    color: #249bc4;
     font-weight: 800;
     font-family: "Playfair Display", sans-serif;
 }
@@ -3627,7 +3643,7 @@ a:hover {
     margin: 0 10px;
 }
 .team-area .team-content-wrap .team-item .team__img .team__img-links ul li a:hover {
-    color: #f1ae44;
+    color: #249bc4;
 }
 .team-area .team-content-wrap .team-item .team__title {
     position: relative;
@@ -3644,7 +3660,7 @@ a:hover {
     left: 0;
     right: 40px;
     z-index: -1;
-    background-color: #50bac3;
+    background-color: #249bc4;
 }
 .team-area .team-content-wrap .team-item .team__title:after {
     right: 21px;
@@ -3679,7 +3695,7 @@ a:hover {
 }
 .team-area .team-content-wrap .team-item3 .team__title:before,
 .team-area .team-content-wrap .team-item3 .team__title:after {
-    background-color: #f1ae44;
+    background-color: #249bc4;
 }
 .team-area .team-content-wrap .team-item4 .team__title:before,
 .team-area .team-content-wrap .team-item4 .team__title:after {
@@ -3711,7 +3727,7 @@ a:hover {
 .sponsor-area .sponsor-wrap .logo-item {
     position: relative;
     z-index: 1;
-    background-color: #50bac3;
+    background-color: #249bc4;
     padding-top: 66px;
     padding-bottom: 66px;
     margin-right: 35px;
@@ -3727,7 +3743,7 @@ a:hover {
     top: 0;
     left: 0;
     z-index: -1;
-    background-color: #50bac3;
+    background-color: #249bc4;
     -webkit-transform-origin: bottom left;
     transform-origin: bottom left;
     -webkit-transform: skew(-12deg,0deg);
@@ -3742,7 +3758,7 @@ a:hover {
 }
 .sponsor-area .sponsor-wrap .logo-item3,
 .sponsor-area .sponsor-wrap .logo-item3:after {
-    background-color: #f1ae44;
+    background-color: #249bc4;
 }
 .sponsor-area .sponsor-wrap .logo-item4,
 .sponsor-area .sponsor-wrap .logo-item4:after {
@@ -3797,7 +3813,7 @@ a:hover {
     left: 0;
     font-size: 12px;
     text-transform: uppercase;
-    background: #50bac3;
+    background: #249bc4;
     color: #fff;
     font-weight: 800;
     letter-spacing: 1px;
@@ -3815,7 +3831,7 @@ a:hover {
     top: 0;
     left: 0;
     z-index: -1;
-    background: #50bac3;
+    background: #249bc4;
     -webkit-transform-origin: bottom left;
     transform-origin: bottom left;
     -webkit-transform: skew(-12deg,0deg);
@@ -3830,7 +3846,7 @@ a:hover {
 }
 .blog-area .recent-post-wrap .recent-item .recent__img .meta__date-date3,
 .blog-area .recent-post-wrap .recent-item .recent__img .meta__date-date3:after {
-    background-color: #f1ae44;
+    background-color: #249bc4;
 }
 .blog-area .recent-post-wrap .recent-item .recent__img .meta__date-date4,
 .blog-area .recent-post-wrap .recent-item .recent__img .meta__date-date4:after {
@@ -3854,7 +3870,7 @@ a:hover {
     transition: 0.3s ease-in;
 }
 .blog-area .recent-post-wrap .recent-item .news__content .news__content-title a:hover {
-    color: #f1ae44;
+    color: #249bc4;
 }
 .blog-area .recent-post-wrap .recent-item .news__content .news__content-list {
     margin-bottom: 30px;
@@ -3956,7 +3972,7 @@ a:hover {
 .cta-area {
     padding-top: 55px;
     padding-bottom: 60px;
-    background-color: #50bac3;
+    background-color: #249bc4;
     position: relative;
     z-index: 1;
     overflow: hidden;
@@ -3992,7 +4008,7 @@ a:hover {
 .cta-area2 {
     padding-top: 110px;
     padding-bottom: 120px;
-    background-color: #f1ae44;
+    background-color: #249bc4;
     position: relative;
     z-index: 1;
     overflow: inherit;
@@ -4059,7 +4075,7 @@ a:hover {
 }
 .contact-area .section__list li a {
     font-size: 14px;
-    background-color: #50bac3;
+    background-color: #249bc4;
     color: #fff;
     padding: 0 5px 0 14px;
     line-height: 42px;
@@ -4077,7 +4093,7 @@ a:hover {
     top: 0;
     left: 0;
     z-index: -1;
-    background-color: #50bac3;
+    background-color: #249bc4;
     -webkit-transform-origin: bottom left;
     transform-origin: bottom left;
     -webkit-transform: skew(-12deg,0deg);
@@ -4092,7 +4108,7 @@ a:hover {
 }
 .contact-area .section__list li:nth-child(3) a,
 .contact-area .section__list li:nth-child(3) a:after {
-    background-color: #f1ae44;
+    background-color: #249bc4;
 }
 .contact-area .section__list li:nth-child(4) a,
 .contact-area .section__list li:nth-child(4) a:after {
@@ -4103,7 +4119,7 @@ a:hover {
     margin-top: 120px;
 }
 .contact-area .contact-detail-action .contact-item {
-    background-color: #50bac3;
+    background-color: #249bc4;
     padding: 52px 30px 50px 60px;
     height: 270px;
     position: relative;
@@ -4119,7 +4135,7 @@ a:hover {
     top: 0;
     left: 0;
     z-index: -1;
-    background-color: #50bac3;
+    background-color: #249bc4;
     -webkit-transform-origin: bottom left;
     transform-origin: bottom left;
     -webkit-transform: skew(-12deg,0deg);
@@ -4134,7 +4150,7 @@ a:hover {
 }
 .contact-area .contact-detail-action .contact-item3,
 .contact-area .contact-detail-action .contact-item3:after {
-    background-color: #f1ae44;
+    background-color: #249bc4;
 }
 .contact-area .contact-detail-action .contact-item .contact__title {
     color: #fff;
@@ -4320,7 +4336,7 @@ a:hover {
     position: relative;
 }
 .donate-area2 .donate-content-wrap .donate-item .form-shared form .yellow-form .form-control {
-    background-color: #f1ae44;
+    background-color: #249bc4;
     padding-top: 30px;
     padding-bottom: 30px;
     padding-left: 80px;
@@ -4438,7 +4454,7 @@ a:hover {
     top: 0;
     left: 1px;
     z-index: -1;
-    background: #f1ae44;
+    background: #249bc4;
     -webkit-transform-origin: bottom left;
     transform-origin: bottom left;
     -webkit-transform: skew(-8deg,0deg);
@@ -4464,13 +4480,13 @@ a:hover {
     left: 0;
     position: absolute;
     z-index: 2;
-    background-color: #f1ae44;
+    background-color: #249bc4;
     font-weight: 600;
 }
 .barfiller .tip:after {
     content: "";
     border: 6px solid transparent;
-    border-top-color: #f1ae44;
+    border-top-color: #249bc4;
     position: absolute;
     top: 100%;
     left: 0;
@@ -4488,7 +4504,7 @@ a:hover {
     top: 0;
     left: 1px;
     z-index: -1;
-    background: #f1ae44;
+    background: #249bc4;
     -webkit-transform-origin: bottom left;
     transform-origin: bottom left;
     -webkit-transform: skew(-8deg,0deg);
@@ -4508,7 +4524,7 @@ a:hover {
 =====================================*/
 /*==== newsletter-area ===*/
 .newsletter-area .section-heading .section__meta {
-    color: #f1ae44;
+    color: #249bc4;
 }
 .newsletter-area .newsletter-form {
     margin-top: 51px;
@@ -4531,7 +4547,7 @@ a:hover {
 }
 .newsletter-area .newsletter-form .form-shared form .submit__btn:hover,
 .newsletter-area .newsletter-form .form-shared form .submit__btn:hover:after {
-    background-color: #f1ae44;
+    background-color: #249bc4;
 }
 
 /*==== footer-area ===*/
@@ -4568,7 +4584,7 @@ a:hover {
     right: 0;
     width: 0;
     height: 1px;
-    background-color: #f1ae44;
+    background-color: #249bc4;
     -webkit-transition: 0.3s ease;
     -moz-transition: 0.3s ease;
     -ms-transition: 0.3s ease;
@@ -4589,7 +4605,7 @@ a:hover {
     /* text-transform: capitalize; */
 }
 .footer-area .footer-widget-wrap .footer-item a:hover {
-    color: #990230;
+    color: #e36955;
 }
 .footer-area .footer-widget-wrap .footer-item {
     position: relative;
@@ -4613,7 +4629,7 @@ a:hover {
  }
 .footer-area .footer-widget-wrap .footer-item .footer__social ul li a {
     font-size: 14px;
-    background-color: #50bac3;
+    background-color: #249bc4;
     color: #fff;
     padding: 0 5px 0 14px;
     line-height: 42px;
@@ -4631,7 +4647,7 @@ a:hover {
     top: 0;
     left: 0;
     z-index: -1;
-    background-color: #50bac3;
+    background-color: #249bc4;
     -webkit-transform-origin: bottom left;
     transform-origin: bottom left;
     -webkit-transform: skew(-12deg,0deg);
@@ -4647,7 +4663,7 @@ a:hover {
 }
 .footer-area .footer-widget-wrap .footer-item .footer__social ul li:nth-child(3) a,
 .footer-area .footer-widget-wrap .footer-item .footer__social ul li:nth-child(3) a:after {
-    background-color: #f1ae44;
+    background-color: #249bc4;
 }
 .footer-area .footer-widget-wrap .footer-item .footer__social ul li:nth-child(4) a,
 .footer-area .footer-widget-wrap .footer-item .footer__social ul li:nth-child(4) a:after {
@@ -4676,7 +4692,7 @@ a:hover {
     right: 0;
     width: 0;
     height: 1px;
-    background-color: #f1ae44;
+    background-color: #249bc4;
     -webkit-transition: 0.3s ease;
     -moz-transition: 0.3s ease;
     -ms-transition: 0.3s ease;
@@ -4684,7 +4700,7 @@ a:hover {
     transition: 0.3s ease;
 }
 .footer-area .footer-copyright .copyright-desc a:hover {
-    color: #f1ae44;
+    color: #249bc4;
 }
 .footer-area .footer-copyright .copyright-desc a:hover:after {
     width: 100%;
@@ -4721,9 +4737,9 @@ a:hover {
     border: 1px solid #ddd;
 }
 #back-to-top:hover {
-    background-color: #f1ae44;
+    background-color: #249bc4;
     color: #fff;
-    border-color: #f1ae44;
+    border-color: #249bc4;
 }
 #back-to-top.back-btn-shown {
     right: 30px;
@@ -4759,6 +4775,7 @@ html {
     font-size: 16px;
     font-weight: 400;
     line-height: 30px;
+    visibility: visible;
 }
 .accordion-container .is-active > h2 {
 	background: #e36955 !important;
@@ -4769,3 +4786,79 @@ html {
     position: relative !important;
 	margin-top: 30px;
 }
+
+
+
+
+/* Mission vision container */
+.mission-vision-section {
+    /* background-color: #f9f9f9; */
+    padding: 80px 0;
+  }
+  
+  .mission-vision-block {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    padding: 30px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+  }
+  
+  .mission-vision-block:before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    background-color: #249bc4;
+    z-index: -1;
+    transform: rotate(-5deg);
+  }
+  
+  .mission-vision-block-icon {
+    font-size: 28px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .mission-vision-block-icon h1{
+    font-size: 28px;
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  
+  .mission-vision-block h1 {
+    /* font-size: 24px; */
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  
+  .mission-vision-block ul {
+    margin-bottom: 0;
+    color: #fff;
+  }
+
+  .mission-vision-block li {
+    margin-bottom: 0;
+    color: #fff;
+    list-style-type: circle;
+    text-align: start;
+  }
+  
+  @media (max-width: 767px) {
+    .mission-vision-block {
+      margin-bottom: 30px;
+    }
+  }

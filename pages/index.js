@@ -10,6 +10,10 @@ import ClientsLogo from '@/components/ClientsLogo';
 import ServiceArea from '@/components/ServiceArea';
 import MixerArea from '@/components/MixerArea';
 import HelpingArea from '@/components/HelpingArea';
+import HiwArea from '@/components/HiwArea';
+import YoutubeCallToAction from '@/components/YoutubeCallToAction';
+import CallToActionTwo from '@/components/CallToActionTwo';
+import Map from '@/components/Map';
 
 const HomePage = () => {
   return (
@@ -17,12 +21,16 @@ const HomePage = () => {
       <NavOne />
       <SliderOne />
       <EntryArea />
+      <HiwArea />
       <ServiceArea />
       <MixerArea />
       <HelpingArea />
       <TeamArea />
       <ClientsLogo />
+      <YoutubeCallToAction />
       <BlogHome />
+      <Map />
+      <CallToActionTwo />
       <Footer />
     </Layout>
   );
