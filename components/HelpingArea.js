@@ -72,7 +72,7 @@ const HelpingArea = () => {
                                     <div className="section-icon">
                                         <img src="/images/section-icon.png" alt="section-icon" />
                                     </div>
-                                    <h3 className="section__title text__white">Be a part of our team</h3>
+                                    <h3 className="section__title text__white">Contact Us</h3>
                                     <p className="section__meta text__white">join us now</p>
                                 </div>
                                 <div className="form-shared">
