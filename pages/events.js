@@ -25,7 +25,72 @@ class Events extends Component {
           <div className="accordion-container">
             <div className="ac">
               <h2 className="ac-q" tabIndex="0">
-                What is Lorem Ipsum?
+                Events of Year 2023
+              </h2>
+              <div className="ac-a">
+                <p className="accordion__content-desc">
+                  <div
+                    className="d-flex"
+                    style={{ justifyContent: "space-evenly" }}
+                  >
+                    <div class="card" style={{ width: "18rem" }}>
+                      <img
+                        src="/images/helping-img.jpg
+                      "
+                        class="card-img-top"
+                        alt="..."
+                      ></img>
+                      <div class="card-body">
+                        <h3>Function Name</h3>
+                        <p style={{ padding: "5px 0px" }}>
+                          {" "}
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                        </p>
+                        <p style={{ padding: "5px 0px" }}>Participents : </p>
+                        <a href="#"> Link</a>
+                      </div>
+                    </div>
+                    <div class="card" style={{ width: "18rem" }}>
+                      <img
+                        src="/images/helping-img.jpg
+                      "
+                        class="card-img-top"
+                        alt="..."
+                      ></img>
+                      <div class="card-body">
+                        <h3>Function Name</h3>
+                        <p style={{ padding: "5px 0px" }}>
+                          {" "}
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                        </p>
+                        <p style={{ padding: "5px 0px" }}>Participents : </p>
+                        <a href="#"> Link</a>
+                      </div>
+                    </div>
+                    <div class="card" style={{ width: "18rem" }}>
+                      <img
+                        src="/images/helping-img.jpg
+                      "
+                        class="card-img-top"
+                        alt="..."
+                      ></img>
+                      <div class="card-body">
+                        <h3>Function Name</h3>
+                        <p style={{ padding: "5px 0px" }}>
+                          {" "}
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                        </p>
+                        <p style={{ padding: "5px 0px" }}>Participents : </p>
+                        <a href="#"> Link</a>
+                      </div>
+                    </div>
+                  </div>
+                </p>
+              </div>
+            </div>
+            <div className="ac">
+              <h2 className="ac-q" tabIndex="0">
+                Events of Year 2022
               </h2>
               <div className="ac-a">
                 <p className="accordion__content-desc">
@@ -39,7 +104,7 @@ class Events extends Component {
             </div>
             <div className="ac">
               <h2 className="ac-q" tabIndex="0">
-                What is Lorem Ipsum?
+                Events of Year 2021
               </h2>
               <div className="ac-a">
                 <p className="accordion__content-desc">
@@ -53,35 +118,7 @@ class Events extends Component {
             </div>
             <div className="ac">
               <h2 className="ac-q" tabIndex="0">
-                What is Lorem Ipsum?
-              </h2>
-              <div className="ac-a">
-                <p className="accordion__content-desc">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Curabitur tincidunt dui vel turpis pretium, eu luctus odio
-                  elementum. Morbi ornare suscipit bibendum. Cras posuere metus
-                  nec turpis ultricies, at tincidunt mauris iaculis. Donec
-                  maximus eros nec lacus interdum, id congue metus sagittis.
-                </p>
-              </div>
-            </div>
-            <div className="ac">
-              <h2 className="ac-q" tabIndex="0">
-                What is Lorem Ipsum?
-              </h2>
-              <div className="ac-a">
-                <p className="accordion__content-desc">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Curabitur tincidunt dui vel turpis pretium, eu luctus odio
-                  elementum. Morbi ornare suscipit bibendum. Cras posuere metus
-                  nec turpis ultricies, at tincidunt mauris iaculis. Donec
-                  maximus eros nec lacus interdum, id congue metus sagittis.
-                </p>
-              </div>
-            </div>
-            <div className="ac">
-              <h2 className="ac-q" tabIndex="0">
-                What is Lorem Ipsum?
+                Events of Year 2020
               </h2>
               <div className="ac-a">
                 <p className="accordion__content-desc">
