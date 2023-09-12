@@ -22,26 +22,27 @@ class EntryArea extends Component {
                 <div className="section-icon">
                   <img src="/images/section-icon.png" alt="section-icon" />
                 </div>
-                <h4 className="entry__title">Thurst is stalking the globe!</h4>
+                <h4 className="entry__title">
+                  Preserve Every Drop, Secure Tomorrow's Oasis{" "}
+                </h4>
               </div>
             </div>
             <div className="col-lg-9">
               <div className="entry-static-box entry-static-box2 d-flex align-items-center">
                 <div className="row">
                   <div className="col-lg-4">
-                    <div className="entry-video-img">
-                      <img
-                        src="/images/entry-video-img.jpg"
-                        alt="entry-video-img"
-                      />
-                      {/* <ModalVideo channel='youtube' isOpen={this.state.isOpen} videoId='PbUxi2Lx8x8' onClose={this.handleModal} /> */}
-                      <div
-                        onClick={this.handleModal}
-                        className="mfp-iframe video-play-btn"
-                        title="Play Video"
-                      >
-                        <i className="fa fa-play"></i>
-                      </div>
+                    {/* <div className="entry-video-img"> */}
+                    <div className="video-responsive">
+                      <iframe
+                        width="853"
+                        height="480"
+                        src="https://www.youtube.com/embed/X93Y3-f37Fk"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen
+                      ></iframe>
+                      {/* </div> */}
                     </div>
                   </div>
                   <div className="col-lg-8">

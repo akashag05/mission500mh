@@ -169,10 +169,14 @@ class NavOne extends Component {
                         />
                       </Link>
                     </div>
-                    <div className="header-btn ml-auto">
-                      <Link href="/">
-                        <p className="theme-btn">View Brochure</p>
-                      </Link>
+                    <div class="header-btn ml-auto">
+                      <a
+                        href="/images/brochure.pdf"
+                        target="_blank"
+                        class="theme-btn"
+                      >
+                        View Brochure
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -215,14 +219,14 @@ class NavOne extends Component {
                                                             </ul> */}
                             </li>
                             <li>
-                              <Link href="/">news</Link>
+                              <Link href="/news">news</Link>
                               {/* <ul className="dropdown-menu-item">
                                                                 <li><Link href="/news"><p>news</p></Link></li>
                                                                 <li><Link href="/single-news"><p>news detail</p></Link></li>
                                                             </ul> */}
                             </li>
                             <li>
-                              <Link href="/">blogs</Link>
+                              <Link href="/blogs">blogs</Link>
                               {/* <ul className="dropdown-menu-item">
                                                                 <li><Link href="/news"><p>news</p></Link></li>
                                                                 <li><Link href="/single-news"><p>news detail</p></Link></li>

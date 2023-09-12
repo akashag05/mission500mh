@@ -1,19 +1,19 @@
-import React from 'react';
+import React from "react";
 import Layout from "../components/Layout";
 import NavOne from "../components/NavOne";
-import SliderOne from '@/components/SliderOne';
-import EntryArea from '@/components/EntryArea';
-import Footer from '@/components/Footer';
-import BlogHome from '@/components/BlogHome';
-import TeamArea from '@/components/TeamArea';
-import ClientsLogo from '@/components/ClientsLogo';
-import ServiceArea from '@/components/ServiceArea';
-import MixerArea from '@/components/MixerArea';
-import HelpingArea from '@/components/HelpingArea';
-import HiwArea from '@/components/HiwArea';
-import YoutubeCallToAction from '@/components/YoutubeCallToAction';
-import CallToActionTwo from '@/components/CallToActionTwo';
-import Map from '@/components/Map';
+import SliderOne from "@/components/SliderOne";
+import EntryArea from "@/components/EntryArea";
+import Footer from "@/components/Footer";
+import BlogHome from "@/components/BlogHome";
+import TeamArea from "@/components/TeamArea";
+import ClientsLogo from "@/components/ClientsLogo";
+import ServiceArea from "@/components/ServiceArea";
+import MixerArea from "@/components/MixerArea";
+import HelpingArea from "@/components/HelpingArea";
+import HiwArea from "@/components/HiwArea";
+import YoutubeCallToAction from "@/components/YoutubeCallToAction";
+import CallToActionTwo from "@/components/CallToActionTwo";
+import Map from "@/components/Map";
 
 const HomePage = () => {
   return (
@@ -24,13 +24,13 @@ const HomePage = () => {
       <HiwArea />
       <ServiceArea />
       <MixerArea />
-      <HelpingArea />
-      <TeamArea />
+      {/* <HelpingArea />
+      <TeamArea /> */}
       <ClientsLogo />
-      <YoutubeCallToAction />
-      <BlogHome />
-      <Map />
-      <CallToActionTwo />
+      {/* <YoutubeCallToAction /> */}
+      {/* <BlogHome /> */}
+      {/*<Map />
+      <CallToActionTwo /> */}
       <Footer />
     </Layout>
   );

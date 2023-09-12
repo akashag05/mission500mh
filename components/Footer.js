@@ -35,7 +35,7 @@ class Footer extends Component {
         return (
             <div>
                 <section className="footer-area">
-                    <div className="newsletter-area">
+                    {/* <div className="newsletter-area">
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-6 mx-auto text-center">
@@ -68,18 +68,18 @@ class Footer extends Component {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                     <div className="footer-top">
                         <div className="container">
                             <div className="row footer-widget-wrap">
                                 <div className="col footer-item footer-item1">
                                     <h3 className="widget__title">about</h3>
                                     <ul className="foot__links">
-                                        <li><Link href="#">Abouts Us</Link></li>
+                                        <li><Link href="/about">Abouts Us</Link></li>
                                         <li><Link href="#">Our Team</Link></li>
                                         {/* <li><Link href="#">New Events</Link></li> */}
-                                        <li><Link href="#">Events</Link></li>
-                                        <li><Link href="#">Site Map</Link></li>
+                                        <li><Link href="/events">Events</Link></li>
+                                        {/* <li><Link href="#">Site Map</Link></li> */}
                                     </ul>
                                 </div>
                                 <div className="col footer-item footer-item2">
@@ -87,12 +87,12 @@ class Footer extends Component {
                                     <ul className="foot__links">
                                         <li><Link href="#">Our Journey</Link></li>
                                         <li><Link href="#">Working Structure</Link></li>
-                                        <li><Link href="#">Blog Posts</Link></li>
+                                        {/* <li><Link href="#">Blog Posts</Link></li> */}
                                         {/* <li><Link href="#">Results</Link></li> */}
                                         <li><Link href="#">Gallery</Link></li>
                                     </ul>
                                 </div>
-                                <div className="col footer-item footer-item3">
+                                {/* <div className="col footer-item footer-item3">
                                     <h3 className="widget__title">links</h3>
                                     <ul className="foot__links">
                                         <li><Link href="#">Projects</Link></li>
@@ -100,16 +100,16 @@ class Footer extends Component {
                                         <li><Link href="#">Privacy Policy</Link></li>
                                         <li><Link href="#">Terms of Use</Link></li>
                                     </ul>
-                                </div>
-                                <div className="col footer-item footer-item3">
+                                </div> */}
+                                {/* <div className="col footer-item footer-item3">
                                     <h3 className="widget__title">blog</h3>
                                     <ul className="foot__links">
                                         <li><Link href="#">Ambehol village resolved to plant 1 lakh Tress!</Link></li>
                                         <li><Link href="#">The story of water revolution</Link></li>
                                         <li><Link href="#">Disabled couple mobilized for pani Foundation</Link></li>
-                                        {/* <li><Link href="#">Raise fund to help</Link></li> */}
+                                        <li><Link href="#">Raise fund to help</Link></li>
                                     </ul>
-                                </div>
+                                </div> */}
                                 <div className="col footer-item footer-item4">
                                     <h3 className="widget__title">contact</h3>
                                     <ul className="contact__info">

@@ -87,7 +87,6 @@ const ServiceArea = () => {
               >
                 <h3>Villages : 1</h3>
                 <h3>Capacity : 14 Cr</h3>
-                <p>Ltr</p>
               </div>
               <div
                 class="circle"
@@ -117,7 +116,6 @@ const ServiceArea = () => {
               >
                 <h3>Villages : 6</h3>
                 <h3>Capacity : 20 Cr</h3>
-                <p>Ltr</p>
               </div>
             </div>
             <div class="block">
@@ -127,7 +125,6 @@ const ServiceArea = () => {
               >
                 <h3>Villages : 16</h3>
                 <h3>Capacity : 102 Cr</h3>
-                <p>Ltr</p>
               </div>
               <div
                 class="circle"
@@ -157,7 +154,6 @@ const ServiceArea = () => {
               >
                 <h3>Villages : 34</h3>
                 <h3>Capacity : 208 Cr</h3>
-                <p>Ltr</p>
               </div>
             </div>
             <div class="block">
@@ -167,7 +163,6 @@ const ServiceArea = () => {
               >
                 <h3>Villages : 70</h3>
                 <h3>Capacity : 450 Cr</h3>
-                <p>Ltr</p>
               </div>
               <div
                 class="circle"
@@ -197,14 +192,13 @@ const ServiceArea = () => {
               >
                 <h3>Villages : 125</h3>
                 <h3>Capacity : 580 Cr</h3>
-                <p>Ltr</p>
               </div>
             </div>
           </div>
         </section>
         <div className="row">
           <div className="col-lg-12">
-            <div className="button-shared">
+            <div className="button-shared" style={{ marginTop: "20px" }}>
               <Link href="/" className="theme-btn">
                 Join us now
               </Link>

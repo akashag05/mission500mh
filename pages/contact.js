@@ -13,7 +13,7 @@ const ContactPage = () => {
             <NavOne />
             <PageHeader title="Contact" />
             <Contact />
-            <Map />
+            {/* <Map /> */}
             <Footer />
         </Layout>
     );

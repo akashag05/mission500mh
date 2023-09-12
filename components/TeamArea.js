@@ -100,7 +100,7 @@ const TeamArea = () => {
             </div>
           </div>
           <div className="col-lg-3 col-sm-6">
-            <div className="team-item team-item3">
+            <div className="team-item team-item1">
               <div className="team__img">
                 <img
                   src="/images/Abhijit_Panwar.png"
@@ -141,7 +141,7 @@ const TeamArea = () => {
             </div>
           </div>
           <div className="col-lg-3 col-sm-6">
-            <div className="team-item team-item4">
+            <div className="team-item team-item2">
               <div className="team__img">
                 <img
                   src="/images/Kiran_patil.png"
@@ -182,7 +182,7 @@ const TeamArea = () => {
             </div>
           </div>
           <div className="col-lg-3 col-sm-6">
-            <div className="team-item team-item4">
+            <div className="team-item team-item1">
               <div className="team__img">
                 <img
                   src="/images/Milind_Deokar.png"
@@ -223,7 +223,7 @@ const TeamArea = () => {
             </div>
           </div>
           <div className="col-lg-3 col-sm-6">
-            <div className="team-item team-item4">
+            <div className="team-item team-item2">
               <div className="team__img">
                 <img
                   src="/images/Sanjay_pate.png"
@@ -264,7 +264,7 @@ const TeamArea = () => {
             </div>
           </div>
           <div className="col-lg-3 col-sm-6">
-            <div className="team-item team-item4">
+            <div className="team-item team-item1">
               <div className="team__img">
                 <img
                   src="/images/Jitendra_kesharwani.png"

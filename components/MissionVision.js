@@ -1,97 +1,115 @@
-import Link from 'next/link';
-import React from 'react';
+import Link from "next/link";
+import React from "react";
+
+const aboutDetails = [
+  {
+    title: "Save, Store, and Share:",
+    desc: "Our approach is threefold saving water through efficient usage practices, storing excess water using modern techniques such as cost effective check dams and groundwater recharge, and sharing knowledge to empower communities with actionable insights",
+  },
+  {
+    title: "Community-Centric Action:",
+    desc: "We believe that impactful change begins at the grassroots level. Mission500 engages citizens, local leaders, schools, and organizations in workshops, campaigns, and collaborative initiatives, creating a network of water-conscious advocates",
+  },
+  {
+    title: "Innovation and Research:",
+    desc: "We are committed to identifying and implementing cutting-edge technologies for water conservation. By partnering with research institutions, experts, and innovators, we aim to find novel solutions that address water scarcity challenges.",
+  },
+  {
+    title: "Policy Advocacy:",
+    desc: "Mission500 works closely with policymakers and government bodies to advocate for effective water conservation policies and regulations. Our goal is to drive systemic change that supports sustainable water management practices.",
+  },
+  {
+    title: "Data-Driven Progress:",
+    desc: "We emphasize data collection, analysis, and reporting to track water consumption patterns, project impact, and assess the effectiveness of our strategies. This enables us to adapt and optimize our approach for maximum results",
+  },
+  {
+    title: "Crisis Response and Preparedness",
+    desc: "Recognizing the urgency of water scarcity during droughts, Mission500 is dedicated to developing emergency response plans and resources that help communities manage and navigate challenging times",
+  },
+  {
+    title: "Inspiring Recognition",
+    desc: "We celebrate individuals, organizations, and communities that demonstrate exceptional commitment to water conservation. Through awards, public acknowledgment, and storytelling, we inspire others to join our movement.",
+  },
+];
 
 const MissionVision = () => {
-    return (
-        // <section className="hiw-area">
-        //     <div className="container">
-        //         <div className="row">
-        //             <div className="col">
-        //                 <div className="hiw-item">
-        //                     <div className="hiw-item-img-box hiw-bg1">
-        //                         <figure>
-        //                             <img src="/images/hiw-img.jpg" height={492} alt="" />
-        //                             <h3 className="hiw-title">Save water live better</h3>
-        //                             <div className="hiw-btn-box">
-        //                                 <Link href="#" className="theme-btn">read more</Link>
-        //                             </div>
-        //                         </figure>
-        //                     </div>
-        //                 </div>
-        //             </div>
-        //             <div className="col">
-        //                 <div className="hiw-item">
-        //                     <div className="hiw-item-img-box hiw-bg2">
-        //                         <figure>
-        //                             <img src="/images/hiw-img2.jpeg" height={492} alt="" />
-        //                             <h3 className="hiw-title">Think before you let it drip.</h3>
-        //                             <div className="hiw-btn-box">
-        //                                 <Link href="#" className="theme-btn">read more</Link>
-        //                             </div>
-        //                         </figure>
-        //                     </div>
-        //                 </div>
-        //             </div>
-        //             <div className="col">
-        //                 <div className="hiw-item">
-        //                     <div className="hiw-item-img-box hiw-bg3">
-        //                         <figure>
-        //                             <img src="/images/hiw-img3.jpg" width={380} height={492} alt="" />
-        //                             <h3 className="hiw-title">Conserve water. Save a million lives.</h3>
-        //                             <div className="hiw-btn-box">
-        //                                 <Link href="#" className="theme-btn">read more</Link>
-        //                             </div>
-        //                         </figure>
-        //                     </div>
-        //                 </div>
-        //             </div>
-        //         </div>
-        //     </div>
-        // </section>
-        <section class="mission-vision-section bg-light">
-            <div class="container">
-                <div className='row mt-2 mb-5 text-center'>
-                    <div className='col'>
-                        <h1>
-                            Obsession with water revolution
-                        </h1>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="mission-vision-block">
-                            <div className='d-flex'>
-                                <div class="mission-vision-block-icon">
-                                    <i class="fa fa-bullseye" aria-hidden="true"></i>
-                                </div>
-                                <h1>Our Mission</h1>
-                            </div>
-                            <ul className='mt-3'>
-                                <li>Lorem ipsum dolor sit amet</li>
-                                <li>Consectetur adipiscing elit</li>
-                                <li>Sed non urna eget quam volutpat lacinia</li>
-                                <li>Vestibulum convallis, mauris a mollis</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="mission-vision-block">
-                            <div class="mission-vision-block-icon">
-                                <i class="fa fa-eye" aria-hidden="true"></i>
-                            </div>
-                            <h1>Our Vision</h1>
-                            <ul className='mt-3'>
-                                <li>Lorem ipsum dolor sit amet</li>
-                                <li>Consectetur adipiscing elit</li>
-                                <li>Sed non urna eget quam volutpat lacinia</li>
-                                <li>Vestibulum convallis, mauris a mollis</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+  return (
+    <>
+      <section class="mission-vision-section bg-light">
+        <div class="container">
+          <div className="row mt-2 mb-5 text-center">
+            <div className="col">
+              <h1>Mission500 - Transforming Maharashtra's Water Landscape</h1>
             </div>
-        </section>
-    );
+          </div>
+
+          <div className="pb-5">
+            <div className="d-flex" style={{ padding: "1rem 0" }}>
+              <div
+                className="px-3"
+                style={{ fontSize: "28px", alignSelf: "center" }}
+              >
+                <i class="fa fa-eye" aria-hidden="true"></i>
+              </div>
+              <h3>Our Vision</h3>
+            </div>
+            <div>
+              <ul
+                className="mt-3"
+                style={{
+                  fontSize: "22px",
+                  lineHeight: "32px",
+                  listStyleType: "circle",
+                }}
+              >
+                <li>
+                  We envision a Maharashtra where every drop of water is valued.
+                </li>
+                <li>
+                  Where communities thrive without the fear of water scarcity.
+                </li>
+                <li>
+                  We aspire to transform the state into a model of water
+                  sustainabilityy, showcasing the potential of collective action
+                  and responsible water stewardship.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <div className="d-flex" style={{ padding: "1rem 0" }}>
+              <div
+                className="px-3"
+                style={{ fontSize: "28px", alignSelf: "center" }}
+              >
+                <i class="fa fa-bullseye" aria-hidden="true"></i>
+              </div>
+              <h3>Our Mission</h3>
+            </div>
+            <div>
+              <p style={{ fontSize: "22px", lineHeight: "32px" }}>
+                {" "}
+                Our mission is to lead the way in water conservation by
+                implementing the Mission500 strategy
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section style={{ padding: "6rem" }}>
+        {aboutDetails.map((item, index) => {
+          return (
+            <div>
+              <h3 style={{ padding: "2rem 0" }}>{item.title}</h3>
+              <p style={{ fontSize: "22px", lineHeight: "32px" }}>
+                {item.desc}
+              </p>
+            </div>
+          );
+        })}
+      </section>
+    </>
+  );
 };
 
 export default MissionVision;

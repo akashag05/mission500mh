@@ -12,9 +12,9 @@ const HiwArea = () => {
                                 <figure>
                                     <img src="/images/hiw-img.jpg" width={380} height={492} alt="" />
                                     <h3 className="hiw-title">Save water live better</h3>
-                                    <div className="hiw-btn-box">
+                                    {/* <div className="hiw-btn-box">
                                         <Link href="#" className="theme-btn">read more</Link>
-                                    </div>
+                                    </div> */}
                                 </figure>
                             </div>
                         </div>
@@ -25,9 +25,9 @@ const HiwArea = () => {
                                 <figure>
                                     <img src="/images/hiw-img2.jpeg" width={380} height={492} alt="" />
                                     <h3 className="hiw-title">Think before you let it drip.</h3>
-                                    <div className="hiw-btn-box">
+                                    {/* <div className="hiw-btn-box">
                                         <Link href="#" className="theme-btn">read more</Link>
-                                    </div>
+                                    </div> */}
                                 </figure>
                             </div>
                         </div>
@@ -38,9 +38,9 @@ const HiwArea = () => {
                                 <figure>
                                     <img src="/images/hiw-img3.jpg" width={380} height={492} alt="" />
                                     <h3 className="hiw-title">Conserve water. Save a million lives.</h3>
-                                    <div className="hiw-btn-box">
+                                    {/* <div className="hiw-btn-box">
                                         <Link href="#" className="theme-btn">read more</Link>
-                                    </div>
+                                    </div> */}
                                 </figure>
                             </div>
                         </div>

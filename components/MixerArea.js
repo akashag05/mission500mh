@@ -31,7 +31,7 @@ class MixerArea extends Component {
                     <img src="/images/section-icon.png" alt="section-icon" />
                   </div>
                   <h2 className="section__title text__white">
-                    Saving the water for the people and causes you care about
+                    Every drop counts, save and surmount!
                   </h2>
                   <Link href="/" className="theme-btn">
                     Join Us
@@ -87,9 +87,17 @@ class MixerArea extends Component {
                     <div className="fun-slide-item">
                       <div className="icon-quote">“</div>
                       <h3 className="funslide__text">
-                        Farmers should come together to work mainly on the issue
-                        of water conservation, tree plantation and take
-                        responsibility for the work.
+                        Your dedication to water conservation and tree planting
+                        is inspiring change on a remarkable scale. Every drop
+                        saved and tree planted nurtures a brighter, greener
+                        future. Your efforts are more than actions; they are a
+                        legacy for generations to come. As we witness the
+                        transformative power of collective action, let it fuel
+                        our resolve to do more, to plant more, and to save more.
+                        <br />
+                        Together, we're writing a story of hope, resilience, and
+                        sustainable abundance. Keep nurturing the Earth; your
+                        contributions matter immensely."
                       </h3>
                       <p className="funslide__name">
                         Mission 500 Crore Ltd. Water Reservoir
@@ -101,7 +109,6 @@ class MixerArea extends Component {
             </div>
           </div>
         </section>
-        
       </div>
     );
   }
