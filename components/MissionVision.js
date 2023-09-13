@@ -35,11 +35,16 @@ const aboutDetails = [
 const MissionVision = () => {
   return (
     <>
-      <section class="mission-vision-section bg-light">
+      <section class="mission-vision-section">
         <div class="container">
-          <div className="row mt-2 mb-5 text-center">
+          <div
+            className="row mt-2 mb-5 text-center"
+            style={{ borderBottom: "2px solid #e36955", paddingBottom: "1rem" }}
+          >
             <div className="col">
-              <h1>Mission500 - Transforming Maharashtra's Water Landscape</h1>
+              <h1 style={{ color: "#e36955" }}>
+                Mission500 - Transforming Maharashtra's Water Landscape
+              </h1>
             </div>
           </div>
 
@@ -51,7 +56,9 @@ const MissionVision = () => {
               >
                 <i class="fa fa-eye" aria-hidden="true"></i>
               </div>
-              <h3>Our Vision</h3>
+              <h3 style={{ fontWeight: "600", fontSize: "30px" }}>
+                Our Vision
+              </h3>
             </div>
             <div>
               <ul
@@ -62,17 +69,13 @@ const MissionVision = () => {
                   listStyleType: "circle",
                 }}
               >
-                <li>
-                  We envision a Maharashtra where every drop of water is valued.
-                </li>
-                <li>
+                <p>
+                  We envision a Maharashtra where every drop of water is valued
                   Where communities thrive without the fear of water scarcity.
-                </li>
-                <li>
                   We aspire to transform the state into a model of water
                   sustainabilityy, showcasing the potential of collective action
                   and responsible water stewardship.
-                </li>
+                </p>
               </ul>
             </div>
           </div>
@@ -84,7 +87,9 @@ const MissionVision = () => {
               >
                 <i class="fa fa-bullseye" aria-hidden="true"></i>
               </div>
-              <h3>Our Mission</h3>
+              <h3 style={{ fontWeight: "600", fontSize: "30px" }}>
+                Our Mission
+              </h3>
             </div>
             <div>
               <p style={{ fontSize: "22px", lineHeight: "32px" }}>
@@ -96,11 +101,13 @@ const MissionVision = () => {
           </div>
         </div>
       </section>
-      <section style={{ padding: "6rem" }}>
+      <section className="container">
         {aboutDetails.map((item, index) => {
           return (
             <div>
-              <h3 style={{ padding: "2rem 0" }}>{item.title}</h3>
+              <h3 style={{ padding: "2rem 0", fontWeight: "600" }}>
+                {item.title}
+              </h3>
               <p style={{ fontSize: "22px", lineHeight: "32px" }}>
                 {item.desc}
               </p>

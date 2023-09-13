@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import Swiper from "react-id-swiper";
 import "swiper/css/swiper.css";
@@ -49,46 +50,66 @@ const ClientsLogo = () => {
           <div className="col-md-12">
             <div className="client-logo mt-5">
               <Swiper {...params}>
-                <div className="client-logo-item">
-                  <img
-                    src="/images/client-logo1.jpg"
-                    width={200}
-                    height={170}
-                    alt="brand image"
-                  />
-                </div>
-                <div className="client-logo-item">
-                  <img
-                    src="/images/client-logo2.jpg"
-                    width={200}
-                    height={170}
-                    alt="brand image"
-                  />
-                </div>
-                <div className="client-logo-item">
-                  <img
-                    src="/images/client-logo3.jpg"
-                    width={200}
-                    height={170}
-                    alt="brand image"
-                  />
-                </div>
-                <div className="client-logo-item">
-                  <img
-                    src="/images/client-logo4.jpg"
-                    width={200}
-                    height={170}
-                    alt="brand image"
-                  />
-                </div>
-                <div className="client-logo-item">
-                  <img
-                    src="/images/client_logo5.jpg"
-                    width={400}
-                    height={130}
-                    alt="brand image"
-                  />
-                </div>
+                <Link href="https://sakalrelieffund.com/">
+                  <div className="client-logo-item">
+                    <img
+                      src="/images/client-logo1.jpg"
+                      width={200}
+                      height={170}
+                      alt="brand image"
+                    />
+                  </div>
+                </Link>
+                <Link href="https://www.rotarypunecamp.com/">
+                  <div className="client-logo-item">
+                    <img
+                      src="/images/client-logo2.jpg"
+                      width={200}
+                      height={170}
+                      alt="brand image"
+                    />
+                  </div>
+                </Link>
+                <Link href="https://naammh.org/">
+                  <div className="client-logo-item">
+                    <img
+                      src="/images/client-logo3.jpg"
+                      width={200}
+                      height={170}
+                      alt="brand image"
+                    />
+                  </div>
+                </Link>
+                <Link href="https://www.credaipune.org/">
+                  <div className="client-logo-item">
+                    <img
+                      src="/images/credai.jpeg"
+                      width={400}
+                      height={130}
+                      alt="brand image"
+                    />
+                  </div>
+                </Link>
+                <Link href="https://bjsindia.org/">
+                  <div className="client-logo-item">
+                    <img
+                      src="/images/client-logo4.jpg"
+                      width={200}
+                      height={170}
+                      alt="brand image"
+                    />
+                  </div>
+                </Link>
+                <Link href="https://www.dorfketal.com/">
+                  <div className="client-logo-item">
+                    <img
+                      src="/images/client_logo5.jpg"
+                      width={400}
+                      height={130}
+                      alt="brand image"
+                    />
+                  </div>
+                </Link>
               </Swiper>
             </div>
           </div>

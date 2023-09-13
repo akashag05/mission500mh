@@ -9,7 +9,7 @@ const Contact = () => {
           <div className="col-lg-6">
             <div className="section-heading">
               <div className="section-icon">
-                <img src="/images/section-icon.png" alt="section-icon" />
+                {/* <img src="/images/section-icon.png" alt="section-icon" /> */}
               </div>
               <h2 className="section__title">Get in Touch With Us</h2>
               <p className="section__meta">Write a message</p>
@@ -17,28 +17,29 @@ const Contact = () => {
                 Are you ready to make a splash for change?
                 <br /> <br /> Join us in our Water Conservation Mission and be a
                 part of the solution. Together, we can create a sustainable,
-                water-secure world. Come forward and let's make waves for
-                a brighter tomorrow! <br />
+                water-secure state. <br />
+                Come forward and let's make waves for a brighter tomorrow!{" "}
+                <br />
                 With hope and determination,
               </p>
               <ul className="section__list">
                 <li>
-                  <Link href="#">
+                  <Link href="https://twitter.com/mission500mh">
                     <i className="fa fa-twitter"></i>
                   </Link>
                 </li>
                 <li>
-                  <Link href="#">
+                  <Link href="https://www.facebook.com/mission500mh">
                     <i className="fa fa-facebook"></i>
                   </Link>
                 </li>
                 <li>
-                  <Link href="#">
+                  <Link href="https://www.youtube.com/channel/UCbkHsi_kfgmYrSQHKlgyciQ">
                     <i className="fa fa-youtube"></i>
                   </Link>
                 </li>
                 <li>
-                  <Link href="#">
+                  <Link href="https://www.instagram.com/mission500mh/">
                     <i className="fa fa-instagram"></i>
                   </Link>
                 </li>

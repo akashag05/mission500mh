@@ -33,7 +33,7 @@ class MixerArea extends Component {
                   <h2 className="section__title text__white">
                     Every drop counts, save and surmount!
                   </h2>
-                  <Link href="/" className="theme-btn">
+                  <Link href="/contact" className="theme-btn">
                     Join Us
                   </Link>
                 </div>
@@ -99,9 +99,7 @@ class MixerArea extends Component {
                         sustainable abundance. Keep nurturing the Earth; your
                         contributions matter immensely."
                       </h3>
-                      <p className="funslide__name">
-                        Mission 500 Crore Ltd. Water Reservoir
-                      </p>
+                      
                     </div>
                   </Swiper>
                 </div>

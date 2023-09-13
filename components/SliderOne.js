@@ -32,7 +32,7 @@ const SliderOne = () => {
                                             <div className="slider-heading">
                                                 <p className="slider__meta">welcome to mission 500</p>
                                                 <h2 className="slider__title">A water conservation movement by the people, for the people.</h2>
-                                                <Link href="#" className="theme-btn">discover more</Link>
+                                                {/* <Link href="#" className="theme-btn">discover more</Link> */}
                                             </div>
                                         </div>
                                     </div>

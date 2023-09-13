@@ -28,8 +28,8 @@ class EntryArea extends Component {
               </div>
             </div>
             <div className="col-lg-9">
-              <div className="entry-static-box entry-static-box2 d-flex align-items-center">
-                <div className="row">
+              <div className="entry-static-box entry-static-box2 d-flex align-items-centerjustify-content-between">
+                <div className="d-flex">
                   <div className="col-lg-4">
                     {/* <div className="entry-video-img"> */}
                     <div className="video-responsive">
@@ -45,7 +45,15 @@ class EntryArea extends Component {
                       {/* </div> */}
                     </div>
                   </div>
-                  <div className="col-lg-8">
+                  <div
+                    className="col-lg-8"
+                    style={{
+                      backgroundImage: 'url("/images/water_bg.png")', // Replace with your image path
+                      backgroundSize: "cover", // Adjust as needed
+                      backgroundPosition: "center center",
+                      marginLeft: "50px",
+                    }}
+                  >
                     <div className="entry-video-text">
                       <h4 className="entry__title">
                         Let’s bring prosperity together.

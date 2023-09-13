@@ -41,7 +41,7 @@ const ServiceArea = () => {
                 </div>
                 <div className="service-content">
                   <h4 className="service__title">Villages</h4>
-                  <h6 className="service__title">86</h6>
+                  <h6 className="service__title">125</h6>
                 </div>
               </div>
             </div>
@@ -51,7 +51,14 @@ const ServiceArea = () => {
               <div className="service-item-inner">
                 <div className="service-icon">
                   {/* <i className="icon-peace"></i> */}
-                  <i className="fa fa-map fa-flip" aria-hidden="true"></i>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="4em"
+                    viewBox="0 0 640 512"
+                    style={{ fill: "#424242" }}
+                  >
+                    <path d="M480 48c0-26.5-21.5-48-48-48H336c-26.5 0-48 21.5-48 48V96H224V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V96H112V24c0-13.3-10.7-24-24-24S64 10.7 64 24V96H48C21.5 96 0 117.5 0 144v96V464c0 26.5 21.5 48 48 48H304h32 96H592c26.5 0 48-21.5 48-48V240c0-26.5-21.5-48-48-48H480V48zm96 320v32c0 8.8-7.2 16-16 16H528c-8.8 0-16-7.2-16-16V368c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16zM240 416H208c-8.8 0-16-7.2-16-16V368c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16zM128 400c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V368c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v32zM560 256c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H528c-8.8 0-16-7.2-16-16V272c0-8.8 7.2-16 16-16h32zM256 176v32c0 8.8-7.2 16-16 16H208c-8.8 0-16-7.2-16-16V176c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16zM112 160c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V176c0-8.8 7.2-16 16-16h32zM256 304c0 8.8-7.2 16-16 16H208c-8.8 0-16-7.2-16-16V272c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v32zM112 320H80c-8.8 0-16-7.2-16-16V272c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16zm304-48v32c0 8.8-7.2 16-16 16H368c-8.8 0-16-7.2-16-16V272c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16zM400 64c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H368c-8.8 0-16-7.2-16-16V80c0-8.8 7.2-16 16-16h32zm16 112v32c0 8.8-7.2 16-16 16H368c-8.8 0-16-7.2-16-16V176c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16z" />
+                  </svg>
                 </div>
                 <div className="service-content">
                   <h4 className="service__title">Districts</h4>
@@ -69,7 +76,7 @@ const ServiceArea = () => {
                 </div>
                 <div className="service-content">
                   <h4 className="service__title">Cr lt of water</h4>
-                  <h6 className="service__title">481</h6>
+                  <h6 className="service__title">580</h6>
                 </div>
               </div>
             </div>
@@ -85,8 +92,8 @@ const ServiceArea = () => {
                   marginLeft: "20px",
                 }}
               >
-                <h3>Villages : 1</h3>
-                <h3>Capacity : 14 Cr</h3>
+                <p>Villages : 1</p>
+                <p>Capacity : 14 Cr</p>
               </div>
               <div
                 class="circle"
@@ -112,10 +119,14 @@ const ServiceArea = () => {
               <div class="link"></div>
               <div
                 class="square down"
-                style={{ borderLeft: "2px solid #ff5e33", marginLeft: "20px" }}
+                style={{
+                  borderLeft: "2px solid #ff5e33",
+                  marginLeft: "20px",
+                  paddingTop: "2.5rem",
+                }}
               >
-                <h3>Villages : 6</h3>
-                <h3>Capacity : 20 Cr</h3>
+                <p>Villages : 6</p>
+                <p>Capacity : 20 Cr</p>
               </div>
             </div>
             <div class="block">
@@ -123,8 +134,8 @@ const ServiceArea = () => {
                 class="square up"
                 style={{ borderLeft: "2px solid #6234ed", marginLeft: "20px" }}
               >
-                <h3>Villages : 16</h3>
-                <h3>Capacity : 102 Cr</h3>
+                <p>Villages : 16</p>
+                <p>Capacity : 102 Cr</p>
               </div>
               <div
                 class="circle"
@@ -150,10 +161,14 @@ const ServiceArea = () => {
               <div class="link"></div>
               <div
                 class="square down"
-                style={{ borderLeft: "2px solid #2f903c", marginLeft: "20px" }}
+                style={{
+                  borderLeft: "2px solid #2f903c",
+                  marginLeft: "20px",
+                  paddingTop: "2.5rem",
+                }}
               >
-                <h3>Villages : 34</h3>
-                <h3>Capacity : 208 Cr</h3>
+                <p>Villages : 34</p>
+                <p>Capacity : 208 Cr</p>
               </div>
             </div>
             <div class="block">
@@ -161,8 +176,8 @@ const ServiceArea = () => {
                 class="square up"
                 style={{ borderLeft: "2px solid #34f50c", marginLeft: "20px" }}
               >
-                <h3>Villages : 70</h3>
-                <h3>Capacity : 450 Cr</h3>
+                <p>Villages : 70</p>
+                <p>Capacity : 450 Cr</p>
               </div>
               <div
                 class="circle"
@@ -188,22 +203,95 @@ const ServiceArea = () => {
               <div class="link"></div>
               <div
                 class="square down"
-                style={{ borderLeft: "2px solid #34f50c", marginLeft: "20px" }}
+                style={{
+                  borderLeft: "2px solid #34f50c",
+                  marginLeft: "20px",
+                  paddingTop: "2.5rem",
+                }}
               >
-                <h3>Villages : 125</h3>
-                <h3>Capacity : 580 Cr</h3>
+                <p>Villages : 125</p>
+                <p>Capacity : 580 Cr</p>
               </div>
             </div>
           </div>
         </section>
-        <div className="row">
-          <div className="col-lg-12">
-            <div className="button-shared" style={{ marginTop: "20px" }}>
-              <Link href="/" className="theme-btn">
-                Join us now
-              </Link>
-            </div>
-          </div>
+      </div>
+      <div className="d-flex" style={{ padding: "3rem 0" }}>
+        <div className="p-3">
+          <ul className="step-menu">
+            <li role="button" className="current">
+              <p>Step 1</p>
+              <p>Village Identification</p>
+              <img
+                src="/images/flow1.jpg"
+                alt="Step 1"
+                style={{ width: "125px", height: "105px" }}
+              />
+            </li>
+            <li role="button" className="current">
+              <p>Step 2</p>
+              <p>Farmer Group Formation</p>
+              <img
+                src="/images/flow2.jpg"
+                alt="Step 1"
+                style={{ width: "125px", height: "105px" }}
+              />
+            </li>
+            <li role="button" className="current">
+              <p>Step 3</p>
+              <p>Benificary Identification</p>
+              <img
+                src="/images/flow3.jpg"
+                alt="Step 1"
+                style={{ width: "125px", height: "105px" }}
+              />
+            </li>
+            <li role="button" className="current">
+              <p>Step 4</p>
+              <p>Demand Letter Approval</p>
+              <img
+                src="/images/flow4.jpg"
+                alt="Step 1"
+                style={{ width: "125px", height: "105px" }}
+              />
+            </li>
+            <li role="button" className="current">
+              <p>Step 5</p>
+              <p>Demand Letter & Approval</p>
+              <img
+                src="/images/flow5.jpg"
+                alt="Step 1"
+                style={{ width: "125px", height: "105px" }}
+              />
+            </li>
+            <li role="button" className="current">
+              <p>Step 6</p>
+              <p>Work Commencement</p>
+              <img
+                src="/images/flow6.jpg"
+                alt="Step 1"
+                style={{ width: "125px", height: "105px" }}
+              />
+            </li>
+            <li role="button" className="current">
+              <p>Step 7</p>
+              <p>Recommendation Letter</p>
+              <img
+                src="/images/flow7.jpg"
+                alt="Step 1"
+                style={{ width: "125px", height: "105px" }}
+              />
+            </li>
+            <li role="button" className="current">
+              <p>Step 8</p>
+              <p>Social Audit</p>
+              <img
+                src="/images/flow8.jpg"
+                alt="Step 1"
+                style={{ width: "125px", height: "105px" }}
+              />
+            </li>
+          </ul>
         </div>
       </div>
     </section>

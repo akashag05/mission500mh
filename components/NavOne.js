@@ -64,7 +64,7 @@ class NavOne extends Component {
                         </li>
                         <li>
                           <Link href="/">
-                            <i className="fa fa-phone-square"></i>+91-9876543210
+                            <i className="fa fa-phone-square"></i>+91-9833615551
                           </Link>
                         </li>
                       </ul>
@@ -169,11 +169,11 @@ class NavOne extends Component {
                         />
                       </Link>
                     </div>
-                    <div class="header-btn ml-auto">
+                    <div className="header-btn ml-auto">
                       <a
                         href="/images/brochure.pdf"
                         target="_blank"
-                        class="theme-btn"
+                        className="theme-btn"
                       >
                         View Brochure
                       </a>
@@ -186,60 +186,31 @@ class NavOne extends Component {
                       <div className="navigation-top">
                         <nav className="main-navigation">
                           <ul>
-                            <li className="active">
+                            {/* <li className="active">
                               <Link href="/">
                                 <p>Home</p>
                               </Link>
-                              {/* <ul className="dropdown-menu-item">
-                                                                <li><Link href="/"><p>Home 1</p></Link></li>
-                                                                <li><Link href="/index2"><p>Home 2</p></Link></li>
-                                                            </ul> */}
-                            </li>
+                            </li> */}
                             <li>
                               <Link href="/about">
                                 <p>About us</p>
                               </Link>
-                              {/* <ul className="dropdown-menu-item">
-                                                                <li><Link href="/"><p>Home 1</p></Link></li>
-                                                                <li><Link href="/index2"><p>Home 2</p></Link></li>
-                                                            </ul> */}
-                            </li>
-                            {/* <li><Link href="/">Path of water revolution</Link>
-                                                            <ul className="dropdown-menu-item">
-                                                                <li><Link href="/"><p>causes</p></Link></li>
-                                                                <li><Link href="/causes-detail"><p>causes detail</p></Link></li>
-                                                                <li><Link href="/donate"><p>donate now</p></Link></li>
-                                                            </ul>
-                                                        </li> */}
-                            <li>
-                              <Link href="/events">events</Link>
-                              {/* <ul className="dropdown-menu-item">
-                                                                <li><Link href="/events"><p>events</p></Link></li>
-                                                                <li><Link href="/events-detail"><p>events detail</p></Link></li>
-                                                            </ul> */}
                             </li>
                             <li>
-                              <Link href="/news">news</Link>
-                              {/* <ul className="dropdown-menu-item">
-                                                                <li><Link href="/news"><p>news</p></Link></li>
-                                                                <li><Link href="/single-news"><p>news detail</p></Link></li>
-                                                            </ul> */}
+                              <Link href="/events">
+                                <p>events</p>
+                              </Link>
                             </li>
                             <li>
-                              <Link href="/blogs">blogs</Link>
-                              {/* <ul className="dropdown-menu-item">
-                                                                <li><Link href="/news"><p>news</p></Link></li>
-                                                                <li><Link href="/single-news"><p>news detail</p></Link></li>
-                                                            </ul> */}
+                              <Link href="/news">
+                                <p>news</p>
+                              </Link>
                             </li>
-                            {/* <li><Link href="/">pages</Link>
-                                                            <ul className="dropdown-menu-item">
-                                                                <li><Link href="#"><p>gallery</p></Link></li>
-                                                                <li><Link href="#"><p>our team</p></Link></li>
-                                                                <li><Link href="#"><p>blogs</p></Link></li>
-                                                                <li><Link href="#"><p>become a volunteer</p></Link></li>
-                                                            </ul>
-                                                        </li> */}
+                            <li>
+                              <Link href="/blogs">
+                                <p>blogs</p>
+                              </Link>
+                            </li>
                             <li>
                               <Link href="/contact">
                                 <p>contact</p>

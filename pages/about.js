@@ -18,7 +18,7 @@ const AboutPage = () => {
       <PageHeader title="About" />
       <MissionVision />
       <TeamArea />
-      <ClientsLogo />
+      {/* <ClientsLogo /> */}
       <Footer />
     </Layout>
   );

@@ -9,6 +9,7 @@ import MixerAreaTwo from "@/components/MixerAreaTwo";
 import NavOne from "@/components/NavOne";
 import PageHeader from "@/components/PageHeader";
 import TeamArea from "@/components/TeamArea";
+import Link from "next/link";
 import React, { Component } from "react";
 
 class Events extends Component {
@@ -22,23 +23,28 @@ class Events extends Component {
           <div class="card mt-4">
             <div class="card-header">
               <ul
-                class="nav nav-tabs nav-tabs-neutral justify-content-center"
+                class="nav nav-tabs nav-tabs-neutral justify-content-start shadow p-3 mb-5 bg-body rounded"
                 role="tablist"
-                data-background-color="orange"
+                // data-background-color="orange"
               >
                 <li class="nav-item">
                   <a
-                    class="nav-link active"
+                    class="nav-link active tabs_list"
                     data-toggle="tab"
                     href="#2023"
                     role="tab"
                   >
-                    Events of Year 2023
+                    Year 2023
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" data-toggle="tab" href="#2022" role="tab">
-                    Events of Year 2022
+                  <a
+                    class="nav-link tabs_list"
+                    data-toggle="tab"
+                    href="#2022"
+                    role="tab"
+                  >
+                    Year 2022
                   </a>
                 </li>
                 {/* <li class="nav-item">
@@ -63,52 +69,51 @@ class Events extends Component {
                     className="d-flex"
                     style={{ justifyContent: "space-evenly" }}
                   >
-                    <div class="card" style={{ width: "18rem" }}>
-                      <img
-                        src="./images/event1_2022.png
-                      "
-                        class="card-img-top"
-                        alt="..."
-                        style={{ width: "250px", height: "150px" }}
-                      ></img>
-                      <div class="card-body">
-                        <h5>Presentation of Mission500 at Hyderabad</h5>
-                        <p style={{ padding: "5px 0px" }}>
-                          {" "}
-                          National convention on rivers at Hyderabad
-                        </p>
-                        <p style={{ padding: "5px 0px" }}>
-                          Participents : Dr. Ujjwalkumar Chavhan – IRS
-                        </p>
-                        <a href="https://www.facebook.com/1226814592/posts/10228332773244243/?extid=0&d=n">
-                          {" "}
-                          Link
-                        </a>
-                      </div>
-                    </div>
-                    <div class="card" style={{ width: "18rem" }}>
-                      <img
-                        src="/images/events2_2022.png
-                      "
-                        class="card-img-top"
-                        alt="..."
-                        style={{ width: "250px", height: "150px" }}
-                      ></img>
-                      <div class="card-body">
-                        <h5>Maharashtra Water Summit 2022 - Part 1</h5>
-                        <p style={{ padding: "5px 0px" }}>
-                          {" "}
-                          Speach at Maharashtra water summit
-                        </p>
-                        <p style={{ padding: "5px 0px" }}>
-                          Participents : Dr. Ujjwalkumar Chavhan – IRS
-                        </p>
-                        <a href="https://www.youtube.com/watch?v=kt8trUzHSZ0">
+                    <Link href="https://www.facebook.com/1226814592/posts/10228332773244243/?extid=0&d=n">
+                      <div class="card" style={{ width: "18rem" }}>
+                        <img
+                          src="./images/event1_2022.png"
+                          class="card-img-top"
+                          alt="..."
+                          style={{ width: "250px", height: "150px" }}
+                        ></img>
+                        <div class="card-body">
+                          <h5>Presentation of Mission500 at Hyderabad</h5>
+                          <p style={{ padding: "5px 0px" }}>
+                            {" "}
+                            National convention on rivers at Hyderabad
+                          </p>
+                          <p style={{ padding: "5px 0px" }}>
+                            Participents : Dr. Ujjwalkumar Chavhan – IRS
+                          </p>
+                          {/* <a href="https://www.facebook.com/1226814592/posts/10228332773244243/?extid=0&d=n">
                           {" "}
                           Link
-                        </a>
+                        </a> */}
+                        </div>
                       </div>
-                    </div>
+                    </Link>
+                    <Link href="https://www.youtube.com/watch?v=kt8trUzHSZ0">
+                      <div class="card" style={{ width: "18rem" }}>
+                        <img
+                          src="/images/events2_2022.png
+                      "
+                          class="card-img-top"
+                          alt="..."
+                          style={{ width: "250px", height: "150px" }}
+                        ></img>
+                        <div class="card-body">
+                          <h5>Maharashtra Water Summit 2022 - Part 1</h5>
+                          <p style={{ padding: "5px 0px" }}>
+                            {" "}
+                            Speach at Maharashtra water summit
+                          </p>
+                          <p style={{ padding: "5px 0px" }}>
+                            Participents : Dr. Ujjwalkumar Chavhan – IRS
+                          </p>
+                        </div>
+                      </div>
+                    </Link>
                     {/* <div class="card" style={{ width: "18rem" }}>
                       <img
                         src="/images/helping-img.jpg
@@ -152,8 +157,8 @@ class Events extends Component {
             </div>
           </div>
         </div>
-        <TeamArea />
-        <ClientsLogo />
+        {/* <TeamArea /> */}
+        {/* <ClientsLogo /> */}
         <Footer />
       </Layout>
     );
