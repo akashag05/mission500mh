@@ -12,7 +12,7 @@ const Contact = () => {
                 {/* <img src="/images/section-icon.png" alt="section-icon" /> */}
               </div>
               <h2 className="section__title">Get in Touch With Us</h2>
-              <p className="section__meta">Write a message</p>
+              {/* <p className="section__meta">Write a message</p> */}
               <p className="section__desc">
                 Are you ready to make a splash for change?
                 <br /> <br /> Join us in our Water Conservation Mission and be a

@@ -1691,8 +1691,8 @@ a:hover {
 .breadcrumb-area .breadcrumb-content {
   text-align: center;
   position: relative;
-  padding-top: 110px;
-  padding-bottom: 115px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 .breadcrumb-area .breadcrumb-content .breadcrumb__title {
   font-size: 60px;
@@ -1905,7 +1905,7 @@ a:hover {
     HIW-AREA
 =====================================*/
 .hiw-area {
-  padding-top: 120px;
+  padding-top: 20px;
 }
 .hiw-area .row {
   margin-left: -10px;
@@ -1981,7 +1981,7 @@ a:hover {
   height: 100%;
   z-index: 1;
   padding-top: 90px;
-  padding-bottom: 120px;
+  /* padding-bottom: 120px; */
 }
 /*=== heart-icon ===*/
 .service-area .heart-icon {
@@ -6530,6 +6530,7 @@ html {
   padding: 15px 15px 15px 15px;
   position: relative;
   margin-left: 10px;
+  margin-bottom: 10px;
 }
 .step-menu li:before {
   content: "";
@@ -6600,3 +6601,22 @@ html {
   cursor: pointer;
 }
 
+@media (max-width: 767px) {
+  .step-menu li:nth-child(1) {
+    z-index: 800;
+    margin-left: 10px;
+    /* padding-left: 30px; */
+  }
+}
+.card_image {
+  margin: 1rem;
+}
+.card_image img {
+  margin-top: 10px;
+  width: 277px;
+  height: 150px;
+}
+.card_image p {
+  padding: 5px 0px;
+  font-size: 12px;
+}

@@ -69,7 +69,7 @@ const MissionVision = () => {
                   listStyleType: "circle",
                 }}
               >
-                <p>
+                <p style={{ fontSize: "22px", lineHeight: "32px" }}>
                   We envision a Maharashtra where every drop of water is valued
                   Where communities thrive without the fear of water scarcity.
                   We aspire to transform the state into a model of water

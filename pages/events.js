@@ -68,33 +68,27 @@ const Events = () => {
                 </li> */}
               </ul>
             </div>
-            <div class="card-body">
+            <div class="card-body" style={{ padding: "0 1.25rem" }}>
               <div class="tab-content text-center">
                 <div class="tab-pane active" id="event2023" role="tabpanel">
                   <EventCard />
                 </div>
                 <div class="tab-pane" id="event2022" role="tabpanel">
-                  <div
-                    className="d-flex"
-                    style={{ justifyContent: "space-evenly" }}
-                  >
+                  <div className="d-flex">
                     <Link href="https://www.facebook.com/1226814592/posts/10228332773244243/?extid=0&d=n">
-                      <div class="card" style={{ width: "18rem" }}>
+                      <div
+                        class="card card_image"
+                        style={{ width: "18rem", height: "23rem" }}
+                      >
                         <img
                           src="./images/event1_2022.png"
                           class="card-img-top"
                           alt="..."
-                          style={{ width: "250px", height: "150px" }}
                         ></img>
                         <div class="card-body">
-                          <h5>Presentation of Mission500 at Hyderabad</h5>
-                          <p style={{ padding: "5px 0px" }}>
-                            {" "}
-                            National convention on rivers at Hyderabad
-                          </p>
-                          <p style={{ padding: "5px 0px" }}>
-                            Participents : Dr. Ujjwalkumar Chavhan – IRS
-                          </p>
+                          <h6>Presentation of Mission500 at Hyderabad</h6>
+                          <p> National convention on rivers at Hyderabad</p>
+                          <p>Participants : Dr. Ujjwalkumar Chavhan – IRS</p>
                           {/* <a href="https://www.facebook.com/1226814592/posts/10228332773244243/?extid=0&d=n">
                           {" "}
                           Link
@@ -103,65 +97,25 @@ const Events = () => {
                       </div>
                     </Link>
                     <Link href="https://www.youtube.com/watch?v=kt8trUzHSZ0">
-                      <div class="card" style={{ width: "18rem" }}>
+                      <div
+                        class="card card_image"
+                        style={{ width: "18rem", height: "23rem" }}
+                      >
                         <img
                           src="/images/events2_2022.png
                       "
                           class="card-img-top"
                           alt="..."
-                          style={{ width: "250px", height: "150px" }}
                         ></img>
                         <div class="card-body">
-                          <h5>Maharashtra Water Summit 2022 - Part 1</h5>
-                          <p style={{ padding: "5px 0px" }}>
-                            {" "}
-                            Speach at Maharashtra water summit
-                          </p>
-                          <p style={{ padding: "5px 0px" }}>
-                            Participents : Dr. Ujjwalkumar Chavhan – IRS
-                          </p>
+                          <h6>Maharashtra Water Summit 2022 - Part 1</h6>
+                          <p> Speach at Maharashtra water summit</p>
+                          <p>Participants : Dr. Ujjwalkumar Chavhan – IRS</p>
                         </div>
                       </div>
                     </Link>
-                    {/* <div class="card" style={{ width: "18rem" }}>
-                      <img
-                        src="/images/helping-img.jpg
-                      "
-                        class="card-img-top"
-                        alt="..."
-                      ></img>
-                      <div class="card-body">
-                        <h3>Function Name</h3>
-                        <p style={{ padding: "5px 0px" }}>
-                          {" "}
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                        </p>
-                        <p style={{ padding: "5px 0px" }}>Participents : </p>
-                        <a href="#"> Link</a>
-                      </div>
-                    </div> */}
                   </div>
                 </div>
-                {/* <div class="tab-pane" id="2021" role="tabpanel">
-                  <p>
-                    I think that’s a responsibility that I have, to push
-                    possibilities, to show people, this is the level that things
-                    could be at. So when you get something that has the name
-                    Kanye West on it, it’s supposed to be pushing the furthest
-                    possibilities. I will be the leader of a company that ends
-                    up being worth billions of dollars, because I got the
-                    answers. I understand culture. I am the nucleus.
-                  </p>
-                </div>
-                <div class="tab-pane" id="2020" role="tabpanel">
-                  <p>
-                    "I will be the leader of a company that ends up being worth
-                    billions of dollars, because I got the answers. I understand
-                    culture. I am the nucleus. I think that’s a responsibility
-                    that I have, to push possibilities, to show people, this is
-                    the level that things could be at."
-                  </p>
-                </div> */}
               </div>
             </div>
           </div>
@@ -197,32 +151,29 @@ const Events = () => {
                 </li>
               </ul>
             </div>
-            <div class="card-body">
+            <div class="card-body" style={{ padding: "0 1.25rem" }}>
               <div class="tab-content text-center">
                 <div class="tab-pane active" id="news2023" role="tabpanel">
-                  <div
-                    className="d-flex"
-                    style={{ justifyContent: "space-evenly" }}
-                  >
+                  <div className="d-flex">
                     <Link href="https://www.newindianexpress.com/good-news/2022/feb/13/barren-hamlet-to-land-bristling-with-life-2418728.html">
-                      <div class="card" style={{ width: "18rem" }}>
+                      <div
+                        class="card card_image"
+                        style={{ width: "18rem", height: "23rem" }}
+                      >
                         <img
                           src="./images/news1.png"
                           class="card-img-top"
                           alt="..."
-                          style={{ width: "250px", height: "150px" }}
                         ></img>
                         <div class="card-body">
                           <h5>Barren hamlet to land bristling with life</h5>
-                          <p style={{ padding: "5px 0px" }}>
+                          <p>
                             {" "}
                             IRS officer’s initiative & efforts of villagers turn
                             region hit by drought into zone with sufficient
                             rainwater storage
                           </p>
-                          <p style={{ padding: "5px 0px" }}>
-                            Participents : Dr. Ujjwalkumar Chavhan – IRS
-                          </p>
+                          <p>Participants : Dr. Ujjwalkumar Chavhan – IRS</p>
                           {/* <a href="https://www.facebook.com/1226814592/posts/10228332773244243/?extid=0&d=n">
                           {" "}
                           Link
@@ -233,27 +184,29 @@ const Events = () => {
                   </div>
                 </div>
                 <div class="tab-pane" id="news2022" role="tabpanel">
-                  <Link href="https://www.thebetterindia.com/247424/irs-hero-ujjwal-chavan-income-tax-commissioner-water-conservation-dhamangaon-maharashtra-farmers-jalyukt-shivar-abhiyan-agriculture-gop94/">
-                    <div class="card" style={{ width: "18rem" }}>
-                      <img
-                        src="/images/news4.png
+                  <div className="d-flex">
+                    <Link href="https://www.thebetterindia.com/247424/irs-hero-ujjwal-chavan-income-tax-commissioner-water-conservation-dhamangaon-maharashtra-farmers-jalyukt-shivar-abhiyan-agriculture-gop94/">
+                      <div
+                        class="card card_image"
+                        style={{ width: "18rem", height: "23rem" }}
+                      >
+                        <img
+                          src="/images/news4.png
                       "
-                        class="card-img-top"
-                        alt="..."
-                        style={{ width: "250px", height: "150px" }}
-                      ></img>
-                      <div class="card-body">
-                        <h5> Saves Cr's Litres</h5>
-                        <p style={{ padding: "5px 0px" }}>
-                          IRS Officer Saves 102 Cr Litres of Water, Makes 16
-                          Villages Drought-Free in 3 Years
-                        </p>
-                        <p style={{ padding: "5px 0px" }}>
-                          Participents : Dr. Ujjwalkumar Chavhan – IRS
-                        </p>
+                          class="card-img-top"
+                          alt="..."
+                        ></img>
+                        <div class="card-body">
+                          <h5> Saves Cr's Litres</h5>
+                          <p>
+                            IRS Officer Saves 102 Cr Litres of Water, Makes 16
+                            Villages Drought-Free in 3 Years
+                          </p>
+                          <p>Participants : Dr. Ujjwalkumar Chavhan – IRS</p>
+                        </div>
                       </div>
-                    </div>
-                  </Link>
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>

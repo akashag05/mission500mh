@@ -9,10 +9,10 @@ const PageHeader = (props) => {
                     <div className="col-lg-12">
                         <div className="breadcrumb-content">
                             <h2 className="breadcrumb__title">{props.title}</h2>
-                            <ul className="breadcrumb__list">
+                            {/* <ul className="breadcrumb__list">
                                 <li className="active__list-item"><Link href="/">home</Link></li>
                                 <li>{props.title}</li>
-                            </ul>
+                            </ul> */}
                         </div>
                     </div>
                 </div>

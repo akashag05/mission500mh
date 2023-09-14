@@ -19,17 +19,26 @@ class Blogs extends Component {
         <NavOne />
         <PageHeader title="Blogs" />
         {/* <BlogHome /> */}
-        <div className="row">
+        <div className="row" style={{ position: "relative" }}>
           <div className="col-md-8">
-            <div className="d-flex flex-column container pt-4">
+            <div
+              className="d-flex flex-column container pt-4"
+            //   style={{ overflowY: "scroll" }}
+            >
               <div style={{ borderBottom: "2px solid #e36955" }}>
-                <h2 style={{ paddingBottom: "1rem", color: "#e36955", lineHeight : "40px" }}>
+                <h2
+                  style={{
+                    paddingBottom: "1rem",
+                    color: "#e36955",
+                    lineHeight: "40px",
+                  }}
+                >
                   Empowering Communities through Decentralized Water Management:
                   The Mission500 Paradigm
                 </h2>
 
                 <div style={{ display: "flex", justifyContent: "flex-end" }}>
-                  <h6 style={{ padding: "0 2rem", color: "#e36955" }}>
+                  <h6 style={{ padding: "0 2rem", color: "black" }}>
                     Written by : Dr. Ujjwal Kumar Chavhan, IRS
                   </h6>
                 </div>
@@ -152,27 +161,40 @@ class Blogs extends Component {
               </div>
             </div>
           </div>
-          <div className="col-md-4">
-            <div className="d-flex flex-column container py-4">
+          <div className="col-md-4" style={{position:'relative'}}>
+            <div
+              className="d-flex flex-column py-4 px-1"
+              style={{ position: "sticky", top: '0' }}
+            >
               <div className="border-bottom-1">
-                <h2>Previous Blogs</h2>
+                <h2 style={{ color: "black", fontWeight: "600" }}>
+                  Previous Blogs
+                </h2>
               </div>
               <div>
                 <div className="previous_blog_section">
                   <p>13th August 2022</p>
-                  <h4>5 Tips for Conserving Water at Home</h4>
+                  <h4 style={{ color: "black" }}>
+                    5 Tips for Conserving Water at Home
+                  </h4>
                 </div>
                 <div className="previous_blog_section">
                   <p>7th July 2022</p>
-                  <h4>The Importance of Water Conservation</h4>
+                  <h4 style={{ color: "black" }}>
+                    The Importance of Water Conservation
+                  </h4>
                 </div>
                 <div className="previous_blog_section">
                   <p>25th June 2022</p>
-                  <h4>Efficient Irrigation Techniques for Gardens</h4>
+                  <h4 style={{ color: "black" }}>
+                    Efficient Irrigation Techniques for Gardens
+                  </h4>
                 </div>
                 <div className="previous_blog_section">
                   <p>10th May 2022</p>
-                  <h4>Reducing Water Waste in Daily Activities</h4>
+                  <h4 style={{ color: "black" }}>
+                    Reducing Water Waste in Daily Activities
+                  </h4>
                 </div>
               </div>
             </div>

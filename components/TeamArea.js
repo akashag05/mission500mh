@@ -12,7 +12,7 @@ const TeamArea = () => {
                 <img src="/images/section-icon.png" alt="section-icon" />
               </div>
               <h2 className="section__title">Our Team</h2>
-              <p className="section__meta">meet profesionals</p>
+              {/* <p className="section__meta">meet profesionals</p> */}
             </div>
           </div>
         </div>

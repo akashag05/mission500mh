@@ -197,8 +197,25 @@ class NavOne extends Component {
                               </Link>
                             </li>
                             <li>
+                              <Link href="/about">
+                                <p>Project</p>
+                              </Link>
+                              <ul className="dropdown-menu-item">
+                                <li>
+                                  <Link href="/">
+                                    <p>Project View</p>
+                                  </Link>
+                                </li>
+                                <li>
+                                  <Link href="/index2">
+                                    <p>Execution Map</p>
+                                  </Link>
+                                </li>
+                              </ul>
+                            </li>
+                            <li>
                               <Link href="/events">
-                                <p>events & news</p>
+                                <p>media</p>
                               </Link>
                             </li>
                             {/* <li>
