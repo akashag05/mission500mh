@@ -6592,3 +6592,11 @@ html {
 .step-menu li.complete:after {
   border-left-color: rgba(51, 122, 183, 0.4);
 }
+
+/* Define initial styles for the image */
+.image-container img {
+  width: 125px;
+  height: 105px;
+  cursor: pointer;
+}
+

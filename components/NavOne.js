@@ -198,14 +198,14 @@ class NavOne extends Component {
                             </li>
                             <li>
                               <Link href="/events">
-                                <p>events</p>
+                                <p>events & news</p>
                               </Link>
                             </li>
-                            <li>
+                            {/* <li>
                               <Link href="/news">
                                 <p>news</p>
                               </Link>
-                            </li>
+                            </li> */}
                             <li>
                               <Link href="/blogs">
                                 <p>blogs</p>

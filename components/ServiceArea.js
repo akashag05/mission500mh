@@ -1,7 +1,17 @@
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 
 const ServiceArea = () => {
+  const [showModal, setShowModal] = useState(false);
+
+  const openModal = () => {
+    setShowModal(true);
+  };
+
+  const closeModal = () => {
+    setShowModal(false);
+  };
+
   return (
     <section className="service-area text-center mt-5">
       <div className="container">
@@ -222,12 +232,11 @@ const ServiceArea = () => {
             <li role="button" className="current">
               <p>Step 1</p>
               <p>Village Identification</p>
-              <img
-                src="/images/flow1.jpg"
-                alt="Step 1"
-                style={{ width: "125px", height: "105px" }}
-              />
+              <div class="image-container">
+                <img src="/images/flow1.jpg" alt="Step 1" />
+              </div>
             </li>
+
             <li role="button" className="current">
               <p>Step 2</p>
               <p>Farmer Group Formation</p>
@@ -292,6 +301,30 @@ const ServiceArea = () => {
               />
             </li>
           </ul>
+        </div>
+      </div>
+      <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">
+                &times;
+              </button>
+              <h4 class="modal-title">Modal Header</h4>
+            </div>
+            <div class="modal-body">
+              <p>Some text in the modal.</p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-default"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </section>
