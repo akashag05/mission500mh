@@ -675,6 +675,18 @@ a:hover {
   .main-navigation
   ul
   li
+  a:visited {
+  background-color: #424242;
+}
+.header-area
+  .header-top
+  .ostion-top-wrap
+  .ostion-menu
+  .ostion-menu-content
+  .navigation-top
+  .main-navigation
+  ul
+  li
   a:hover:after {
   right: auto;
   left: 0;
@@ -6627,10 +6639,12 @@ html {
   border-radius: 12px;
 }
 .image-container {
-    transition: transform 0.2s; /* Add smooth transition effect */
-  }
-  
-  .image-container:hover {
-    transform: scale(1.3); /* Increase scale to 1.2 on hover */
-  }
-  
+  transition: transform 0.2s; /* Add smooth transition effect */
+}
+
+.image-container:hover {
+  transform: scale(1.3); /* Increase scale to 1.2 on hover */
+}
+.active_link p {
+  border-bottom: 1px solid black;
+}

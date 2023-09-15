@@ -7,12 +7,34 @@ class NavOne extends Component {
     super();
     this.state = {
       sticky: false,
+      activeLink: null,
     };
   }
+  handleLinkClick = (index) => {
+    this.setState({ activeLink: index }, () => {
+      // Check if localStorage is available before trying to save data
+      if (typeof window !== "undefined") {
+        localStorage.setItem("activeLink", index);
+      }
+    });
+  };
 
+  handleImageClick = () => {
+    // Remove the class by setting activeLink to null
+    this.setState({ activeLink: null }, () => {
+      if (typeof window !== "undefined") {
+        localStorage.removeItem("activeLink");
+      }
+    });
+  };
   componentDidMount() {
     window.addEventListener("scroll", this.handleScroll);
-
+    if (typeof window !== "undefined") {
+      const activeLink = localStorage.getItem("activeLink");
+      if (activeLink !== null) {
+        this.setState({ activeLink: parseInt(activeLink) });
+      }
+    }
     //Mobile Menu
     this.mobileMenu();
   }
@@ -46,6 +68,21 @@ class NavOne extends Component {
   };
 
   render() {
+    const navigationItems = [
+      { text: "About us", path: "/about" },
+      {
+        text: "Project",
+        path: "/about",
+        submenu: [
+          { text: "Project View", path: "/" },
+          { text: "Execution Map", path: "/executionMap" },
+        ],
+      },
+      { text: "Media", path: "/events" },
+      { text: "Blogs", path: "/blogs" },
+      { text: "Contact", path: "/contact" },
+      // ... other items
+    ];
     return (
       <div>
         <header className="header-area">
@@ -161,12 +198,16 @@ class NavOne extends Component {
                     <div className="ostion-logo">
                       <Link href="/">
                         <div className="image-container">
-                          <Image
+                          <img
                             src="/images/mlogo.png"
                             width={90}
                             height={90}
                             alt="Mission500 Logo"
                             title="mission500"
+                            className={`image ${
+                              this.state.activeLink === null ? "active" : ""
+                            }`}
+                            onClick={this.handleImageClick}
                           />
                         </div>
                       </Link>
@@ -189,53 +230,40 @@ class NavOne extends Component {
                       <div className="navigation-top">
                         <nav className="main-navigation">
                           <ul>
-                            {/* <li className="active">
-                              <Link href="/">
-                                <p>Home</p>
-                              </Link>
-                            </li> */}
-                            <li>
-                              <Link href="/about">
-                                <p>About us</p>
-                              </Link>
-                            </li>
-                            <li>
-                              <Link href="/about">
-                                <p>Project</p>
-                              </Link>
-                              <ul className="dropdown-menu-item">
-                                <li>
-                                  <Link href="/">
-                                    <p>Project View</p>
-                                  </Link>
-                                </li>
-                                <li>
-                                  <Link href="/executionMap">
-                                    <p>Execution Map</p>
-                                  </Link>
-                                </li>
-                              </ul>
-                            </li>
-                            <li>
-                              <Link href="/events">
-                                <p>media</p>
-                              </Link>
-                            </li>
-                            {/* <li>
-                              <Link href="/news">
-                                <p>news</p>
-                              </Link>
-                            </li> */}
-                            <li>
-                              <Link href="/blogs">
-                                <p>blogs</p>
-                              </Link>
-                            </li>
-                            <li>
-                              <Link href="/contact">
-                                <p>contact</p>
-                              </Link>
-                            </li>
+                            {navigationItems.map((item, index) => (
+                              <li key={index}>
+                                <Link
+                                  href={item.path}
+                                  onClick={() => this.handleLinkClick(index)}
+                                  className={
+                                    index === this.state.activeLink
+                                      ? "active_link"
+                                      : ""
+                                  }
+                                >
+                                  <p
+                                    className={
+                                      index === this.state.activeLink
+                                        ? "active_link"
+                                        : ""
+                                    }
+                                  >
+                                    {item.text}
+                                  </p>
+                                </Link>
+                                {item.submenu && (
+                                  <ul className="dropdown-menu-item">
+                                    {item.submenu.map((subitem, subindex) => (
+                                      <li key={subindex}>
+                                        <Link href={subitem.path}>
+                                          <p>{subitem.text}</p>
+                                        </Link>
+                                      </li>
+                                    ))}
+                                  </ul>
+                                )}
+                              </li>
+                            ))}
                           </ul>
                         </nav>
                       </div>

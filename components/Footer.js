@@ -123,7 +123,7 @@ class Footer extends Component {
                 <div className="col footer-item footer-item4">
                   <h3 className="widget__title">contact</h3>
                   <ul className="contact__info">
-                    <li>Address to be written here!</li>
+                    {/* <li>Address to be written here!</li> */}
                     <li>
                       <Link href="mailto:info@mission500mh.com">
                         info@mission500mh.com

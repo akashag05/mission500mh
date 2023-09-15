@@ -26,30 +26,7 @@ const TeamArea = () => {
                   height={295}
                   alt="team image"
                 />
-                <div className="team__img-links">
-                  <ul>
-                    <li>
-                      <Link href="#">
-                        <i className="fa fa-twitter"></i>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="#">
-                        <i className="fa fa-facebook"></i>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="#">
-                        <i className="fa fa-pinterest"></i>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="#">
-                        <i className="fa fa-instagram"></i>
-                      </Link>
-                    </li>
-                  </ul>
-                </div>
+               
               </div>
               <div className="team__title">
                 <h3 className="team__title-title">
@@ -67,30 +44,7 @@ const TeamArea = () => {
                   height={295}
                   alt="team image"
                 />
-                <div className="team__img-links">
-                  <ul>
-                    <li>
-                      <Link href="#">
-                        <i className="fa fa-twitter"></i>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="#">
-                        <i className="fa fa-facebook"></i>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="#">
-                        <i className="fa fa-pinterest"></i>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="#">
-                        <i className="fa fa-instagram"></i>
-                      </Link>
-                    </li>
-                  </ul>
-                </div>
+               
               </div>
               <div className="team__title">
                 <h3 className="team__title-title">
@@ -108,30 +62,7 @@ const TeamArea = () => {
                   height={295}
                   alt="team image"
                 />
-                <div className="team__img-links">
-                  <ul>
-                    <li>
-                      <Link href="#">
-                        <i className="fa fa-twitter"></i>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="#">
-                        <i className="fa fa-facebook"></i>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="#">
-                        <i className="fa fa-pinterest"></i>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="#">
-                        <i className="fa fa-instagram"></i>
-                      </Link>
-                    </li>
-                  </ul>
-                </div>
+               
               </div>
               <div className="team__title">
                 <h3 className="team__title-title">
@@ -149,30 +80,7 @@ const TeamArea = () => {
                   height={295}
                   alt="team image"
                 />
-                <div className="team__img-links">
-                  <ul>
-                    <li>
-                      <Link href="#">
-                        <i className="fa fa-twitter"></i>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="#">
-                        <i className="fa fa-facebook"></i>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="#">
-                        <i className="fa fa-pinterest"></i>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="#">
-                        <i className="fa fa-instagram"></i>
-                      </Link>
-                    </li>
-                  </ul>
-                </div>
+               
               </div>
               <div className="team__title">
                 <h3 className="team__title-title">
@@ -190,30 +98,7 @@ const TeamArea = () => {
                   height={295}
                   alt="team image"
                 />
-                <div className="team__img-links">
-                  <ul>
-                    <li>
-                      <Link href="#">
-                        <i className="fa fa-twitter"></i>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="#">
-                        <i className="fa fa-facebook"></i>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="#">
-                        <i className="fa fa-pinterest"></i>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="#">
-                        <i className="fa fa-instagram"></i>
-                      </Link>
-                    </li>
-                  </ul>
-                </div>
+               
               </div>
               <div className="team__title">
                 <h3 className="team__title-title">
@@ -231,30 +116,7 @@ const TeamArea = () => {
                   height={295}
                   alt="team image"
                 />
-                <div className="team__img-links">
-                  <ul>
-                    <li>
-                      <Link href="#">
-                        <i className="fa fa-twitter"></i>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="#">
-                        <i className="fa fa-facebook"></i>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="#">
-                        <i className="fa fa-pinterest"></i>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="#">
-                        <i className="fa fa-instagram"></i>
-                      </Link>
-                    </li>
-                  </ul>
-                </div>
+               
               </div>
               <div className="team__title">
                 <h3 className="team__title-title">
@@ -272,30 +134,7 @@ const TeamArea = () => {
                   height={295}
                   alt="team image"
                 />
-                <div className="team__img-links">
-                  <ul>
-                    <li>
-                      <Link href="#">
-                        <i className="fa fa-twitter"></i>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="#">
-                        <i className="fa fa-facebook"></i>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="#">
-                        <i className="fa fa-pinterest"></i>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="#">
-                        <i className="fa fa-instagram"></i>
-                      </Link>
-                    </li>
-                  </ul>
-                </div>
+               
               </div>
               <div className="team__title">
                 <h3 className="team__title-title">
