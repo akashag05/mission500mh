@@ -16,7 +16,7 @@ const ClientsLogo = () => {
     // Responsive breakpoints
     breakpoints: {
       1499: {
-        slidesPerView: 5,
+        slidesPerView: 3,
       },
 
       991: {
@@ -24,7 +24,7 @@ const ClientsLogo = () => {
       },
 
       767: {
-        slidesPerView: 3,
+        slidesPerView: 2,
       },
 
       575: {
@@ -40,7 +40,7 @@ const ClientsLogo = () => {
           <div className="col-lg-8 mx-auto text-center">
             <div className="section-heading blog-heading">
               <div className="section-icon">
-                <img src="/images/section-icon.png" alt="section-icon" />
+                {/* <img src="/images/section-icon.png" alt="section-icon" /> */}
               </div>
               <h2 className="section__title">Partners</h2>
             </div>

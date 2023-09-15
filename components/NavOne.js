@@ -57,15 +57,15 @@ class NavOne extends Component {
                     <div className="info-box info-box-1 d-flex align-items-center">
                       <ul className="d-flex align-items-center">
                         <li>
-                          <Link href="/">
+                          <>
                             <i className="fa fa-envelope"></i>
                             info@mission500mh.com
-                          </Link>
+                          </>
                         </li>
                         <li>
-                          <Link href="/">
+                          <>
                             <i className="fa fa-phone-square"></i>+91-9833615551
-                          </Link>
+                          </>
                         </li>
                       </ul>
                     </div>
@@ -160,15 +160,18 @@ class NavOne extends Component {
                   <div className="logo-action d-flex align-items-center">
                     <div className="ostion-logo">
                       <Link href="/">
-                        <Image
-                          src="/images/mlogo.png"
-                          width={90}
-                          height={90}
-                          alt="Mission500 Logo"
-                          title="mission500"
-                        />
+                        <div className="image-container">
+                          <Image
+                            src="/images/mlogo.png"
+                            width={90}
+                            height={90}
+                            alt="Mission500 Logo"
+                            title="mission500"
+                          />
+                        </div>
                       </Link>
                     </div>
+
                     <div className="header-btn ml-auto">
                       <a
                         href="/images/brochure.pdf"
@@ -207,7 +210,7 @@ class NavOne extends Component {
                                   </Link>
                                 </li>
                                 <li>
-                                  <Link href="/index2">
+                                  <Link href="/executionMap">
                                     <p>Execution Map</p>
                                   </Link>
                                 </li>

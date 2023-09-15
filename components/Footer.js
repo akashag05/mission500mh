@@ -81,7 +81,7 @@ class Footer extends Component {
                     </li>
                     {/* <li><Link href="#">New Events</Link></li> */}
                     <li>
-                      <Link href="/events">Events</Link>
+                      <Link href="/events">Media</Link>
                     </li>
                     {/* <li><Link href="#">Site Map</Link></li> */}
                   </ul>
@@ -93,12 +93,12 @@ class Footer extends Component {
                       <Link href="#">Our Journey</Link>
                     </li>
                     <li>
-                      <Link href="#">Working Structure</Link>
+                      <Link href="/executionMap">Exexution Map</Link>
                     </li>
                     {/* <li><Link href="#">Blog Posts</Link></li> */}
                     {/* <li><Link href="#">Results</Link></li> */}
                     <li>
-                      <Link href="#">Gallery</Link>
+                      <Link href="/blogs">Blogs</Link>
                     </li>
                   </ul>
                 </div>
@@ -167,8 +167,10 @@ class Footer extends Component {
                 <div className="col-lg-12">
                   <div className="copyright-desc">
                     <p>
-                      © Copyright 2020 by{" "}
-                      <Link href="https://www.revdau.com">revdau.com</Link>
+                      © Copyright 2023 by{" "}
+                      <Link href="https://mission500mh.com/home">
+                        Mission 500
+                      </Link>
                     </p>
                   </div>
                 </div>

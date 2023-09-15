@@ -2,15 +2,6 @@ import Link from "next/link";
 import React, { useState } from "react";
 
 const ServiceArea = () => {
-  const [showModal, setShowModal] = useState(false);
-
-  const openModal = () => {
-    setShowModal(true);
-  };
-
-  const closeModal = () => {
-    setShowModal(false);
-  };
 
   return (
     <section className="service-area text-center mt-5">
@@ -19,7 +10,7 @@ const ServiceArea = () => {
           <div className="col-lg-8 mx-auto">
             <div className="section-heading service-heading">
               <div className="section-icon">
-                <img src="/images/section-icon.png" alt="section-icon" />
+                {/* <img src="/images/section-icon.png" alt="section-icon" /> */}
               </div>
               <h2 className="section__title">
                 We Believe that We can Save More Water with you
@@ -225,83 +216,6 @@ const ServiceArea = () => {
             </div>
           </div>
         </section>
-      </div>
-      <div className="d-flex" style={{ padding: "3rem 0" }}>
-        <div className="p-3">
-          <ul className="step-menu">
-            <li role="button" className="current">
-              <p>Step 1</p>
-              <p>Village Identification</p>
-              <div className="image-container">
-                <img src="/images/flow1.jpg" alt="Step 1" />
-              </div>
-            </li>
-
-            <li role="button" className="current">
-              <p>Step 2</p>
-              <p>Farmer Group Formation</p>
-              <img
-                src="/images/flow2.jpg"
-                alt="Step 1"
-                style={{ width: "125px", height: "105px" }}
-              />
-            </li>
-            <li role="button" className="current">
-              <p>Step 3</p>
-              <p>Benificary Identification</p>
-              <img
-                src="/images/flow3.jpg"
-                alt="Step 1"
-                style={{ width: "125px", height: "105px" }}
-              />
-            </li>
-            <li role="button" className="current">
-              <p>Step 4</p>
-              <p>Demand Letter Approval</p>
-              <img
-                src="/images/flow4.jpg"
-                alt="Step 1"
-                style={{ width: "125px", height: "105px" }}
-              />
-            </li>
-            <li role="button" className="current">
-              <p>Step 5</p>
-              <p>Demand Letter & Approval</p>
-              <img
-                src="/images/flow5.jpg"
-                alt="Step 1"
-                style={{ width: "125px", height: "105px" }}
-              />
-            </li>
-            <li role="button" className="current">
-              <p>Step 6</p>
-              <p>Work Commencement</p>
-              <img
-                src="/images/flow6.jpg"
-                alt="Step 1"
-                style={{ width: "125px", height: "105px" }}
-              />
-            </li>
-            <li role="button" className="current">
-              <p>Step 7</p>
-              <p>Recommendation Letter</p>
-              <img
-                src="/images/flow7.jpg"
-                alt="Step 1"
-                style={{ width: "125px", height: "105px" }}
-              />
-            </li>
-            <li role="button" className="current">
-              <p>Step 8</p>
-              <p>Social Audit</p>
-              <img
-                src="/images/flow8.jpg"
-                alt="Step 1"
-                style={{ width: "125px", height: "105px" }}
-              />
-            </li>
-          </ul>
-        </div>
       </div>
     </section>
   );

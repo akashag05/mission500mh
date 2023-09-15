@@ -38,7 +38,7 @@ const Events = () => {
               >
                 <li class="nav-item">
                   <a
-                    class="nav-link active tabs_list"
+                    class="nav-link tabs_list"
                     data-toggle="tab"
                     href="#event2023"
                     role="tab"
@@ -48,7 +48,7 @@ const Events = () => {
                 </li>
                 <li class="nav-item">
                   <a
-                    class="nav-link tabs_list"
+                    class="nav-link active tabs_list"
                     data-toggle="tab"
                     href="#event2022"
                     role="tab"
@@ -56,24 +56,14 @@ const Events = () => {
                     Year 2022
                   </a>
                 </li>
-                {/* <li class="nav-item">
-                  <a class="nav-link" data-toggle="tab" href="#2021" role="tab">
-                    Events of Year 2021
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" data-toggle="tab" href="#2020" role="tab">
-                    Events of Year 2020
-                  </a>
-                </li> */}
               </ul>
             </div>
             <div class="card-body" style={{ padding: "0 1.25rem" }}>
               <div class="tab-content text-center">
-                <div class="tab-pane active" id="event2023" role="tabpanel">
+                <div class="tab-pane " id="event2023" role="tabpanel">
                   <EventCard />
                 </div>
-                <div class="tab-pane" id="event2022" role="tabpanel">
+                <div class="tab-pane active" id="event2022" role="tabpanel">
                   <div className="d-flex">
                     <Link href="https://www.facebook.com/1226814592/posts/10228332773244243/?extid=0&d=n">
                       <div
@@ -89,10 +79,6 @@ const Events = () => {
                           <h6>Presentation of Mission500 at Hyderabad</h6>
                           <p> National convention on rivers at Hyderabad</p>
                           <p>Participants : Dr. Ujjwalkumar Chavhan – IRS</p>
-                          {/* <a href="https://www.facebook.com/1226814592/posts/10228332773244243/?extid=0&d=n">
-                          {" "}
-                          Link
-                        </a> */}
                         </div>
                       </div>
                     </Link>
@@ -174,10 +160,6 @@ const Events = () => {
                             rainwater storage
                           </p>
                           <p>Participants : Dr. Ujjwalkumar Chavhan – IRS</p>
-                          {/* <a href="https://www.facebook.com/1226814592/posts/10228332773244243/?extid=0&d=n">
-                          {" "}
-                          Link
-                        </a> */}
                         </div>
                       </div>
                     </Link>

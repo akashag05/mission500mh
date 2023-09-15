@@ -20,7 +20,7 @@ class EntryArea extends Component {
             <div className="col-lg-3">
               <div className="entry-static-box entry-static-box1">
                 <div className="section-icon">
-                  <img src="/images/section-icon.png" alt="section-icon" />
+                  {/* <img src="/images/section-icon.png" alt="section-icon" /> */}
                 </div>
                 <h4 className="entry__title">
                   Preserve Every Drop, Secure Tomorrow's Oasis{" "}
@@ -40,7 +40,7 @@ class EntryArea extends Component {
                         title="YouTube video player"
                         frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen
+                        allowfullscreen={true}
                       ></iframe>
                       {/* </div> */}
                     </div>
