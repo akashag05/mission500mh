@@ -17,7 +17,7 @@ import Map from "@/components/Map";
 
 const HomePage = () => {
   return (
-    <Layout pageTitle="Mission 500 website">
+    <Layout pageTitle="Mission 500">
       <NavOne />
       <SliderOne />
       <EntryArea />

@@ -2,7 +2,6 @@ import Link from "next/link";
 import React, { useState } from "react";
 
 const ServiceArea = () => {
-
   return (
     <section className="service-area text-center mt-5">
       <div className="container">
@@ -84,10 +83,10 @@ const ServiceArea = () => {
           </div>
         </div>
         <section className="section-timeline">
-          <div id="horizontal-timeline" class="timeline horizontal reverse">
-            <div class="block">
+          <div id="horizontal-timeline" className="timeline horizontal reverse">
+            <div className="block">
               <div
-                class="square up "
+                className="square up "
                 style={{
                   borderLeft: "2px solid rgb(176, 7, 7)",
                   marginLeft: "20px",
@@ -97,29 +96,29 @@ const ServiceArea = () => {
                 <p>Capacity : 14 Cr</p>
               </div>
               <div
-                class="circle"
+                className="circle"
                 style={{
                   backgroundColor: "rgb(176, 7, 7)",
                 }}
               >
                 <p>2018</p>
               </div>
-              <div class="link"></div>
-              <div class="square down blank "></div>
+              <div className="link"></div>
+              <div className="square down blank "></div>
             </div>
-            <div class="block">
-              <div class="square up blank"></div>
+            <div className="block">
+              <div className="square up blank"></div>
               <div
-                class="circle"
+                className="circle"
                 style={{
                   backgroundColor: "#ff5e33",
                 }}
               >
                 <p>2019</p>
               </div>
-              <div class="link"></div>
+              <div className="link"></div>
               <div
-                class="square down"
+                className="square down"
                 style={{
                   borderLeft: "2px solid #ff5e33",
                   marginLeft: "20px",
@@ -130,38 +129,38 @@ const ServiceArea = () => {
                 <p>Capacity : 20 Cr</p>
               </div>
             </div>
-            <div class="block">
+            <div className="block">
               <div
-                class="square up"
+                className="square up"
                 style={{ borderLeft: "2px solid #6234ed", marginLeft: "20px" }}
               >
                 <p>Villages : 16</p>
                 <p>Capacity : 102 Cr</p>
               </div>
               <div
-                class="circle"
+                className="circle"
                 style={{
                   backgroundColor: "#6234ed ",
                 }}
               >
                 <p>2020</p>
               </div>
-              <div class="link"></div>
-              <div class="square down blank"></div>
+              <div className="link"></div>
+              <div className="square down blank"></div>
             </div>
-            <div class="block">
-              <div class="square up blank"></div>
+            <div className="block">
+              <div className="square up blank"></div>
               <div
-                class="circle"
+                className="circle"
                 style={{
                   backgroundColor: "#2f903c ",
                 }}
               >
                 <p>2021</p>
               </div>
-              <div class="link"></div>
+              <div className="link"></div>
               <div
-                class="square down"
+                className="square down"
                 style={{
                   borderLeft: "2px solid #2f903c",
                   marginLeft: "20px",
@@ -172,38 +171,38 @@ const ServiceArea = () => {
                 <p>Capacity : 208 Cr</p>
               </div>
             </div>
-            <div class="block">
+            <div className="block">
               <div
-                class="square up"
+                className="square up"
                 style={{ borderLeft: "2px solid #34f50c", marginLeft: "20px" }}
               >
                 <p>Villages : 70</p>
                 <p>Capacity : 450 Cr</p>
               </div>
               <div
-                class="circle"
+                className="circle"
                 style={{
                   backgroundColor: "#34f50c ",
                 }}
               >
                 <p>2022</p>
               </div>
-              <div class="link"></div>
-              <div class="square down blank"></div>
+              <div className="link"></div>
+              <div className="square down blank"></div>
             </div>
-            <div class="block">
-              <div class="square up blank"></div>
+            <div className="block">
+              <div className="square up blank"></div>
               <div
-                class="circle"
+                className="circle"
                 style={{
                   backgroundColor: "#2f903c ",
                 }}
               >
                 <p>2023</p>
               </div>
-              <div class="link"></div>
+              <div className="link"></div>
               <div
-                class="square down"
+                className="square down"
                 style={{
                   borderLeft: "2px solid #34f50c",
                   marginLeft: "20px",

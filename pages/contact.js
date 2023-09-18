@@ -9,7 +9,7 @@ import Footer from '@/components/Footer';
 
 const ContactPage = () => {
     return (
-        <Layout pageTitle="Oxpitan | Contact">
+        <Layout pageTitle="Mission 500 | Contact">
             <NavOne />
             <PageHeader title="Contact" />
             <Contact />

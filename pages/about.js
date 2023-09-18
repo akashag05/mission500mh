@@ -13,7 +13,7 @@ import React from "react";
 
 const AboutPage = () => {
   return (
-    <Layout pageTitle="Oxpitan | About">
+    <Layout pageTitle="Mission 500 | About">
       <NavOne />
       <PageHeader title="About" />
       <MissionVision />

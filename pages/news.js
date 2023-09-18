@@ -9,7 +9,7 @@ import NewsContent from "@/components/News";
 
 const News = () => {
   return (
-    <Layout pageTitle="Oxpitan | News">
+    <Layout pageTitle="Mission 500 | News">
       <NavOne />
       <PageHeader title="News" />
       <NewsContent />

@@ -19,7 +19,7 @@ const Events = () => {
     setIsNewsMode(!isNewsMode);
   };
   return (
-    <Layout pageTitle="Mission 500 | About">
+    <Layout pageTitle="Mission 500 | Media">
       <NavOne />
       <PageHeader title="Events & News" />
       <div className="d-flex justify-content-end p-3 px-4">

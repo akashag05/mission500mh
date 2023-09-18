@@ -15,7 +15,7 @@ import React, { Component } from "react";
 class Blogs extends Component {
   render() {
     return (
-      <Layout pageTitle="Mission 500 | About">
+        <Layout pageTitle="Mission 500 | Blogs">
         <NavOne />
         <PageHeader title="Blogs" />
         {/* <BlogHome /> */}
