@@ -1,5 +1,5 @@
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import Swiper from "react-id-swiper";
 import "swiper/css/swiper.css";
 
@@ -35,7 +35,7 @@ const MapsSwiper = () => {
 
   const images = [
     {
-      src: "../public/images/flow1.jpg",
+      src: "/images/flow1.jpg",
       alt: "Step 1",
       description: "Village Identification",
     },
@@ -76,90 +76,106 @@ const MapsSwiper = () => {
     },
     // Add more image objects here
   ];
+  const [selectedImage, setSelectedImage] = useState(null);
+  const [description, setDescription] = useState("");
+
+  const handleImageClick = (imageSrc, imageDescription) => {
+    setSelectedImage(imageSrc);
+    setDescription(imageDescription);
+  };
   return (
     <section className="clientlogo-area">
       <div className="container">
         <div className="row">
-          <div className="col-lg-8 mx-auto text-center">
-            <div className="section-heading blog-heading">
-              <div className="section-icon">
-                {/* <img src="/images/section-icon.png" alt="section-icon" /> */}
-              </div>
-              <h2 className="section__title">Partners</h2>
-            </div>
-          </div>
-        </div>
-        <div className="row">
           <div className="col-md-12">
             <div className="client-logo mt-5">
-              <Swiper {...params}>
-                <div>
-                  <li
-                    key={1}
-                    role="button"
-                    className="current"
-                    onClick={() =>
-                      handleImageClick(images.src, images.description)
-                    }
-                  >
-                    <p>Step {1}</p>
-                    <p>{images.description}</p>
-                    <div className="image-container">
-                      <img src={images.src} alt={images.alt} />
+              <ul className="step-menu">
+                <Swiper {...params}>
+                  {images.map((image, index) => (
+                    <div key={index}>
+                      <li
+                        role="button"
+                        className="current"
+                        onClick={() =>
+                          handleImageClick(image.src, image.description)
+                        }
+                        style={{ width: "inherit" }}
+                      >
+                        <p>Step {index + 1}</p>
+                        <p>{image.description}</p>
+                        <div className="image-container">
+                          <img src={image.src} alt={image.alt} />
+                        </div>
+                      </li>
                     </div>
-                  </li>
+                  ))}
+                  {/* <Link href="https://www.rotarypunecamp.com/">
+                    <div className="client-logo-item">
+                      <img
+                        src="/images/client-logo2.jpg"
+                        width={200}
+                        height={170}
+                        alt="brand image"
+                      />
+                    </div>
+                  </Link>
+                  <Link href="https://naammh.org/">
+                    <div className="client-logo-item">
+                      <img
+                        src="/images/client-logo3.jpg"
+                        width={200}
+                        height={170}
+                        alt="brand image"
+                      />
+                    </div>
+                  </Link>
+                  <Link href="https://www.credaipune.org/">
+                    <div className="client-logo-item">
+                      <img
+                        src="/images/credai.jpeg"
+                        width={400}
+                        height={130}
+                        alt="brand image"
+                      />
+                    </div>
+                  </Link>
+                  <Link href="https://bjsindia.org/">
+                    <div className="client-logo-item">
+                      <img
+                        src="/images/client-logo4.jpg"
+                        width={200}
+                        height={170}
+                        alt="brand image"
+                      />
+                    </div>
+                  </Link>
+                  <Link href="https://www.dorfketal.com/">
+                    <div className="client-logo-item">
+                      <img
+                        src="/images/client_logo5.jpg"
+                        width={400}
+                        height={130}
+                        alt="brand image"
+                      />
+                    </div>
+                  </Link> */}
+                </Swiper>
+              </ul>
+            </div>
+            <p style={{ fontSize: "12px", color: "red" }} className="container">
+              <i>Note* - Click on Image to view enlarge form</i>
+            </p>
+            <div className="container">
+              {selectedImage && (
+                <div className="enlarge_image">
+                  <p className="d-flex justify-content-center">{description}</p>
+                  <img
+                    src={selectedImage}
+                    alt={description}
+                    style={{ width: "100%", height: "auto" }}
+                  />
                 </div>
-                <Link href="https://www.rotarypunecamp.com/">
-                  <div className="client-logo-item">
-                    <img
-                      src="/images/client-logo2.jpg"
-                      width={200}
-                      height={170}
-                      alt="brand image"
-                    />
-                  </div>
-                </Link>
-                <Link href="https://naammh.org/">
-                  <div className="client-logo-item">
-                    <img
-                      src="/images/client-logo3.jpg"
-                      width={200}
-                      height={170}
-                      alt="brand image"
-                    />
-                  </div>
-                </Link>
-                <Link href="https://www.credaipune.org/">
-                  <div className="client-logo-item">
-                    <img
-                      src="/images/credai.jpeg"
-                      width={400}
-                      height={130}
-                      alt="brand image"
-                    />
-                  </div>
-                </Link>
-                <Link href="https://bjsindia.org/">
-                  <div className="client-logo-item">
-                    <img
-                      src="/images/client-logo4.jpg"
-                      width={200}
-                      height={170}
-                      alt="brand image"
-                    />
-                  </div>
-                </Link>
-                <Link href="https://www.dorfketal.com/">
-                  <div className="client-logo-item">
-                    <img
-                      src="/images/client_logo5.jpg"
-                      width={400}
-                      height={130}
-                      alt="brand image"
-                    />
-                  </div>
-                </Link>
-              </Swiper>
+              )}
             </div>
           </div>
         </div>

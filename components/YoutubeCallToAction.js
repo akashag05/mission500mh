@@ -14,7 +14,7 @@ const YoutubeCallToAction = () => {
                             {/* <h2 className="section__title text__white">Our fingerprints on the lives we touch never
                                 fade</h2> */}
                             <div className='video-responsive'>
-                                <iframe width="853" height="480" src="https://www.youtube.com/embed/X93Y3-f37Fk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                <iframe width="853" height="480" src="https://www.youtube.com/embed/X93Y3-f37Fk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                             </div>
                             <Link href="https://www.youtube.com/@mission500mh/videos" className="theme-btn mt-5" target="_blank">View More</Link>
                         </div>

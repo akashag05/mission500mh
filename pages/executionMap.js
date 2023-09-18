@@ -4,6 +4,7 @@ import NavOne from "@/components/NavOne";
 import PageHeader from "@/components/PageHeader";
 import NewsContent from "@/components/News";
 import Footer from "@/components/Footer";
+import MapsSwiper from "@/components/MapSwiper";
 
 const ExecutionMap = () => {
   const images = [
@@ -61,7 +62,8 @@ const ExecutionMap = () => {
     <Layout pageTitle="Execution Map">
       <NavOne />
       <PageHeader title="Execution Map" />
-      <div className="d-flex justify-content-center" style={{ padding: "0 0" }}>
+      <MapsSwiper/>
+      {/* <div className="d-flex justify-content-center" style={{ padding: "0 0" }}>
         <div className="p-3">
           <ul className="step-menu">
             {images.map((image, index) => (
@@ -80,8 +82,8 @@ const ExecutionMap = () => {
             ))}
           </ul>
         </div>
-      </div>
-      <p style={{ fontSize: "12px", color: "red" }} className="container">
+      </div> */}
+      {/* <p style={{ fontSize: "12px", color: "red" }} className="container">
         <i>Note* - Click on Image to view enlarge form</i>
       </p>
       <div className="container">
@@ -95,7 +97,7 @@ const ExecutionMap = () => {
             />
           </div>
         )}
-      </div>
+      </div> */}
       <Footer />
     </Layout>
   );

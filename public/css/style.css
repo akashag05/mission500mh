@@ -87,11 +87,7 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
+
 body {
   font-family: "Libre Baskerville", serif;
   font-size: 16px;
@@ -6529,9 +6525,9 @@ html {
   list-style-type: none;
 }
 .step-menu p {
-  font-size: 9px;
+  font-size: 17px;
   color: white;
-  font-weight: 700;
+  font-weight: 500;
 }
 .step-menu li {
   box-sizing: border-box;
@@ -6608,8 +6604,8 @@ html {
 
 /* Define initial styles for the image */
 .image-container img {
-  width: 125px;
-  height: 105px;
+  width: 20rem;
+  height: 15rem;
   cursor: pointer;
 }
 
@@ -6639,12 +6635,26 @@ html {
   border-radius: 12px;
 }
 .image-container {
+  margin-top: 10px;
   transition: transform 0.2s; /* Add smooth transition effect */
 }
 
 .image-container:hover {
-  transform: scale(1.3); /* Increase scale to 1.2 on hover */
+  transform: scale(1.1); /* Increase scale to 1.2 on hover */
 }
 .active_link p {
   border-bottom: 1px solid black;
+}
+
+.logo-image-container {
+  transition: transform 0.2s, z-index 0.2s; /* Add smooth transition effect for both transform and z-index */
+  position: relative; /* Ensure relative positioning for child elements */
+  z-index: 1; /* Set a default z-index for other divs */
+}
+
+.logo-image-container:hover {
+  /* left: 50%; */
+  transform: translate(50%, 50%) scale(2.8); /* Center and scale on hover */
+  z-index: 999; /* Set a higher z-index on hover to bring it above other divs */
+  cursor: pointer; /* Change cursor to indicate interactivity */
 }

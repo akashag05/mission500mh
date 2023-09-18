@@ -18,6 +18,7 @@ import Map from "@/components/Map";
 const HomePage = () => {
   return (
     <Layout pageTitle="Mission 500">
+      {/* <div className="full-screen-div" id="activeDiv"></div> */}
       <NavOne />
       <SliderOne />
       <EntryArea />
