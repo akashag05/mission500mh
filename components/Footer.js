@@ -158,22 +158,38 @@ class Footer extends Component {
                   <div className="footer__social">
                     <ul className="section__list">
                       <li>
-                        <Link href="https://twitter.com/mission500mh">
+                        <Link
+                          href="https://twitter.com/mission500mh"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
                           <i className="fa fa-twitter"></i>
                         </Link>
                       </li>
                       <li>
-                        <Link href="https://www.facebook.com/mission500mh">
+                        <Link
+                          href="https://www.facebook.com/mission500mh"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
                           <i className="fa fa-facebook"></i>
                         </Link>
                       </li>
                       <li>
-                        <Link href="https://www.youtube.com/channel/UCbkHsi_kfgmYrSQHKlgyciQ">
+                        <Link
+                          href="https://www.youtube.com/channel/UCbkHsi_kfgmYrSQHKlgyciQ"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
                           <i className="fa fa-youtube"></i>
                         </Link>
                       </li>
                       <li>
-                        <Link href="https://www.instagram.com/mission500mh/">
+                        <Link
+                          href="https://www.instagram.com/mission500mh/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
                           <i className="fa fa-instagram"></i>
                         </Link>
                       </li>
@@ -190,7 +206,11 @@ class Footer extends Component {
                   <div className="copyright-desc">
                     <p>
                       © Copyright 2023 by{" "}
-                      <Link href="https://mission500mh.com/home">
+                      <Link
+                        href="https://mission500mh.com/home"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         Mission 500
                       </Link>
                     </p>

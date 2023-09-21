@@ -122,27 +122,47 @@ class NavOne extends Component {
                         {/* <li className="action__text"><Link href="/">login</Link></li>
                                                 <li className="action__text"><Link href="/">register</Link></li> */}
                         <li>
-                          <Link href="https://www.facebook.com/mission500mh">
+                          <Link
+                            href="https://www.facebook.com/mission500mh"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
                             <i className="fa fa-facebook"></i>
                           </Link>
                         </li>
                         <li>
-                          <Link href="https://twitter.com/mission500mh">
+                          <Link
+                            href="https://twitter.com/mission500mh"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
                             <i className="fa fa-twitter"></i>
                           </Link>
                         </li>
                         <li>
-                          <Link href="https://www.instagram.com/mission500mh/">
+                          <Link
+                            href="https://www.instagram.com/mission500mh/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
                             <i className="fa fa-instagram"></i>
                           </Link>
                         </li>
                         <li>
-                          <Link href="https://www.youtube.com/channel/UCbkHsi_kfgmYrSQHKlgyciQ">
+                          <Link
+                            href="https://www.youtube.com/channel/UCbkHsi_kfgmYrSQHKlgyciQ"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
                             <i className="fa fa-youtube-play"></i>
                           </Link>
                         </li>
                         <li>
-                          <Link href="https://www.kooapp.com/profile/mission500mh">
+                          <Link
+                            href="https://www.kooapp.com/profile/mission500mh"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
                             <i>
                               {" "}
                               <svg
@@ -323,27 +343,47 @@ class NavOne extends Component {
               </ul>
               <ul className="side-social">
                 <li>
-                  <Link href="https://www.facebook.com/mission500mh">
+                  <Link
+                    href="https://www.facebook.com/mission500mh"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <i className="fa fa-facebook"></i>
                   </Link>
                 </li>
                 <li>
-                  <Link href="https://twitter.com/mission500mh">
+                  <Link
+                    href="https://twitter.com/mission500mh"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <i className="fa fa-twitter"></i>
                   </Link>
                 </li>
                 <li>
-                  <Link href="https://www.instagram.com/mission500mh/">
+                  <Link
+                    href="https://www.instagram.com/mission500mh/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <i className="fa fa-instagram"></i>
                   </Link>
                 </li>
                 <li>
-                  <Link href="https://www.youtube.com/channel/UCbkHsi_kfgmYrSQHKlgyciQ">
+                  <Link
+                    href="https://www.youtube.com/channel/UCbkHsi_kfgmYrSQHKlgyciQ"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <i className="fa fa-youtube-play"></i>
                   </Link>
                 </li>
                 <li>
-                  <Link href="https://www.kooapp.com/profile/mission500mh">
+                  <Link
+                    href="https://www.kooapp.com/profile/mission500mh"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <i>
                       {" "}
                       <svg
