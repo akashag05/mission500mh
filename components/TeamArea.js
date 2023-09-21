@@ -3,7 +3,7 @@ import React from "react";
 
 const TeamArea = () => {
   return (
-    <section className="team-area text-center">
+    <section className="team-area text-center" id="out_team">
       <div className="container">
         <div className="row">
           <div className="col-lg-8 mx-auto">
@@ -26,7 +26,6 @@ const TeamArea = () => {
                   height={295}
                   alt="team image"
                 />
-               
               </div>
               <div className="team__title">
                 <h3 className="team__title-title">
@@ -44,7 +43,6 @@ const TeamArea = () => {
                   height={295}
                   alt="team image"
                 />
-               
               </div>
               <div className="team__title">
                 <h3 className="team__title-title">
@@ -62,7 +60,6 @@ const TeamArea = () => {
                   height={295}
                   alt="team image"
                 />
-               
               </div>
               <div className="team__title">
                 <h3 className="team__title-title">
@@ -80,7 +77,6 @@ const TeamArea = () => {
                   height={295}
                   alt="team image"
                 />
-               
               </div>
               <div className="team__title">
                 <h3 className="team__title-title">
@@ -98,7 +94,6 @@ const TeamArea = () => {
                   height={295}
                   alt="team image"
                 />
-               
               </div>
               <div className="team__title">
                 <h3 className="team__title-title">
@@ -116,7 +111,6 @@ const TeamArea = () => {
                   height={295}
                   alt="team image"
                 />
-               
               </div>
               <div className="team__title">
                 <h3 className="team__title-title">
@@ -134,7 +128,6 @@ const TeamArea = () => {
                   height={295}
                   alt="team image"
                 />
-               
               </div>
               <div className="team__title">
                 <h3 className="team__title-title">

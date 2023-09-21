@@ -28,7 +28,18 @@ class Footer extends Component {
   scrollTop = () => {
     window.scrollTo(0, 0);
   };
-
+  scrollToOurJourney = () => {
+    const element = document.getElementById("our_journey"); // Get the target element by its ID
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" }); // Scroll to the target element smoothly
+    }
+  };
+  scrollToOurTeam = () => {
+    const element = document.getElementById("our_team"); // Get the target element by its ID
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" }); // Scroll to the target element smoothly
+    }
+  };
   render() {
     return (
       <div>
@@ -77,7 +88,13 @@ class Footer extends Component {
                       <Link href="/about">Abouts Us</Link>
                     </li>
                     <li>
-                      <Link href="/about">Our Team</Link>
+                      <a
+                        href="/about#our_journey"
+                        style={{ cursor: "pointer" }}
+                        onClick={this.scrollToOurTeam}
+                      >
+                        Our Team
+                      </a>
                     </li>
                     {/* <li><Link href="#">New Events</Link></li> */}
                     <li>
@@ -90,7 +107,12 @@ class Footer extends Component {
                   <h3 className="widget__title">explore</h3>
                   <ul className="foot__links">
                     <li>
-                      <Link href="#">Our Journey</Link>
+                      <a
+                        style={{ cursor: "pointer" }}
+                        onClick={this.scrollToOurJourney}
+                      >
+                        Our Journey
+                      </a>
                     </li>
                     <li>
                       <Link href="/executionMap">Exexution Map</Link>

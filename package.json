@@ -16,6 +16,9 @@
     "react-id-swiper": "3.0.0",
     "react-modal-video": "1.2.3",
     "react-pdf": "^7.3.3",
+    "react-responsive-carousel": "^3.2.23",
+    "react-router-dom": "^6.16.0",
+    "react-scroll": "^1.8.9",
     "react-visibility-sensor": "5.1.1",
     "swiper": "5.3.6"
   }

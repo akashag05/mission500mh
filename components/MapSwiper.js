@@ -4,14 +4,27 @@ import Swiper from "react-id-swiper";
 import "swiper/css/swiper.css";
 
 const MapsSwiper = () => {
+  const [swiper, setSwiper] = useState(null);
+
+  const goNext = () => {
+    if (swiper !== null) {
+      swiper.slideNext();
+    }
+  };
+
+  const goPrev = () => {
+    if (swiper !== null) {
+      swiper.slidePrev();
+    }
+  };
   const params = {
-    slidesPerView: 5,
-    loop: true,
+    slidesPerView: 3,
+    // loop: true,
     speed: 1000,
     spaceBetween: 30,
     autoplay: {
       delay: 3000,
-      disableOnInteraction: false,
+      disableOnInteraction: true,
     },
     // Responsive breakpoints
     breakpoints: {
@@ -74,7 +87,6 @@ const MapsSwiper = () => {
       alt: "Step 8",
       description: "Social Audit",
     },
-    // Add more image objects here
   ];
   const [selectedImage, setSelectedImage] = useState(null);
   const [description, setDescription] = useState("");
@@ -83,85 +95,243 @@ const MapsSwiper = () => {
     setSelectedImage(imageSrc);
     setDescription(imageDescription);
   };
+
+  //   console.log("image", selectedImage, "desc", description);
   return (
     <section className="clientlogo-area">
       <div className="container">
         <div className="row">
-          <div className="col-md-12">
+          <div
+            onClick={goPrev}
+            className="col-md-1 owl-dot"
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              cursor: "pointer",
+            }}
+          >
+            <svg
+              viewBox="0 0 24 24"
+              width="44"
+              height="44"
+              stroke="currentColor"
+              strokeWidth="2.5"
+              fill="none"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="css-i6dzq1"
+            >
+              <line x1="19" y1="12" x2="5" y2="12"></line>
+              <polyline points="12 19 5 12 12 5"></polyline>
+            </svg>
+          </div>
+
+          <div className="col-md-10">
             <div className="client-logo mt-5">
               <ul className="step-menu">
-                <Swiper {...params}>
-                  {images.map((image, index) => (
-                    <div key={index}>
-                      <li
-                        role="button"
-                        className="current"
-                        onClick={() =>
-                          handleImageClick(image.src, image.description)
-                        }
-                        style={{ width: "inherit" }}
-                      >
-                        <p>Step {index + 1}</p>
-                        <p>{image.description}</p>
-                        <div className="image-container">
-                          <img src={image.src} alt={image.alt} />
-                        </div>
-                      </li>
-                    </div>
-                  ))}
-                  {/* <Link href="https://www.rotarypunecamp.com/">
-                    <div className="client-logo-item">
-                      <img
-                        src="/images/client-logo2.jpg"
-                        width={200}
-                        height={170}
-                        alt="brand image"
-                      />
-                    </div>
-                  </Link>
-                  <Link href="https://naammh.org/">
-                    <div className="client-logo-item">
-                      <img
-                        src="/images/client-logo3.jpg"
-                        width={200}
-                        height={170}
-                        alt="brand image"
-                      />
-                    </div>
-                  </Link>
-                  <Link href="https://www.credaipune.org/">
-                    <div className="client-logo-item">
-                      <img
-                        src="/images/credai.jpeg"
-                        width={400}
-                        height={130}
-                        alt="brand image"
-                      />
-                    </div>
-                  </Link>
-                  <Link href="https://bjsindia.org/">
-                    <div className="client-logo-item">
-                      <img
-                        src="/images/client-logo4.jpg"
-                        width={200}
-                        height={170}
-                        alt="brand image"
-                      />
-                    </div>
-                  </Link>
-                  <Link href="https://www.dorfketal.com/">
-                    <div className="client-logo-item">
-                      <img
-                        src="/images/client_logo5.jpg"
-                        width={400}
-                        height={130}
-                        alt="brand image"
-                      />
-                    </div>
-                  </Link> */}
+                <Swiper getSwiper={setSwiper} {...params}>
+                  <div>
+                    <li
+                      key={1}
+                      role="button"
+                      className="current"
+                      onClick={() => {
+                        console.log("clicked");
+                        setSelectedImage("/images/flow1.jpg");
+                        setDescription("Village Identification");
+                      }}
+                      style={{ width: "inherit" }}
+                    >
+                      <p>Step 1</p>
+                      <p>{"Village Identification"}</p>
+                      <div className="image-container">
+                        <img
+                          src="/images/flow1.jpg"
+                          alt="Village Identification"
+                        />
+                      </div>
+                    </li>
+                  </div>
+                  <div>
+                    <li
+                      key={2}
+                      role="button"
+                      className="current"
+                      onClick={() => {
+                        console.log("clicked");
+                        setSelectedImage("/images/flow2.jpg");
+                        setDescription("Farmer Group Formation");
+                      }}
+                      style={{ width: "inherit" }}
+                    >
+                      <p>Step 2</p>
+                      <p>{"Farmer Group Formation"}</p>
+                      <div className="image-container">
+                        <img
+                          src="/images/flow2.jpg"
+                          alt="Farmer Group Formation"
+                        />
+                      </div>
+                    </li>
+                  </div>
+                  <div>
+                    <li
+                      key={3}
+                      role="button"
+                      className="current"
+                      onClick={() => {
+                        console.log("clicked");
+                        setSelectedImage("/images/flow3.jpg");
+                        setDescription("Benificary Identification");
+                      }}
+                      style={{ width: "inherit" }}
+                    >
+                      <p>Step 3</p>
+                      <p>{"Benificary Identification"}</p>
+                      <div className="image-container">
+                        <img
+                          src="/images/flow3.jpg"
+                          alt="Benificary Identification"
+                        />
+                      </div>
+                    </li>
+                  </div>
+                  <div>
+                    <li
+                      key={4}
+                      role="button"
+                      className="current"
+                      onClick={() => {
+                        console.log("clicked");
+                        setSelectedImage("/images/flow4.jpg");
+                        setDescription("Work Break Down Structure");
+                      }}
+                      style={{ width: "inherit" }}
+                    >
+                      <p>Step 4</p>
+                      <p>{"Work Break Down Structure"}</p>
+                      <div className="image-container">
+                        <img
+                          src="/images/flow4.jpg"
+                          alt="Work Break Down Structure"
+                        />
+                      </div>
+                    </li>
+                  </div>
+                  <div>
+                    <li
+                      key={5}
+                      role="button"
+                      className="current"
+                      onClick={() => {
+                        console.log("clicked");
+                        setSelectedImage("/images/flow5.jpg");
+                        setDescription("Demand Letter & Approval");
+                      }}
+                      style={{ width: "inherit" }}
+                    >
+                      <p>Step 5</p>
+                      <p>{"Demand Letter & Approval"}</p>
+                      <div className="image-container">
+                        <img
+                          src="/images/flow5.jpg"
+                          alt="Demand Letter & Approval"
+                        />
+                      </div>
+                    </li>
+                  </div>
+                  <div>
+                    <li
+                      key={6}
+                      role="button"
+                      className="current"
+                      onClick={() => {
+                        console.log("clicked");
+                        setSelectedImage("/images/flow6.jpg");
+                        setDescription("Work Commencement");
+                      }}
+                      style={{ width: "inherit" }}
+                    >
+                      <p>Step 6</p>
+                      <p>{"Work Commencement"}</p>
+                      <div className="image-container">
+                        <img src="/images/flow6.jpg" alt="Work Commencement" />
+                      </div>
+                    </li>
+                  </div>
+                  <div>
+                    <li
+                      key={7}
+                      role="button"
+                      className="current"
+                      onClick={() => {
+                        console.log("clicked");
+                        setSelectedImage("/images/flow7.jpg");
+                        setDescription("Recommendation Letter");
+                      }}
+                      style={{ width: "inherit" }}
+                    >
+                      <p>Step 7</p>
+                      <p>{"Recommendation Letter"}</p>
+                      <div className="image-container">
+                        <img
+                          src="/images/flow7.jpg"
+                          alt="Recommendation Letter"
+                        />
+                      </div>
+                    </li>
+                  </div>
+                  <div>
+                    <li
+                      key={8}
+                      role="button"
+                      className="current"
+                      onClick={() => {
+                        console.log("clicked");
+                        setSelectedImage("/images/flow8.jpg");
+                        setDescription("Social Audit");
+                      }}
+                      style={{ width: "inherit" }}
+                    >
+                      <p>Step 8</p>
+                      <p>{"Social Audit"}</p>
+                      <div className="image-container">
+                        <img src="/images/flow8.jpg" alt="Social Audit" />
+                      </div>
+                    </li>
+                  </div>
                 </Swiper>
               </ul>
             </div>
+          </div>
+          <div
+            onClick={goNext}
+            className="col-md-1 owl-dot"
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              cursor: "pointer",
+            }}
+          >
+            <svg
+              viewBox="0 0 24 24"
+              width="44"
+              height="44"
+              stroke="currentColor"
+              strokeWidth="2.5"
+              fill="none"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="css-i6dzq1"
+            >
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </div>
+
+          <div className="container">
             <p style={{ fontSize: "12px", color: "red" }} className="container">
               <i>Note* - Click on Image to view enlarge form</i>
             </p>

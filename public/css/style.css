@@ -1332,6 +1332,7 @@ a:hover {
 /*===================================
         SLIDER AREA
  =====================================*/
+
 .slider-area {
   position: relative;
   z-index: 1;
@@ -6604,7 +6605,7 @@ html {
 
 /* Define initial styles for the image */
 .image-container img {
-  width: 20rem;
+  width: 17rem;
   height: 15rem;
   cursor: pointer;
 }
@@ -6657,4 +6658,8 @@ html {
   transform: translate(50%, 50%) scale(2.8); /* Center and scale on hover */
   z-index: 999; /* Set a higher z-index on hover to bring it above other divs */
   cursor: pointer; /* Change cursor to indicate interactivity */
+}
+
+.ex_map {
+  display: flex;
 }

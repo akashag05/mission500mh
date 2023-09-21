@@ -62,42 +62,8 @@ const ExecutionMap = () => {
     <Layout pageTitle="Execution Map">
       <NavOne />
       <PageHeader title="Execution Map" />
-      <MapsSwiper/>
-      {/* <div className="d-flex justify-content-center" style={{ padding: "0 0" }}>
-        <div className="p-3">
-          <ul className="step-menu">
-            {images.map((image, index) => (
-              <li
-                key={index}
-                role="button"
-                className="current"
-                onClick={() => handleImageClick(image.src, image.description)}
-              >
-                <p>Step {index + 1}</p>
-                <p>{image.description}</p>
-                <div className="image-container">
-                  <img src={image.src} alt={image.alt} />
-                </div>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </div> */}
-      {/* <p style={{ fontSize: "12px", color: "red" }} className="container">
-        <i>Note* - Click on Image to view enlarge form</i>
-      </p>
-      <div className="container">
-        {selectedImage && (
-          <div className="enlarge_image">
-            <p className="d-flex justify-content-center">{description}</p>
-            <img
-              src={selectedImage}
-              alt={description}
-              style={{ width: "100%", height: "auto" }}
-            />
-          </div>
-        )}
-      </div> */}
+      <MapsSwiper />
+
       <Footer />
     </Layout>
   );

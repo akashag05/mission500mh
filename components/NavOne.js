@@ -107,7 +107,8 @@ class NavOne extends Component {
                         </li>
                         <li>
                           <>
-                            <i className="fa fa-phone-square p-1"></i>+91-9833615551
+                            <i className="fa fa-phone-square p-1"></i>
+                            +91-9833615551
                           </>
                         </li>
                       </ul>
@@ -217,6 +218,7 @@ class NavOne extends Component {
                             className={`image ${
                               this.state.activeLink === null ? "active" : ""
                             }`}
+                            onClick={this.handleImageClick}
                           />
                         </div>
                       </Link>

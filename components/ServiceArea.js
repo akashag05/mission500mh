@@ -3,7 +3,7 @@ import React, { useState } from "react";
 
 const ServiceArea = () => {
   return (
-    <section className="service-area text-center mt-5">
+    <section className="service-area text-center mt-5" id="our_journey">
       <div className="container">
         <div className="row">
           <div className="col-lg-8 mx-auto">
