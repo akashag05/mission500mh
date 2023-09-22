@@ -3,7 +3,7 @@ import React from "react";
 
 const TeamArea = () => {
   return (
-    <section className="team-area text-center" id="out_team">
+    <section className="team-area text-center" id="our_team">
       <div className="container">
         <div className="row">
           <div className="col-lg-8 mx-auto">

@@ -14,7 +14,16 @@ class EntryArea extends Component {
   };
   render() {
     return (
-      <section className="entry-area">
+      <section
+        className="entry-area"
+        style={{
+          backgroundImage: 'url("/images/water_bg.png")', // Replace with your image path
+          backgroundSize: "cover", // Adjust as needed
+          backgroundPosition: "center center",
+          // marginLeft: "50px",
+          zIndex: "-1",
+        }}
+      >
         <div className="container">
           <div className="row entry-static-wrap">
             <div className="col-lg-3">
@@ -48,7 +57,7 @@ class EntryArea extends Component {
                   <div
                     className="col-lg-8"
                     style={{
-                      backgroundImage: 'url("/images/water_bg.png")', // Replace with your image path
+                      // backgroundImage: 'url("/images/water_bg.png")', // Replace with your image path
                       backgroundSize: "cover", // Adjust as needed
                       backgroundPosition: "center center",
                       marginLeft: "50px",

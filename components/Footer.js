@@ -89,7 +89,7 @@ class Footer extends Component {
                     </li>
                     <li>
                       <a
-                        href="/about#our_journey"
+                        href="/about#our_team"
                         style={{ cursor: "pointer" }}
                         onClick={this.scrollToOurTeam}
                       >
@@ -108,6 +108,7 @@ class Footer extends Component {
                   <ul className="foot__links">
                     <li>
                       <a
+                      href="/#our_journey"
                         style={{ cursor: "pointer" }}
                         onClick={this.scrollToOurJourney}
                       >

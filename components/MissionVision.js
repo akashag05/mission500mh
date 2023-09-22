@@ -104,7 +104,7 @@ const MissionVision = () => {
       <section className="container">
         {aboutDetails.map((item, index) => {
           return (
-            <div>
+            <div key={index}>
               <h3 style={{ padding: "2rem 0", fontWeight: "600" }}>
                 {item.title}
               </h3>

@@ -4,28 +4,44 @@ import Swiper from "react-id-swiper";
 import "swiper/css/swiper.css";
 
 const MapsSwiper = () => {
-  const [swiper, setSwiper] = useState(null);
+  const [swiperr, setSwiperr] = useState(null);
+  const [selectedImage, setSelectedImage] = useState(null);
+  const [description, setDescription] = useState("");
+  const [nextDisbale, setNextDisable] = useState(false);
+  const [PrevDisbale, setPrevDisable] = useState(true);
 
   const goNext = () => {
-    if (swiper !== null) {
-      swiper.slideNext();
+    setPrevDisable(false);
+    if (swiperr.activeIndex <= 4) {
+      if (swiperr.activeIndex == 4) {
+        setNextDisable(true);
+      }
+      console.log(swiperr.activeIndex);
+      swiperr.slideNext();
     }
   };
 
   const goPrev = () => {
-    if (swiper !== null) {
-      swiper.slidePrev();
+    setNextDisable(false);
+    if (swiperr.activeIndex >= 1) {
+      if (swiperr.activeIndex == 1) {
+        setPrevDisable(true);
+      }
+      console.log(swiperr.activeIndex);
+      swiperr.slidePrev();
     }
   };
   const params = {
     slidesPerView: 3,
     // loop: true,
+    noSwiping: true,
+    noSwipingClass: "swiper-no-swiping",
     speed: 1000,
     spaceBetween: 30,
-    autoplay: {
-      delay: 3000,
-      disableOnInteraction: true,
-    },
+    // autoplay: {
+    //   delay: 3000,
+    //   disableOnInteraction: true,
+    // },
     // Responsive breakpoints
     breakpoints: {
       1499: {
@@ -88,8 +104,6 @@ const MapsSwiper = () => {
       description: "Social Audit",
     },
   ];
-  const [selectedImage, setSelectedImage] = useState(null);
-  const [description, setDescription] = useState("");
 
   const handleImageClick = (imageSrc, imageDescription) => {
     setSelectedImage(imageSrc);
@@ -111,13 +125,20 @@ const MapsSwiper = () => {
               cursor: "pointer",
             }}
           >
-            <img src="/images/left-arrow.png" />
+            {swiperr && swiperr.activeIndex == 0 ? ( // Replace shouldDisablePrevButton with your condition
+              <img
+                src="/images/left-arrow-disabled.png" // Provide the path to your disabled button image
+                alt="Previous"
+              />
+            ) : (
+              <img src="/images/left-arrow.png" alt="Previous" />
+            )}
           </div>
 
           <div className="col-md-10">
             <div className="client-logo mt-5">
               <ul className="step-menu">
-                <Swiper getSwiper={setSwiper} {...params}>
+                <Swiper getSwiper={setSwiperr} {...params}>
                   <div>
                     <li
                       key={1}
@@ -302,7 +323,14 @@ const MapsSwiper = () => {
               cursor: "pointer",
             }}
           >
-            <img src="/images/right-arrow.png" />
+            {nextDisbale ? ( // Replace shouldDisablePrevButton with your condition
+              <img
+                src="/images/right-arrow-disabled.png" // Provide the path to your disabled button image
+                alt="Previous"
+              />
+            ) : (
+              <img src="/images/right-arrow.png" alt="Previous" />
+            )}
           </div>
 
           <div className="container">
