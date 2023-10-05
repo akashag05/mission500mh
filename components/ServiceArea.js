@@ -41,7 +41,7 @@ const ServiceArea = () => {
                 </div>
                 <div className="service-content">
                   <h4 className="service__title">Villages</h4>
-                  <h6 className="service__title">125</h6>
+                  <h6 className="service__title">106</h6>
                 </div>
               </div>
             </div>
@@ -62,7 +62,7 @@ const ServiceArea = () => {
                 </div>
                 <div className="service-content">
                   <h4 className="service__title">Districts</h4>
-                  <h6 className="service__title">9</h6>
+                  <h6 className="service__title">12</h6>
                 </div>
               </div>
             </div>
@@ -125,8 +125,8 @@ const ServiceArea = () => {
                   paddingTop: "2.5rem",
                 }}
               >
-                <p>Villages : 6</p>
-                <p>Capacity : 20 Cr</p>
+                <p>Villages : 7</p>
+                <p>Capacity : 11 Cr</p>
               </div>
             </div>
             <div className="block">
@@ -134,8 +134,8 @@ const ServiceArea = () => {
                 className="square up"
                 style={{ borderLeft: "2px solid #6234ed", marginLeft: "20px" }}
               >
-                <p>Villages : 16</p>
-                <p>Capacity : 102 Cr</p>
+                <p>Villages : 14</p>
+                <p>Capacity : 27 Cr</p>
               </div>
               <div
                 className="circle"
@@ -167,8 +167,8 @@ const ServiceArea = () => {
                   paddingTop: "2.5rem",
                 }}
               >
-                <p>Villages : 34</p>
-                <p>Capacity : 208 Cr</p>
+                <p>Villages : 19</p>
+                <p>Capacity : 27 Cr</p>
               </div>
             </div>
             <div className="block">
@@ -176,8 +176,8 @@ const ServiceArea = () => {
                 className="square up"
                 style={{ borderLeft: "2px solid #34f50c", marginLeft: "20px" }}
               >
-                <p>Villages : 70</p>
-                <p>Capacity : 450 Cr</p>
+                <p>Villages : 44</p>
+                <p>Capacity : 126 Cr</p>
               </div>
               <div
                 className="circle"
@@ -209,8 +209,8 @@ const ServiceArea = () => {
                   paddingTop: "2.5rem",
                 }}
               >
-                <p>Villages : 125</p>
-                <p>Capacity : 580 Cr</p>
+                <p>Villages : 62</p>
+                <p>Capacity : 132 Cr</p>
               </div>
             </div>
           </div>

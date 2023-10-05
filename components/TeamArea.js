@@ -1,7 +1,19 @@
 import Link from "next/link";
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { getMember } from "@/api/about";
 
 const TeamArea = () => {
+  const [temaData, setTeamData] = useState([]);
+
+  const getData = async () => {
+    let response = await getMember();
+    setTeamData(response);
+    console.log("get members response", response);
+  };
+  useEffect(() => {
+    getData();
+  }, []);
+
   return (
     <section className="team-area text-center" id="our_team">
       <div className="container">
@@ -17,24 +29,30 @@ const TeamArea = () => {
           </div>
         </div>
         <div className="row team-content-wrap justify-content-between">
-          <div className="col-lg-3 col-sm-6">
-            <div className="team-item team-item1">
-              <div className="team__img">
-                <img
-                  src="/images/Tushar_Nikam.png"
-                  width={270}
-                  height={295}
-                  alt="team image"
-                />
+          {temaData.map((item, index) => {
+            const isEven = index % 2 === 0;
+            const teamItemClass = isEven ? "team-item1" : "team-item2";
+            return (
+              <div className="col-lg-3 col-sm-6" key={index}>
+                <div className={`team-item ${teamItemClass}`}>
+                  <div className="team__img">
+                    <img
+                      src={item.memberPhoto_path}
+                      width={270}
+                      height={295}
+                      alt="team image"
+                    />
+                  </div>
+                  <div className="team__title">
+                    <h3 className="team__title-title">
+                      <Link href="#">{item.memberName}</Link>
+                    </h3>
+                  </div>
+                </div>
               </div>
-              <div className="team__title">
-                <h3 className="team__title-title">
-                  <Link href="#">Tushar Nikam</Link>
-                </h3>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-3 col-sm-6">
+            );
+          })}
+          {/* <div className="col-lg-3 col-sm-6">
             <div className="team-item team-item2">
               <div className="team__img">
                 <img
@@ -135,7 +153,7 @@ const TeamArea = () => {
                 </h3>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

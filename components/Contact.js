@@ -1,18 +1,52 @@
-import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phoneNumber: "",
+    message: "",
+  });
+
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    console.log("formData", formData);
+    try {
+      const response = await fetch("http://localhost:5000/contact/addForm", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          // Add CSRF token here if required
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.status === 200) {
+        alert("Form submitted successfully!");
+      } else {
+        alert("Form submission failed.");
+      }
+    } catch (error) {
+      console.error("Error submitting form: ", error);
+      alert("An error occurred while submitting the form.");
+    }
+  };
+
   return (
     <section className="contact-area">
       <div className="container">
         <div className="row">
           <div className="col-lg-6">
             <div className="section-heading">
-              <div className="section-icon">
-                {/* <img src="/images/section-icon.png" alt="section-icon" /> */}
-              </div>
               <h2 className="section__title">Get in Touch With Us</h2>
-              {/* <p className="section__meta">Write a message</p> */}
               <p className="section__desc">
                 Are you ready to make a splash for change?
                 <br /> <br /> Join us in our Water Conservation Mission and be a
@@ -24,37 +58,39 @@ const Contact = () => {
               </p>
               <ul className="section__list">
                 <li>
-                  <Link href="https://twitter.com/mission500mh">
+                  <a href="https://twitter.com/mission500mh">
                     <i className="fa fa-twitter"></i>
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link href="https://www.facebook.com/mission500mh">
+                  <a href="https://www.facebook.com/mission500mh">
                     <i className="fa fa-facebook"></i>
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link href="https://www.youtube.com/channel/UCbkHsi_kfgmYrSQHKlgyciQ">
+                  <a href="https://www.youtube.com/channel/UCbkHsi_kfgmYrSQHKlgyciQ">
                     <i className="fa fa-youtube"></i>
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link href="https://www.instagram.com/mission500mh/">
+                  <a href="https://www.instagram.com/mission500mh/">
                     <i className="fa fa-instagram"></i>
-                  </Link>
+                  </a>
                 </li>
               </ul>
             </div>
           </div>
           <div className="col-lg-6">
             <div className="form-shared">
-              <form action="#" method="post">
+              <form onSubmit={handleSubmit}>
                 <div className="row">
                   <div className="col-lg-6 col-sm-6 form-group">
                     <input
                       className="form-control"
                       type="text"
                       name="name"
+                      value={formData.name}
+                      onChange={handleChange}
                       placeholder="Full Name"
                     />
                   </div>
@@ -64,6 +100,8 @@ const Contact = () => {
                       className="form-control"
                       type="email"
                       name="email"
+                      value={formData.email}
+                      onChange={handleChange}
                       placeholder="Email Address"
                     />
                   </div>
@@ -71,8 +109,10 @@ const Contact = () => {
                   <div className="col-lg-12 form-group">
                     <input
                       className="form-control"
-                      type="number"
-                      name="phone"
+                      type="tel"
+                      name="phoneNumber"
+                      value={formData.phoneNumber}
+                      onChange={handleChange}
                       placeholder="Phone Number"
                     />
                   </div>
@@ -81,6 +121,8 @@ const Contact = () => {
                     <textarea
                       className="textarea"
                       name="message"
+                      value={formData.message}
+                      onChange={handleChange}
                       placeholder="Write a Message"
                     ></textarea>
                   </div>
@@ -95,39 +137,9 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        {/* <div className="row contact-detail-action">
-          <div className="col-lg-4">
-            <div className="contact-item contact-item1">
-              <h3 className="contact__title">About</h3>
-              <p className="contact__desc">
-                Lorem ipsum is simply free text dolor sit amet, duise
-                consectetur ullam blandit
-              </p>
-            </div>
-          </div>
-          <div className="col-lg-4">
-            <div className="contact-item contact-item2">
-              <h3 className="contact__title">Address</h3>
-              <p className="contact__desc">
-                Lorem ipsum is simply free text dolor sit amet, duise
-                consectetur ullam blandit
-              </p>
-            </div>
-          </div>
-          <div className="col-lg-4">
-            <div className="contact-item contact-item3">
-              <h3 className="contact__title">Contact</h3>
-              <p className="contact__desc">
-                <i className="fa fa-envelope-o" aria-hidden="true"></i>{" "}
-                contact@mission.com <br />
-                <i className="fa fa-phone" aria-hidden="true"></i>{" "}
-                +91-9876543210
-              </p>
-            </div>
-          </div>
-        </div> */}
       </div>
     </section>
   );
 };
+
 export default Contact;

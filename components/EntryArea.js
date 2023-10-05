@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import ModalVideo from "react-modal-video";
+import AnimatedSVG from "./AnimatedSVG";
 
 class EntryArea extends Component {
   constructor() {
@@ -16,14 +16,15 @@ class EntryArea extends Component {
     return (
       <section
         className="entry-area"
-        style={{
-          backgroundImage: 'url("/images/water_bg.png")', // Replace with your image path
-          backgroundSize: "cover", // Adjust as needed
-          backgroundPosition: "center center",
-          // marginLeft: "50px",
-          zIndex: "-1",
-        }}
+        // style={{
+        //   backgroundImage: 'url("/images/water_bg.png")', // Replace with your image path
+        //   backgroundSize: "cover", // Adjust as needed
+        //   backgroundPosition: "center center",
+        // marginLeft: "50px",
+        //   zIndex: "-1",
+        // }}
       >
+        <AnimatedSVG />
         <div className="container">
           <div className="row entry-static-wrap">
             <div className="col-lg-3">
@@ -47,7 +48,7 @@ class EntryArea extends Component {
                         height="480"
                         src="https://www.youtube.com/embed/X93Y3-f37Fk"
                         title="YouTube video player"
-                        frameborder="0"
+                        frameBorder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowFullScreen={true}
                       ></iframe>

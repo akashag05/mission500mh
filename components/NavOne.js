@@ -78,9 +78,9 @@ class NavOne extends Component {
       { text: "About us", path: "/about" },
       {
         text: "Project",
-        path: "/about",
+        path: "/",
         submenu: [
-          { text: "Project View", path: "/" },
+          { text: "Project View", path: "/projectView" },
           { text: "Execution Map", path: "/executionMap" },
         ],
       },
