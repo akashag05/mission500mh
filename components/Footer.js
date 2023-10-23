@@ -108,7 +108,7 @@ class Footer extends Component {
                   <ul className="foot__links">
                     <li>
                       <a
-                      href="/#our_journey"
+                        href="/#our_journey"
                         style={{ cursor: "pointer" }}
                         onClick={this.scrollToOurJourney}
                       >
@@ -153,7 +153,7 @@ class Footer extends Component {
                       </Link>
                     </li>
                     <li>
-                      <Link href="tel:6668880000">+91-9833615551</Link>
+                      <Link href="tel:+91-9763469063">+91-9763469063</Link>
                     </li>
                   </ul>
                   <div className="footer__social">

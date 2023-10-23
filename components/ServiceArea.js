@@ -26,8 +26,8 @@ const ServiceArea = () => {
                   <i className="fa fa-group fa-flip" aria-hidden="true"></i>
                 </div>
                 <div className="service-content">
-                  <h4 className="service__title">Total Benefeficiaries</h4>
-                  <h6 className="service__title">181300</h6>
+                  <h4 className="service__title">Farmers Contribution</h4>
+                  <h6 className="service__title">31,143,775 Rs</h6>
                 </div>
               </div>
             </div>
@@ -41,7 +41,9 @@ const ServiceArea = () => {
                 </div>
                 <div className="service-content">
                   <h4 className="service__title">Villages</h4>
-                  <h6 className="service__title">106</h6>
+                  <h6 className="service__title" style={{ marginTop: "41px" }}>
+                    106
+                  </h6>
                 </div>
               </div>
             </div>
@@ -62,7 +64,9 @@ const ServiceArea = () => {
                 </div>
                 <div className="service-content">
                   <h4 className="service__title">Districts</h4>
-                  <h6 className="service__title">12</h6>
+                  <h6 className="service__title" style={{ marginTop: "41px" }}>
+                    12
+                  </h6>
                 </div>
               </div>
             </div>
@@ -76,13 +80,15 @@ const ServiceArea = () => {
                 </div>
                 <div className="service-content">
                   <h4 className="service__title">Cr lt of water</h4>
-                  <h6 className="service__title">580</h6>
+                  <h6 className="service__title" style={{ marginTop: "41px" }}>
+                    337
+                  </h6>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <section className="section-timeline">
+        {/* <section className="section-timeline">
           <div id="horizontal-timeline" className="timeline horizontal reverse">
             <div className="block">
               <div
@@ -214,7 +220,7 @@ const ServiceArea = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
       </div>
     </section>
   );

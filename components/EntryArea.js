@@ -16,18 +16,29 @@ class EntryArea extends Component {
     return (
       <section
         className="entry-area"
-        // style={{
-        //   backgroundImage: 'url("/images/water_bg.png")', // Replace with your image path
-        //   backgroundSize: "cover", // Adjust as needed
-        //   backgroundPosition: "center center",
-        // marginLeft: "50px",
-        //   zIndex: "-1",
-        // }}
+        style={{
+          position: "relative",
+          // backgroundImage: 'url("/images/water_bg.png")', // Replace with your image path
+          // backgroundSize: "cover", // Adjust as needed
+          // backgroundPosition: "center center",
+          // marginLeft: "50px",
+          // zIndex: "-1",
+        }}
       >
-        <AnimatedSVG />
+        <div
+          style={{
+            position: "absolute",
+            width: "100%",
+            height: "100%",
+            right: 0,
+            bottom: 0,
+          }}
+        >
+          <AnimatedSVG />
+        </div>
         <div className="container">
           <div className="row entry-static-wrap">
-            <div className="col-lg-3">
+            <div className="col-lg-3" style={{ zIndex: 999 }}>
               <div className="entry-static-box entry-static-box1">
                 <div className="section-icon">
                   {/* <img src="/images/section-icon.png" alt="section-icon" /> */}
@@ -51,6 +62,7 @@ class EntryArea extends Component {
                         frameBorder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowFullScreen={true}
+                        className="rounded"
                       ></iframe>
                       {/* </div> */}
                     </div>

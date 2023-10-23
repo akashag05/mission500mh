@@ -75,13 +75,25 @@ class NavOne extends Component {
 
   render() {
     const navigationItems = [
-      { text: "About us", path: "/about" },
+      {
+        text: "About",
+        path: "/about",
+        submenu: [
+          { text: "About Us", path: "/about" },
+          { text: "Vision, Mission & Goals", path: "/about/MissionVision" },
+          { text: "Execution Map", path: "/about/executionMap" },
+          { text: "Our Journey", path: "/about/OurJourney" },
+          { text: "Our Team", path: "/about/OurTeam" },
+        ],
+      },
       {
         text: "Project",
-        path: "/",
+        path: "/projects/WaterConservation",
         submenu: [
-          { text: "Project View", path: "/projectView" },
-          { text: "Execution Map", path: "/executionMap" },
+          { text: "Water Conservation", path: "/projects/WaterConservation" },
+          { text: "Education", path: "/projects/Education" },
+          { text: "Health", path: "/projects/Health" },
+          { text: "Tree Plantation", path: "/projects/TreePlantation" },
         ],
       },
       { text: "Media", path: "/events" },
@@ -105,11 +117,10 @@ class NavOne extends Component {
                             info@mission500mh.com
                           </>
                         </li>
-                        <li>
-                          <>
-                            <i className="fa fa-phone-square p-1"></i>
-                            +91-9833615551
-                          </>
+                        <li class="tooltip-container">
+                          <i className="fa fa-phone-square p-1"></i>
+                          +91-9763469063
+                          <span class="tooltip">Shekhar Nimbalkar</span>
                         </li>
                       </ul>
                     </div>
@@ -206,6 +217,14 @@ class NavOne extends Component {
                             </i>
                           </Link>
                         </li>
+                        <li>
+                          <Link
+                            href="https://mission500mh.com/home"
+                            target="_blank"
+                          >
+                            <p style={{ fontSize: "12px" }}>Marathi</p>
+                          </Link>
+                        </li>
                       </ul>
                     </div>
                   </div>
@@ -285,7 +304,10 @@ class NavOne extends Component {
                                 {item.submenu && (
                                   <ul className="dropdown-menu-item">
                                     {item.submenu.map((subitem, subindex) => (
-                                      <li key={subindex}>
+                                      <li
+                                        key={subindex}
+                                        style={{ width: "max-content" }}
+                                      >
                                         <Link href={subitem.path}>
                                           <p>{subitem.text}</p>
                                         </Link>

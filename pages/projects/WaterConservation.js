@@ -5,11 +5,11 @@ import PageHeader from "@/components/PageHeader";
 import SummeryTable from "@/components/summeryTable";
 import React from "react";
 
-const projectView = () => {
+const WaterConservation = () => {
   return (
-    <Layout pageTitle="Project Viewp">
+    <Layout pageTitle="Water Conservation">
       <NavOne />
-      <PageHeader title="Project View" />
+      <PageHeader title="Water Conservation" />
       {/* <MapsSwiper /> */}
       <SummeryTable />
       <Footer />
@@ -17,4 +17,4 @@ const projectView = () => {
   );
 };
 
-export default projectView;
+export default WaterConservation;

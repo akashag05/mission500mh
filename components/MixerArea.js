@@ -56,7 +56,7 @@ class MixerArea extends Component {
                         delayedCall
                       >
                         <CountUp
-                          end={this.state.startCounter ? 5000000000 : 0}
+                          end={this.state.startCounter ? 3370000000 : 0}
                         />
                       </VisibilitySensor>
                     </h3>

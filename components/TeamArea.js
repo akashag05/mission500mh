@@ -4,15 +4,21 @@ import { getMember } from "@/api/about";
 
 const TeamArea = () => {
   const [temaData, setTeamData] = useState([]);
-
+  let length = 0;
   const getData = async () => {
     let response = await getMember();
-    setTeamData(response);
-    console.log("get members response", response);
+    setTeamData(response.data);
+    length = response.data.length;
+    console.log("get members response", length);
   };
   useEffect(() => {
     getData();
   }, []);
+
+  const startIndex = 1; // Index of the first element you want to include
+  const endIndex = temaData.length; // Set endIndex to the last index value
+
+  const slicedData = temaData.slice(startIndex, endIndex);
 
   return (
     <section className="team-area text-center" id="our_team">
@@ -28,10 +34,11 @@ const TeamArea = () => {
             </div>
           </div>
         </div>
-        <div className="row team-content-wrap justify-content-between">
-          {temaData.map((item, index) => {
+        <div className="row team-content-wrap justify-content-center">
+          {temaData.slice(0, 1).map((item, index) => {
             const isEven = index % 2 === 0;
             const teamItemClass = isEven ? "team-item1" : "team-item2";
+            console.log(item);
             return (
               <div className="col-lg-3 col-sm-6" key={index}>
                 <div className={`team-item ${teamItemClass}`}>
@@ -47,113 +54,44 @@ const TeamArea = () => {
                     <h3 className="team__title-title">
                       <Link href="#">{item.memberName}</Link>
                     </h3>
+                    <p style={{ color: "white", fontSize: "12px" }}>
+                      {item.memberProfession}
+                    </p>
                   </div>
                 </div>
               </div>
             );
           })}
-          {/* <div className="col-lg-3 col-sm-6">
-            <div className="team-item team-item2">
-              <div className="team__img">
-                <img
-                  src="/images/Shekhar_Nimbalkar.png"
-                  width={270}
-                  height={295}
-                  alt="team image"
-                />
+        </div>
+        <div className="row team-content-wrap justify-content-between">
+          {slicedData.map((item, index) => {
+            const isEven = index % 2 === 0;
+            const teamItemClass = isEven ? "team-item1" : "team-item2";
+            return (
+              <div className="col-lg-4 col-sm-6" key={index}>
+                <div className={`team-item ${teamItemClass}`}>
+                  <div className="team__img">
+                    <img
+                      src={item.memberPhoto_path}
+                      width={270}
+                      height={295}
+                      alt="team image"
+                    />
+                  </div>
+                  <div className="team__title">
+                    <h3 className="team__title-title">
+                      <Link style={{ margin: "0 10px" }} href="#">
+                        {item.memberName}
+                      </Link>
+                    </h3>
+                    <p style={{ color: "white", fontSize: "12px" }}>
+                      {item.memberProfession}
+                    </p>
+                  </div>
+                </div>
               </div>
-              <div className="team__title">
-                <h3 className="team__title-title">
-                  <Link href="#">Shekhar Nimbalkar</Link>
-                </h3>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-3 col-sm-6">
-            <div className="team-item team-item1">
-              <div className="team__img">
-                <img
-                  src="/images/Abhijit_Panwar.png"
-                  width={270}
-                  height={295}
-                  alt="team image"
-                />
-              </div>
-              <div className="team__title">
-                <h3 className="team__title-title">
-                  <Link href="#">Abhijit Panwar</Link>
-                </h3>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-3 col-sm-6">
-            <div className="team-item team-item2">
-              <div className="team__img">
-                <img
-                  src="/images/Kiran_patil.png"
-                  width={270}
-                  height={295}
-                  alt="team image"
-                />
-              </div>
-              <div className="team__title">
-                <h3 className="team__title-title">
-                  <Link href="#">Kiran Patil</Link>
-                </h3>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-3 col-sm-6">
-            <div className="team-item team-item1">
-              <div className="team__img">
-                <img
-                  src="/images/Milind_Deokar.png"
-                  width={270}
-                  height={295}
-                  alt="team image"
-                />
-              </div>
-              <div className="team__title">
-                <h3 className="team__title-title">
-                  <Link href="#">Milind Deokar</Link>
-                </h3>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-3 col-sm-6">
-            <div className="team-item team-item2">
-              <div className="team__img">
-                <img
-                  src="/images/Sanjay_pate.png"
-                  width={270}
-                  height={295}
-                  alt="team image"
-                />
-              </div>
-              <div className="team__title">
-                <h3 className="team__title-title">
-                  <Link href="#">Sanjay Pate</Link>
-                </h3>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-3 col-sm-6">
-            <div className="team-item team-item1">
-              <div className="team__img">
-                <img
-                  src="/images/Jitendra_kesharwani.png"
-                  width={270}
-                  height={295}
-                  alt="team image"
-                />
-              </div>
-              <div className="team__title">
-                <h3 className="team__title-title">
-                  <Link href="#">Jitendra Kesharwani</Link>
-                </h3>
-              </div>
-            </div>
-          </div> */}
+            );
+          })}
         </div>
       </div>
     </section>

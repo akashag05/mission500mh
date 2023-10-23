@@ -1,3 +1,4 @@
+import { baseUrl } from "@/constants";
 import React, { useState } from "react";
 
 const Contact = () => {
@@ -15,12 +16,19 @@ const Contact = () => {
       [name]: value,
     });
   };
-
+  const resetFormData = () => {
+    setFormData({
+      name: "",
+      email: "",
+      phoneNumber: "",
+      message: "",
+    });
+  };
   const handleSubmit = async (e) => {
     e.preventDefault();
     console.log("formData", formData);
     try {
-      const response = await fetch("http://localhost:5000/contact/addForm", {
+      const response = await fetch(`${baseUrl}/contact/addForm`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -28,9 +36,10 @@ const Contact = () => {
         },
         body: JSON.stringify(formData),
       });
-
-      if (response.status === 200) {
+      console.log(response);
+      if (response.status === 400) {
         alert("Form submitted successfully!");
+        resetFormData();
       } else {
         alert("Form submission failed.");
       }
