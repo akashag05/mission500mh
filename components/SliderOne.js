@@ -11,8 +11,8 @@ const SliderOne = () => {
 
   const goNext = () => {
     setPrevDisable(false);
-    if (swiperr.activeIndex <= 0) {
-      if (swiperr.activeIndex == 0) {
+    if (swiperr.activeIndex <= 6) {
+      if (swiperr.activeIndex == 6) {
         setNextDisable(true);
       }
       console.log(swiperr.activeIndex);
@@ -65,32 +65,14 @@ const SliderOne = () => {
     <section className="slider-area">
       <div className="homepage-slide1">
         <Swiper {...params} getSwiper={setSwiperr}>
-          <div className="single-slide-item slide-bg1">
-            <div className="slide-item-table">
-              <div className="slide-item-tablecell">
-                <div className="container">
-                  <div className="row">
-                    <div className="col-md-7">
-                      <div className="slider-heading"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="single-slide-item slide-bg2">
-            <div className="slide-item-table">
-              <div className="slide-item-tablecell">
-                <div className="container">
-                  <div className="row">
-                    <div className="col-md-7">
-                      <div className="slider-heading"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <div className="single-slide-item slide-bg1"></div>
+          <div className="single-slide-item slide-bg2"></div>
+          <div className="single-slide-item slide-bg3"></div>
+          <div className="single-slide-item slide-bg4"></div>
+          <div className="single-slide-item slide-bg5"></div>
+          <div className="single-slide-item slide-bg6"></div>
+          <div className="single-slide-item slide-bg7"></div>
+          <div className="single-slide-item slide-bg8"></div>
         </Swiper>
         {/* <div className="swiper-pagination"></div> */}
         {/* <div className="owl-dots">
@@ -102,10 +84,10 @@ const SliderOne = () => {
           </div>
         </div> */}
       </div>
-      <div className="d-flex justify-content-center p-4">
+      <div className="d-flex justify-content-center p-1">
         <div
           onClick={goPrev}
-          className="col-md-1 owl-dot"
+          className=" owl-dot"
           style={{
             display: "flex",
             justifyContent: "center",
@@ -114,17 +96,50 @@ const SliderOne = () => {
           }}
         >
           {swiperr && swiperr.activeIndex == 0 ? ( // Replace shouldDisablePrevButton with your condition
-            <img
-              src="/images/left-arrow-disabled.png" // Provide the path to your disabled button image
-              alt="Previous"
-            />
+            <svg
+              fill="#828282"
+              width="64px"
+              height="64px"
+              viewBox="-24 -24 72.00 72.00"
+              xmlns="http://www.w3.org/2000/svg"
+              stroke="#828282"
+              strokeWidth="2.4"
+            >
+              <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <path d="m4.431 12.822 13 9A1 1 0 0 0 19 21V3a1 1 0 0 0-1.569-.823l-13 9a1.003 1.003 0 0 0 0 1.645z"></path>
+              </g>
+            </svg>
           ) : (
-            <img src="/images/left-arrow.png" alt="Previous" />
+            <svg
+              fill="#000000"
+              width="64px"
+              height="64px"
+              viewBox="-24 -24 72.00 72.00"
+              xmlns="http://www.w3.org/2000/svg"
+              stroke="#000000"
+              strokeWidth="2.4"
+            >
+              <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <path d="m4.431 12.822 13 9A1 1 0 0 0 19 21V3a1 1 0 0 0-1.569-.823l-13 9a1.003 1.003 0 0 0 0 1.645z"></path>
+              </g>
+            </svg>
           )}
         </div>
         <div
           onClick={goNext}
-          className="col-md-1 owl-dot"
+          className=" owl-dot"
           style={{
             display: "flex",
             justifyContent: "center",
@@ -133,12 +148,45 @@ const SliderOne = () => {
           }}
         >
           {nextDisbale ? ( // Replace shouldDisablePrevButton with your condition
-            <img
-              src="/images/right-arrow-disabled.png" // Provide the path to your disabled button image
-              alt="Previous"
-            />
+            <svg
+              fill="#828282"
+              width="64px"
+              height="64px"
+              viewBox="-24 -24 72.00 72.00"
+              xmlns="http://www.w3.org/2000/svg"
+              stroke="#828282"
+              strokeWidth="2.4"
+            >
+              <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <path d="M5.536 21.886a1.004 1.004 0 0 0 1.033-.064l13-9a1 1 0 0 0 0-1.644l-13-9A1 1 0 0 0 5 3v18a1 1 0 0 0 .536.886z"></path>
+              </g>
+            </svg>
           ) : (
-            <img src="/images/right-arrow.png" alt="Previous" />
+            <svg
+              fill="#000000"
+              width="64px"
+              height="64px"
+              viewBox="-24 -24 72.00 72.00"
+              xmlns="http://www.w3.org/2000/svg"
+              stroke="#000000"
+              strokeWidth="2.4"
+            >
+              <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <path d="M5.536 21.886a1.004 1.004 0 0 0 1.033-.064l13-9a1 1 0 0 0 0-1.644l-13-9A1 1 0 0 0 5 3v18a1 1 0 0 0 .536.886z"></path>
+              </g>
+            </svg>
           )}
         </div>
       </div>
