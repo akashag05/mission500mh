@@ -1,23 +1,86 @@
-import AboutUs from "@/components/AboutArea";
+import Image from "next/image";
+import React, { useState } from "react";
 import Footer from "@/components/Footer";
 import Layout from "@/components/Layout";
-import MissionVision from "@/components/MissionVision";
 import NavOne from "@/components/NavOne";
 import PageHeader from "@/components/PageHeader";
-import TeamArea from "@/components/TeamArea";
-import Image from "next/image";
-import React from "react";
 
 const OurJourney = () => {
+  const [milestone, setMilestone] = useState({});
+
+  const milestones = [
+    {
+      name: "Conception",
+      content:
+        "This concept of watershed development through people's participation started in the year 2017 in Dhamangaon Village. The 14 crore liter surface water reservoir  was created in the first year itself.",
+    },
+    {
+      name: "Pilot",
+      content:
+        "This concept was tested in 6 more villages in 2018 to see whether farmers can come together for this work in a couple of village meetings. Farmers responded well and a reservoir of 20 crore liters was created.",
+    },
+    {
+      name: "LeaderShip",
+      content:
+        "Expansion of this project to further villages requires trained leadership. 14 people were trained in 2019-20 for 9 months on the lines of the 'Landmark forum program.' They took responsibility for 5 villages each, therefore called 'Pach patil'. They work without any remuneration. Work was expanded to 16 villages. Storage capacity reached up to 1.02 Billion liters.",
+    },
+    {
+      name: "Expansion",
+      content:
+        "In 2021-22, this model replicated in 70 villages in 7 districts and created a storage capacity of 450 Crore liters. Mission Titur River cleaning- Chalisgaon city was flooded 8 times in monsoon of 2021. Through collaboration of NGO/CSR and people's participation, 1500 dumper silt was removed from the 7 KM stretch of the river in the city.",
+    },
+    {
+      name: "Replication",
+      content:
+        "The project reached up to 34 villages in 4 tehsils in 4 districts of Maharashtra and crossed the storage capacity of 2.08 Billion liters in 2020-21. Number of NGOs supporting this project expanded to 4 viz Sakal Relief Fund, Rotary Club, Bhartiya Jain Sanghatana and NAAM Foundation..",
+    },
+  ];
+
+  const handleClick = (item) => {
+    setMilestone(item);
+  };
+
   return (
     <Layout pageTitle="Mission 500 | About">
       <NavOne />
       <PageHeader title="Our Journey" />
-      <div className="container">
+      <div className="mb-5">
         <div className="d-flex flex-column  m-4">
-          <div className="d-flex justify-content-between">
-            <div>
+          <div className="d-flex justify-content-around">
+            <div className="d-flex flex-column">
               <h3>Milestone's</h3>
+              <div
+                className="p-4 ml-3"
+                style={{
+                  border: "2px solid grey",
+                  borderRadius: "12px",
+                  height: "fit-content",
+                  width: "max-content",
+                }}
+              >
+                {milestones.map((item, index) => {
+                  return (
+                    <ul className="d-flex justify-content-evenly" key={index}>
+                      <li
+                        onClick={() => handleClick(item)}
+                        style={{ cursor: "pointer" }}
+                      >
+                        - {item.name}
+                      </li>
+                    </ul>
+                  );
+                })}
+              </div>
+              {Object.keys(milestone).length != 0 && (
+                <div class="container mt-4">
+                  <div class="card" style={{ width: "18rem;" }}>
+                    <div class="card-body">
+                      <h5 class="card-title">{milestone.name}</h5>
+                      <p class="card-text">{milestone.content}</p>
+                    </div>
+                  </div>
+                </div>
+              )}
             </div>
             <Image
               src="/images/journey.png"
@@ -27,7 +90,7 @@ const OurJourney = () => {
             />
           </div>
           <section className="section-timeline">
-            <div className="my-3">
+            <div className="d-flex justify-content-start my-3">
               <h3>Achievements</h3>
             </div>
             <div

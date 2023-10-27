@@ -145,7 +145,7 @@ const MapsSwiper = () => {
                       role="button"
                       className="current"
                       onClick={() => {
-                        console.log("clicked");
+                        // console.log("clicked");
                         setSelectedImage("/images/flow1.jpg");
                         setDescription("Village Identification");
                       }}

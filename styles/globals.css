@@ -1,6 +1,9 @@
 /* General code */
 @import url(https://fonts.googleapis.com/css?family=Barlow+Condensed);
 
+body {
+  scroll-behavior: smooth;
+}
 .section-timeline {
   padding: 0 30px 0 30px;
 }
@@ -516,27 +519,40 @@ footer p a:hover {
   cursor: pointer;
 }
 
-.tooltip {
-  visibility: hidden;
-  width: 200px;
+.tooltipa {
+  /* visibility: hidden; */
+  width: 400px;
   background-color: #333;
   color: #fff;
   text-align: center;
   border-radius: 4px;
   padding: 5px;
   position: absolute;
-  z-index: 1;
-  /* bottom: 125%; */
-  left: 50%;
-  transform: translateX(-50%);
-  opacity: 0;
-  transition: opacity 0.2s;
+  z-index: 10;
+  top: 20%;
+  /* Adjust the left property to control the distance from the button */
+  left: 125%; /* Use a value greater than 100% to position it to the right */
+  /* opacity: 1; */
+  /* transition: opacity 0.2s; */
 }
 
-.tooltip-container:hover .tooltip {
+.tooltipa::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -5px;
+  width: 0;
+  height: 0;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent transparent #333; /* Adjust the color */
+}
+
+/* .tooltip-container:hover .tooltip {
   visibility: visible;
   opacity: 1;
-}
+} */
 
 /* The switch */
 .switch {
@@ -561,7 +577,7 @@ footer p a:hover {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
+  background-color: #2196f3;
   -webkit-transition: 0.4s;
   transition: 0.4s;
   border-radius: 34px;

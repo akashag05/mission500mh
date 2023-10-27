@@ -21,12 +21,39 @@ const HomePage = () => {
       {/* <div className="full-screen-div" id="activeDiv"></div> */}
       <NavOne />
       <SliderOne />
-      <EntryArea />
       <ServiceArea />
+      <div className="d-flex justify-content-center m-5">
+        <div className="entry-video-img">
+          <div className="video-responsive">
+            <div className="col-md-12">
+              <iframe
+                width="1200"
+                height="4810"
+                src="https://www.youtube.com/embed/X93Y3-f37Fk"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen={true}
+                className="rounded"
+              ></iframe>
+              <div className="entry-video-text">
+                <h2 className="entry__title d-flex justify-content-center p-4">
+                  Let’s bring prosperity together. Watch us how we plan to save
+                  water!
+                </h2>
+                {/* <p className="entry__text">
+                  Watch us how we plan to save water!
+                </p> */}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <HiwArea />
       <MixerArea />
       {/* <HelpingArea />
       <TeamArea /> */}
+      {/* <EntryArea /> */}
       <ClientsLogo />
       {/* <YoutubeCallToAction /> */}
       {/* <BlogHome /> */}

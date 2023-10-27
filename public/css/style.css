@@ -275,7 +275,7 @@ a:hover {
   z-index: 2;
 }
 .header-area .header-top-action .top-action-content {
-  background: #424242;
+  background: #0192de;
   position: relative;
   z-index: 1;
 }
@@ -291,7 +291,7 @@ a:hover {
   content: "";
   width: 100%;
   height: 100%;
-  background: #424242;
+  background: #0192de;
   position: absolute;
   top: 0;
   right: 100%;
@@ -1356,7 +1356,7 @@ a:hover {
   top: 0;
   left: -110px;
   z-index: -1;
-  background-color: #0192de;
+  /* background-color: #0192de; */
   opacity: 0.4;
   -webkit-transform: skew(-12deg, 0deg);
   -moz-transform: skew(-12deg, 0deg);
@@ -2218,14 +2218,14 @@ a:hover {
 .video-responsive iframe {
   left: 0;
   top: 0;
-  height: 200px;
-  width: 250px;
+  height: 45vw;
+  width: 80vw;
 }
 
 .mixer-area {
   position: relative;
   z-index: 1;
-  background-image: url("../images/mixer-bg.png");
+  /* background-image: url("../images/mixer-bg.png"); */
   background-size: cover;
   background-position: center;
   background-attachment: fixed;

@@ -17,10 +17,11 @@ const Events = () => {
   const [selectedYear, setSelectedYear] = useState(null);
   const [eventType, setEventType] = useState("news");
   const [expanded, setExpanded] = useState(false);
+  const [openTooltip, setOpenToolTip] = useState(false);
 
-  const toggleExpand = () => {
-    setExpanded(!expanded);
-  };
+  // const toggleExpand = () => {
+  //   setExpanded(!expanded);
+  // };
 
   const handleToggle = () => {
     // Toggle the button text
@@ -75,7 +76,11 @@ const Events = () => {
     setSelectedYear(year);
   };
 
-  // console.log("Media Data", selectedYear);
+  const toggleTooltip = () => {
+    setOpenToolTip(!openTooltip);
+  };
+
+  console.log("Media Data", openTooltip);
   return (
     <Layout pageTitle="Mission 500 | Media">
       <NavOne />
@@ -117,7 +122,7 @@ const Events = () => {
                       <div className="d-flex">
                         <div
                           className="card card_image"
-                          style={{ width: "18rem", height: "fit-content" }}
+                          style={{ width: "18rem" }}
                         >
                           <Link href={event.eventNewsLink} target="_blank">
                             <img
@@ -136,13 +141,17 @@ const Events = () => {
                                   {event.shortDesc.slice(0, 50)}...
                                   <span>
                                     {event.shortDesc.length > 50 && (
-                                      <button
-                                        onClick={toggleExpand}
-                                        className="btn btn-link"
-                                        style={{ fontSize: "12px" }}
+                                      <li
+                                        class="tooltip-container"
+                                        onClick={toggleTooltip}
                                       >
-                                        {expanded ? "Less" : "More"}
-                                      </button>
+                                        More
+                                        {openTooltip && (
+                                          <span class="tooltipa">
+                                            {event.shortDesc} hi
+                                          </span>
+                                        )}
+                                      </li>
                                     )}
                                   </span>
                                 </p>

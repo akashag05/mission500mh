@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import data from "../data.json";
 import Image from "next/image";
+import Link from "next/link";
 
 const SummeryTable = () => {
   const [selectedYear, setSelectedYear] = useState(null);
@@ -14,7 +15,12 @@ const SummeryTable = () => {
   const handleYearClick = (year) => {
     setSelectedYear(year);
   };
-
+  const scrollToMaps = () => {
+    const element = document.getElementById("maps"); // Get the target element by its ID
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" }); // Scroll to the target element smoothly
+    }
+  };
   return (
     <>
       <div
@@ -56,7 +62,10 @@ const SummeryTable = () => {
                 <tr key={index}>
                   {/* <td>{item.SR_NO}</td> */}
                   <td
-                    onClick={() => handleYearClick(item.YEAR)}
+                    onClick={() => {
+                      handleYearClick(item.YEAR);
+                      scrollToMaps();
+                    }}
                     style={{
                       color: "blue",
                       cursor: "pointer",
@@ -64,7 +73,9 @@ const SummeryTable = () => {
                       verticalAlign: "middle",
                     }}
                   >
-                    {item.YEAR}
+                    <a href="#maps" style={{ cursor: "pointer" }}>
+                      {item.YEAR}
+                    </a>
                   </td>
                   <td style={{ textAlign: "center", verticalAlign: "middle" }}>
                     {item.NUMBER_OF_VILLAGES}
@@ -152,7 +163,11 @@ const SummeryTable = () => {
           </tbody>
         </table>
       </div>
-      <div className="d-flex justify-content-between">
+      <section
+        className="d-flex justify-content-between"
+        // style={{ paddingTop: "12rem" }}
+        id="maps"
+      >
         <div
           className="p-4 ml-3"
           style={{
@@ -196,7 +211,7 @@ const SummeryTable = () => {
             )}
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 };

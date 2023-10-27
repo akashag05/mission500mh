@@ -3,7 +3,7 @@ import React, { useState } from "react";
 
 const ServiceArea = () => {
   return (
-    <section className="service-area text-center mt-5" id="our_journey">
+    <section className="service-area text-center" id="our_journey">
       <div className="container">
         <div className="row">
           <div className="col-lg-8 mx-auto">
@@ -26,8 +26,8 @@ const ServiceArea = () => {
                   <i className="fa fa-group fa-flip" aria-hidden="true"></i>
                 </div>
                 <div className="service-content">
-                  <h4 className="service__title">Farmers Contribution</h4>
-                  <h6 className="service__title">31,143,775 Rs</h6>
+                  <h4 className="service__title">Farmers Contribution (Rs)</h4>
+                  <h6 className="service__title">31,143,775</h6>
                 </div>
               </div>
             </div>

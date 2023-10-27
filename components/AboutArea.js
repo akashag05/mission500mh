@@ -112,7 +112,7 @@ const AboutUs = () => {
           </div> */}
         </div>
       </section>
-      <section className="container">
+      <section className="container mb-5">
         <div className="d-flex" style={{ padding: "1rem 0" }}>
           {/* <div
             className="px-3"

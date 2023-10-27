@@ -81,9 +81,9 @@ class NavOne extends Component {
         submenu: [
           { text: "About Us", path: "/about" },
           { text: "Vision, Mission & Goals", path: "/about/MissionVision" },
-          { text: "Execution Map", path: "/about/executionMap" },
-          { text: "Our Journey", path: "/about/OurJourney" },
           { text: "Our Team", path: "/about/OurTeam" },
+          { text: "Our Journey", path: "/about/OurJourney" },
+          { text: "Execution Map", path: "/about/executionMap" },
         ],
       },
       {
@@ -92,7 +92,7 @@ class NavOne extends Component {
         submenu: [
           { text: "Water Conservation", path: "/projects/WaterConservation" },
           { text: "Education", path: "/projects/Education" },
-          { text: "Health", path: "/projects/Health" },
+          { text: "Employment", path: "/projects/Employment" },
           { text: "Tree Plantation", path: "/projects/TreePlantation" },
         ],
       },
@@ -110,7 +110,13 @@ class NavOne extends Component {
                 <div className="col-lg-5">
                   <div className="top-action-content">
                     <div className="info-box info-box-1 d-flex align-items-center">
-                      <ul className="d-flex align-items-center">
+                      <p
+                        className="slider__meta"
+                        style={{ fontSize: "14px", color: "white" }}
+                      >
+                        Mission 500 - Transforming Maharashtra's Water Landscape
+                      </p>
+                      {/* <ul className="d-flex align-items-center">
                         <li>
                           <>
                             <i className="fa fa-envelope p-1"></i>
@@ -122,7 +128,7 @@ class NavOne extends Component {
                           +91-9763469063
                           <span class="tooltip">Shekhar Nimbalkar</span>
                         </li>
-                      </ul>
+                      </ul> */}
                     </div>
                   </div>
                 </div>
@@ -168,7 +174,7 @@ class NavOne extends Component {
                             <i className="fa fa-youtube-play"></i>
                           </Link>
                         </li>
-                        <li>
+                        {/* <li>
                           <Link
                             href="https://www.kooapp.com/profile/mission500mh"
                             target="_blank"
@@ -216,13 +222,13 @@ class NavOne extends Component {
                               </svg>{" "}
                             </i>
                           </Link>
-                        </li>
+                        </li> */}
                         <li>
                           <Link
                             href="https://mission500mh.com/home"
                             target="_blank"
                           >
-                            <p style={{ fontSize: "12px" }}>Marathi</p>
+                            <p style={{ fontSize: "12px" }}>मराठी</p>
                           </Link>
                         </li>
                       </ul>
@@ -308,7 +314,12 @@ class NavOne extends Component {
                                         key={subindex}
                                         style={{ width: "max-content" }}
                                       >
-                                        <Link href={subitem.path}>
+                                        <Link
+                                          href={subitem.path}
+                                          onClick={() =>
+                                            this.handleLinkClick(index)
+                                          }
+                                        >
                                           <p>{subitem.text}</p>
                                         </Link>
                                       </li>
@@ -400,7 +411,7 @@ class NavOne extends Component {
                     <i className="fa fa-youtube-play"></i>
                   </Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link
                     href="https://www.kooapp.com/profile/mission500mh"
                     target="_blank"
@@ -448,7 +459,7 @@ class NavOne extends Component {
                       </svg>{" "}
                     </i>
                   </Link>
-                </li>
+                </li> */}
               </ul>
               <div className="side-btn">
                 <div className="header-btn ml-auto">

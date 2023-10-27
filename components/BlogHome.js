@@ -78,7 +78,7 @@ const BlogHome = () => {
                     style={{ display: "flex", justifyContent: "space-between" }}
                   >
                     <h6 style={{ padding: "0 2rem", color: "black" }}>
-                      PostedDate -{" "}
+                      Date -{" "}
                       {(blogData && blogData.postedDate) ||
                         blogData.data.postedDate}
                     </h6>
