@@ -7,7 +7,7 @@ import PageHeader from "@/components/PageHeader";
 
 const OurJourney = () => {
   const [milestone, setMilestone] = useState({});
-
+  const [selectedItem, setSelectedItem] = useState(null);
   const milestones = [
     {
       name: "Conception",
@@ -38,6 +38,7 @@ const OurJourney = () => {
 
   const handleClick = (item) => {
     setMilestone(item);
+    setSelectedItem(item.name);
   };
 
   return (
@@ -45,42 +46,70 @@ const OurJourney = () => {
       <NavOne />
       <PageHeader title="Our Journey" />
       <div className="mb-5">
-        <div className="d-flex flex-column  m-4">
-          <div className="d-flex justify-content-around">
-            <div className="d-flex flex-column">
-              <h3>Milestone's</h3>
-              <div
-                className="p-4 ml-3"
-                style={{
-                  border: "2px solid grey",
-                  borderRadius: "12px",
-                  height: "fit-content",
-                  width: "max-content",
-                }}
-              >
-                {milestones.map((item, index) => {
-                  return (
+        <div className="d-flex flex-column m-4">
+          <div className="d-flex justify-content-between">
+            <div className="d-flex">
+              <div>
+                <h3>Milestone's</h3>
+                <div
+                  className="p-4 ml-3"
+                  style={{
+                    border: "2px solid grey",
+                    borderRadius: "12px",
+                    height: "fit-content",
+                    width: "max-content",
+                  }}
+                >
+                  {milestones.map((item, index) => (
                     <ul className="d-flex justify-content-evenly" key={index}>
                       <li
                         onClick={() => handleClick(item)}
-                        style={{ cursor: "pointer" }}
+                        style={{
+                          cursor: "pointer",
+                          fontWeight:
+                            selectedItem === item.name ? "bold" : "normal", // Apply bold style when selected
+                          fontSize: selectedItem === item.name && "18px",
+                        }}
                       >
                         - {item.name}
                       </li>
                     </ul>
-                  );
-                })}
+                  ))}
+                </div>
               </div>
-              {Object.keys(milestone).length != 0 && (
-                <div class="container mt-4">
-                  <div class="card" style={{ width: "18rem;" }}>
-                    <div class="card-body">
-                      <h5 class="card-title">{milestone.name}</h5>
-                      <p class="card-text">{milestone.content}</p>
+              <div>
+                {Object.keys(milestone).length != 0 && (
+                  <div class="container mt-4">
+                    <div class="card" style={{ width: "18rem;" }}>
+                      <div class="card-body">
+                        <div className="d-flex justify-content-between">
+                          <h5 class="card-title">{milestone.name}</h5>
+                          <p
+                            onClick={() =>{ setMilestone({}); setSelectedItem(null)}}
+                            style={{ cursor: "pointer" }}
+                          >
+                            <svg
+                              viewBox="0 0 24 24"
+                              width="24"
+                              height="24"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              fill="none"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              class="css-i6dzq1"
+                            >
+                              <line x1="18" y1="6" x2="6" y2="18"></line>
+                              <line x1="6" y1="6" x2="18" y2="18"></line>
+                            </svg>
+                          </p>
+                        </div>
+                        <p class="card-text">{milestone.content}</p>
+                      </div>
                     </div>
                   </div>
-                </div>
-              )}
+                )}
+              </div>
             </div>
             <Image
               src="/images/journey.png"

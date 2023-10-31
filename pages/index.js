@@ -38,8 +38,7 @@ const HomePage = () => {
               ></iframe>
               <div className="entry-video-text">
                 <h2 className="entry__title d-flex justify-content-center p-4">
-                  Let’s bring prosperity together. Watch us how we plan to save
-                  water!
+                  Let’s bring prosperity together. water!
                 </h2>
                 {/* <p className="entry__text">
                   Watch us how we plan to save water!

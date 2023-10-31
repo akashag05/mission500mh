@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const SummeryTable = () => {
   const [selectedYear, setSelectedYear] = useState(null);
-
+  const [selectedItem, setSelectedItem] = useState(null);
   useEffect(() => {
     // Set the default selected year to the last year in the data array
     const lastYear = data[data.length - 1].YEAR;
@@ -21,6 +21,10 @@ const SummeryTable = () => {
       element.scrollIntoView({ behavior: "smooth" }); // Scroll to the target element smoothly
     }
   };
+  const handleClick = (item) => {
+    handleYearClick(item.YEAR);
+    setSelectedItem(item.YEAR);
+  };
   return (
     <>
       <div
@@ -35,23 +39,59 @@ const SummeryTable = () => {
           <thead>
             <tr>
               {/* <th>SR NO</th> */}
-              <th style={{ textAlign: "center", verticalAlign: "middle" }}>
+              <th
+                style={{
+                  textAlign: "center",
+                  verticalAlign: "middle",
+                  fontWeight: 600,
+                }}
+              >
                 YEAR
               </th>
-              <th style={{ textAlign: "center", verticalAlign: "middle" }}>
+              <th
+                style={{
+                  textAlign: "center",
+                  verticalAlign: "middle",
+                  fontWeight: 600,
+                }}
+              >
                 NUMBER OF VILLAGES
               </th>
-              <th style={{ textAlign: "center", verticalAlign: "middle" }}>
+              <th
+                style={{
+                  textAlign: "center",
+                  verticalAlign: "middle",
+                  fontWeight: 600,
+                }}
+              >
                 NO OF HOURS
               </th>
-              <th style={{ textAlign: "center", verticalAlign: "middle" }}>
+              <th
+                style={{
+                  textAlign: "center",
+                  verticalAlign: "middle",
+                  fontWeight: 600,
+                }}
+              >
                 CONTRIBUTION BY FARMERS(RS)
               </th>
-              <th style={{ textAlign: "center", verticalAlign: "middle" }}>
+              <th
+                style={{
+                  textAlign: "center",
+                  verticalAlign: "middle",
+                  fontWeight: 600,
+                }}
+              >
                 CONTRIBUTION FROM SPONSOR (RS)
               </th>
               {/* <th>RESERVOIR CREATED IN LITRE</th> */}
-              <th style={{ textAlign: "center", verticalAlign: "middle" }}>
+              <th
+                style={{
+                  textAlign: "center",
+                  verticalAlign: "middle",
+                  fontWeight: 600,
+                }}
+              >
                 RESERVOIR CREATED IN CRORE LITRE
               </th>
             </tr>
@@ -59,11 +99,12 @@ const SummeryTable = () => {
           <tbody>
             {data.map((item, index) => {
               return (
-                <tr key={index}>
+                <tr key={index} id={index == 3 && "maps"}>
                   {/* <td>{item.SR_NO}</td> */}
                   <td
                     onClick={() => {
                       handleYearClick(item.YEAR);
+                      setSelectedItem(item.YEAR);
                       scrollToMaps();
                     }}
                     style={{
@@ -164,12 +205,11 @@ const SummeryTable = () => {
         </table>
       </div>
       <section
-        className="d-flex justify-content-between"
-        // style={{ paddingTop: "12rem" }}
-        id="maps"
+        className="d-flex justify-content-around"
+        style={{ paddingTop: "0rem" }}
       >
         <div
-          className="p-4 ml-3"
+          className="p-4 ml-3 justify-start"
           style={{
             border: "2px solid grey",
             borderRadius: "12px",
@@ -178,10 +218,14 @@ const SummeryTable = () => {
         >
           {data.map((item, index) => {
             return (
-              <ul className="d-flex justify-content-evenly">
+              <ul className="d-flex justify-content-evenly" key={index}>
                 <li
-                  onClick={() => handleYearClick(item.YEAR)}
-                  style={{ cursor: "pointer" }}
+                  onClick={() => handleClick(item)}
+                  style={{
+                    cursor: "pointer",
+                    fontWeight: selectedItem === item.YEAR ? "bold" : "normal",
+                    fontSize: selectedItem === item.YEAR && "18px",
+                  }}
                 >
                   - {item.YEAR}
                 </li>
@@ -189,8 +233,8 @@ const SummeryTable = () => {
             );
           })}
         </div>
-        <div className="d-flex p-4" style={{ margin: "0 7rem 0 0" }}>
-          <div className="">
+        <div className="justify-end">
+          <div className="d-flex p-4">
             <p>Year {selectedYear}</p>
             {selectedYear && selectedYear == 2023 ? (
               <Image src="../images/map_23.svg" width={700} height={500} />

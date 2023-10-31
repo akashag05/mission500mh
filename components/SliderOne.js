@@ -31,12 +31,12 @@ const SliderOne = () => {
     }
   };
   const params = {
-    slidesPerView: 1,
+    slidesPerView: 2,
     // loop: true,
     noSwiping: true,
     noSwipingClass: "swiper-no-swiping",
     speed: 1000,
-    spaceBetween: 30,
+    spaceBetween: 3,
     // autoplay: {
     //   delay: 3000,
     //   disableOnInteraction: true,
@@ -84,22 +84,22 @@ const SliderOne = () => {
           </div>
         </div> */}
       </div>
-      <div className="d-flex justify-content-center p-1">
+      <div className="d-flex justify-content-center">
         <div
           onClick={goPrev}
-          className=" owl-dot"
+          className="owl-dot"
           style={{
             display: "flex",
             justifyContent: "center",
-            alignItems: "center",
+
             cursor: "pointer",
           }}
         >
           {swiperr && swiperr.activeIndex == 0 ? ( // Replace shouldDisablePrevButton with your condition
             <svg
               fill="#828282"
-              width="64px"
-              height="64px"
+              width="50px"
+              height="50px"
               viewBox="-24 -24 72.00 72.00"
               xmlns="http://www.w3.org/2000/svg"
               stroke="#828282"
@@ -118,8 +118,8 @@ const SliderOne = () => {
           ) : (
             <svg
               fill="#000000"
-              width="64px"
-              height="64px"
+              width="50px"
+              height="50px"
               viewBox="-24 -24 72.00 72.00"
               xmlns="http://www.w3.org/2000/svg"
               stroke="#000000"
@@ -143,15 +143,15 @@ const SliderOne = () => {
           style={{
             display: "flex",
             justifyContent: "center",
-            alignItems: "center",
+
             cursor: "pointer",
           }}
         >
           {nextDisbale ? ( // Replace shouldDisablePrevButton with your condition
             <svg
               fill="#828282"
-              width="64px"
-              height="64px"
+              width="50px"
+              height="50px"
               viewBox="-24 -24 72.00 72.00"
               xmlns="http://www.w3.org/2000/svg"
               stroke="#828282"
@@ -170,8 +170,8 @@ const SliderOne = () => {
           ) : (
             <svg
               fill="#000000"
-              width="64px"
-              height="64px"
+              width="50px"
+              height="50px"
               viewBox="-24 -24 72.00 72.00"
               xmlns="http://www.w3.org/2000/svg"
               stroke="#000000"

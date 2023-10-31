@@ -50,7 +50,7 @@ const ClientsLogo = () => {
           <div className="col-md-12">
             <div className="client-logo mt-5">
               <Swiper {...params}>
-                <Link href="https://sakalrelieffund.com/">
+                <Link href="https://sakalrelieffund.com/" target="_blank">
                   <div className="client-logo-item">
                     <img
                       src="/images/client-logo1.jpg"
@@ -60,7 +60,7 @@ const ClientsLogo = () => {
                     />
                   </div>
                 </Link>
-                <Link href="https://www.rotarypunecamp.com/">
+                <Link href="https://www.rotarypunecamp.com/" target="_blank">
                   <div className="client-logo-item">
                     <img
                       src="/images/client-logo2.jpg"
@@ -70,7 +70,7 @@ const ClientsLogo = () => {
                     />
                   </div>
                 </Link>
-                <Link href="https://naammh.org/">
+                <Link href="https://naammh.org/" target="_blank">
                   <div className="client-logo-item">
                     <img
                       src="/images/client-logo3.jpg"
@@ -80,7 +80,7 @@ const ClientsLogo = () => {
                     />
                   </div>
                 </Link>
-                <Link href="https://www.credaipune.org/">
+                <Link href="https://www.credaipune.org/" target="_blank">
                   <div className="client-logo-item">
                     <img
                       src="/images/credai.jpeg"
@@ -90,7 +90,7 @@ const ClientsLogo = () => {
                     />
                   </div>
                 </Link>
-                <Link href="https://bjsindia.org/">
+                <Link href="https://bjsindia.org/" target="_blank">
                   <div className="client-logo-item">
                     <img
                       src="/images/client-logo4.jpg"
@@ -100,7 +100,7 @@ const ClientsLogo = () => {
                     />
                   </div>
                 </Link>
-                <Link href="https://www.dorfketal.com/">
+                <Link href="https://www.dorfketal.com/" target="_blank">
                   <div className="client-logo-item">
                     <img
                       src="/images/client_logo5.jpg"
