@@ -47,7 +47,8 @@ const OurJourney = () => {
       <PageHeader title="Our Journey" />
       <div className="mb-5">
         <div className="d-flex flex-column m-4">
-          <div className="d-flex justify-content-between">
+          <div className="d-flex justify-content-around">
+          
             <div className="d-flex">
               <div>
                 <h3>Milestone's</h3>
@@ -95,8 +96,8 @@ const OurJourney = () => {
                               stroke="currentColor"
                               stroke-width="2"
                               fill="none"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
                               class="css-i6dzq1"
                             >
                               <line x1="18" y1="6" x2="6" y2="18"></line>
@@ -119,7 +120,8 @@ const OurJourney = () => {
             />
           </div>
           <section className="section-timeline">
-            <div className="d-flex justify-content-start my-3">
+            <div style={{position: "relative",  left: "21%"}} className="d-flex justify-content-start my-3">
+          
               <h3>Achievements</h3>
             </div>
             <div

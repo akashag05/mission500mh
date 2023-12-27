@@ -27,7 +27,7 @@ const ServiceArea = () => {
                 </div>
                 <div className="service-content">
                   <h4 className="service__title">Farmers Contribution (Rs)</h4>
-                  <h6 className="service__title">31,143,775</h6>
+                  <h6 className="service__title">3,11,43,775</h6>
                 </div>
               </div>
             </div>

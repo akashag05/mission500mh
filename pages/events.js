@@ -35,24 +35,26 @@ const Events = () => {
   useEffect(() => {
     const getYear = async () => {
       const response = await getYearBYEvent(eventType);
-      setYears(response.data);
-      // console.log("years", response.data);
+      const sortedYears = response.data.sort((a, b) => b - a); 
+      console.log("years", response.data);
+      //setYears(response.data);
+      setYears(sortedYears);
     };
     getYear();
   }, [eventType]);
 
-  // useEffect(() => {
-  //   const getData = async () => {
-  //     const response = await getAllEventsNews();
-  //     // console.log(response);
-  //     const events =
-  //       response && response.filter((item) => item.eventNewsType === "Events");
-  //     const news =
-  //       response && response.filter((item) => item.eventNewsType === "News");
-  //     setMediaData({ events, news });
-  //   };
-  //   getData();
-  // }, []);
+  useEffect(() => {
+    const getData = async () => {
+      const response = await getAllEventsNews();
+      // console.log(response);
+      const events =
+        response && response.filter((item) => item.eventNewsType === "Events");
+      const news =
+        response && response.filter((item) => item.eventNewsType === "News");
+      setMediaData({ events, news });
+    };
+    getData();
+  }, []);
 
   useEffect(() => {
     const getData = async () => {
@@ -67,6 +69,7 @@ const Events = () => {
     };
     getData();
   }, [years, eventType]);
+  
   const handleYearButtonClick = async (year) => {
     const response = await getInfoByYearAndEvent(year, eventType);
     setMediaData(response.data);
@@ -78,6 +81,11 @@ const Events = () => {
 
   const toggleTooltip = () => {
     setOpenToolTip(!openTooltip);
+  };
+
+  const closeTooltip = (e) => {
+    e.stopPropagation();
+    setOpenToolTip(false);
   };
 
   console.log("Media Data", openTooltip);
@@ -98,31 +106,32 @@ const Events = () => {
         <div className="card mt-4">
           <div className="card-header">
             <ul className="nav nav-tabs nav-tabs-neutral justify-content-start shadow p-3 mb-5 bg-body rounded">
-              {years.map((year, index) => (
-                <li className="nav-item" key={index}>
-                  <button
-                    className={`nav-link tabs_list ${
-                      year === selectedYear ? "active" : ""
-                    }`}
-                    style={{ cursor: "pointer" }}
-                    onClick={() => handleYearButtonClick(year)}
-                  >
-                    Year {year}
-                  </button>
-                </li>
-              ))}
+              {years &&
+                years.map((year, index) => (
+                  <li className="nav-item" key={index}>
+                    <button
+                      className={`nav-link tabs_list ${
+                        year === selectedYear ? "active" : ""
+                      }`}
+                      style={{ cursor: "pointer" }}
+                      onClick={() => handleYearButtonClick(year)}
+                    >
+                      Year {year}
+                    </button>
+                  </li>
+                ))}
             </ul>
           </div>
           <div className="card-body" style={{ padding: "0 1.25rem" }}>
             <div className="tab-content text-center">
               <div className="d-flex">
                 {responseType === "true" &&
-                  mediaData.map((event, index) => (
+                mediaData.map((event, index) => (
                     <div className="tab-pane active" key={index}>
                       <div className="d-flex">
                         <div
                           className="card card_image"
-                          style={{ width: "18rem" }}
+                       style={{ width: "18rem" }}
                         >
                           <Link href={event.eventNewsLink} target="_blank">
                             <img
@@ -142,13 +151,37 @@ const Events = () => {
                                   <span>
                                     {event.shortDesc.length > 50 && (
                                       <li
-                                        class="tooltip-container"
+                                        className="tooltip-container"
                                         onClick={toggleTooltip}
                                       >
                                         More
                                         {openTooltip && (
-                                          <span class="tooltipa">
-                                            {event.shortDesc} hi
+                                          <span
+                                            className="tooltipa"
+                                            onClick={(e) => e.stopPropagation()}
+                                          >
+                                            <button
+                                              className="close-button"
+                                              onClick={(e) => closeTooltip(e)}
+                                            >
+                                              <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                x="0px"
+                                                y="0px"
+                                                width="10"
+                                                height="10"
+                                                viewBox="0 0 50 50"
+                                              >
+                                                <path d="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.28125 L 7.71875 43.71875 L 25 26.4375 L 42.28125 43.71875 L 43.71875 42.28125 L 26.4375 25 L 43.71875 7.71875 L 42.28125 6.28125 L 25 23.5625 Z"></path>
+                                              </svg>
+                                              {/* <img src="/images/close.png" alt="close icon" /> */}
+                                            </button>
+                                            {openTooltip && (
+                                              <span className="tooltip-content">
+                                                {event.shortDesc}
+                                              </span>
+                                            )}
+                                            {/* {event.shortDesc} */}
                                           </span>
                                         )}
                                       </li>

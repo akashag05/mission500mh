@@ -106,6 +106,7 @@ const SummeryTable = () => {
                       handleYearClick(item.YEAR);
                       setSelectedItem(item.YEAR);
                       scrollToMaps();
+                
                     }}
                     style={{
                       color: "blue",
@@ -114,7 +115,10 @@ const SummeryTable = () => {
                       verticalAlign: "middle",
                     }}
                   >
-                    <a href="#maps" style={{ cursor: "pointer" }}>
+                    {/* <a href="#maps" style={{ cursor: "pointer" }}>
+                      {item.YEAR}
+                    </a> */}
+                    <a href={`https://mission500mh.com/${item.YEAR}-Projects`} target="_blank" rel="noopener noreferrer" style={{ cursor: "pointer" }}>
                       {item.YEAR}
                     </a>
                   </td>
@@ -177,7 +181,7 @@ const SummeryTable = () => {
                   fontSize: "15px",
                 }}
               >
-                31,143,775
+                3,11,43,775
               </td>
               <td
                 style={{
@@ -226,13 +230,19 @@ const SummeryTable = () => {
                     fontWeight: selectedItem === item.YEAR ? "bold" : "normal",
                     fontSize: selectedItem === item.YEAR && "18px",
                   }}
+
                 >
                   - {item.YEAR}
                 </li>
               </ul>
+              
             );
           })}
         </div>
+        <div>
+
+        </div>
+
         <div className="justify-end">
           <div className="d-flex p-4">
             <p>Year {selectedYear}</p>
@@ -244,14 +254,13 @@ const SummeryTable = () => {
               <Image src="../images/map_21.svg" width={700} height={500} />
             ) : selectedYear == 2020 ||
               selectedYear == 2019 ||
-              selectedYear == 2018 ? (
-              <Image
+              selectedYear == 2018 ? (              <Image
                 src="../images/map_18_19_20.svg"
                 width={700}
                 height={500}
               />
             ) : (
-              ""
+              "/"
             )}
           </div>
         </div>

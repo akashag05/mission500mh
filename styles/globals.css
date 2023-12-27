@@ -517,14 +517,15 @@ footer p a:hover {
   position: relative;
   display: inline-block;
   cursor: pointer;
+  z-index: 9999;
 }
 
 .tooltipa {
   /* visibility: hidden; */
   width: 400px;
-  background-color: #333;
-  color: #fff;
-  text-align: center;
+  background-color: antiquewhite;
+  color: black;
+  text-align: left;
   border-radius: 4px;
   padding: 5px;
   position: absolute;
@@ -548,6 +549,14 @@ footer p a:hover {
   border-style: solid;
   border-color: transparent transparent transparent #333; /* Adjust the color */
 }
+.close-button{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-color: chocolate;
+  border: none;
+}
+
 
 /* .tooltip-container:hover .tooltip {
   visibility: visible;

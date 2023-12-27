@@ -85,7 +85,7 @@ class Footer extends Component {
                   <h3 className="widget__title">about</h3>
                   <ul className="foot__links">
                     <li>
-                      <Link href="/about">Abouts Us</Link>
+                      <Link href="/about">About Us</Link>
                     </li>
                     <li>
                       <a
@@ -101,6 +101,18 @@ class Footer extends Component {
                       <Link href="/events">Media</Link>
                     </li>
                     {/* <li><Link href="#">Site Map</Link></li> */}
+                    <li>
+                      {/* <a href="../public/files/Privacy.pdf">Privacy Policy</a> */}
+                      <Link href="files/Privacy.pdf">
+                        Privacy Policy
+                      </Link>
+                    </li>
+                    <li>
+                      {/* <a href="../public/files/Terms.pdf">Terms Of Use</a> */}
+                      <Link href="/files/Terms.pdf">
+                        Terms Of Use
+                      </Link>
+                    </li>
                   </ul>
                 </div>
                 <div className="col footer-item footer-item2">
@@ -116,7 +128,7 @@ class Footer extends Component {
                       </a>
                     </li>
                     <li>
-                      <Link href="/executionMap">Exexution Map</Link>
+                      <Link href="/executionMap">Execution Map</Link>
                     </li>
                     {/* <li><Link href="#">Blog Posts</Link></li> */}
                     {/* <li><Link href="#">Results</Link></li> */}
@@ -205,16 +217,17 @@ class Footer extends Component {
               <div className="row">
                 <div className="col-lg-12">
                   <div className="copyright-desc">
-                    <p>
-                      © Copyright 2023 by{" "}
-                      <Link
+                    <p className="footer_text">
+                      © Copyright 2022-23 @ Wari Foundation{" "}
+                      {/* <Link
                         href="https://mission500mh.com/home"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
                         Mission 500
-                      </Link>
+                      </Link> */}
                     </p>
+                    <p className="footer_text">Created By RevDau</p>
                   </div>
                 </div>
               </div>

@@ -72,11 +72,11 @@ class MixerArea extends Component {
                         offset={{ top: 10 }}
                         delayedCall
                       >
-                        <CountUp end={this.state.startCounter ? 6300 : 0} />
+                        <CountUp end={this.state.startCounter ? 156381 : 0} />
                       </VisibilitySensor>
                     </h3>
                     <p className="fun__text">
-                      volunteers have joined us to save water
+                    Beneficiaries from the mission
                     </p>
                   </div>
                 </div>
